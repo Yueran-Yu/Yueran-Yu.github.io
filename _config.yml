@@ -18,6 +18,7 @@ url: 'https://yueran-yu.github.io'
 # baseurl:
 permalink: pretty
 
+
 # Pagination
 paginate: 10
 #paginate_path: "/page:num/"
@@ -392,7 +393,7 @@ han: false
 # Disqus
 disqus:
   enable: true
-  shortname: Sinan
+  shortname: Yueran
   count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true

@@ -83,7 +83,7 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="database," />
+  <meta name="keywords" content="back end," />
 
 
 
@@ -111,17 +111,25 @@
 
 
 
-<meta name="description" content="Brief Note A query is a request we make to firestore to give us something from the database. Firestore returns us two types of objects: references and snapshots. Of these objects, they can be either Document or Collection versions. Firestore will always return us these objects, even if nothing exists at from that query.">
-<meta name="keywords" content="database">
+<meta name="description" content="1. URL contains what? What is the function of each part of the URL? URL =&amp;gt; Uniform Resource Locator">
+<meta name="keywords" content="back end">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Query Reference and Query Snapshot">
-<meta property="og:url" content="http://localhost:4000/firestore/2021/02/19/query_ref_query_snapshot/">
+<meta property="og:title" content="HTTP">
+<meta property="og:url" content="http://localhost:4000/http/2020/11/05/http_note/">
 <meta property="og:site_name" content="Yueran&apos;s Learning">
-<meta property="og:description" content="Brief Note A query is a request we make to firestore to give us something from the database. Firestore returns us two types of objects: references and snapshots. Of these objects, they can be either Document or Collection versions. Firestore will always return us these objects, even if nothing exists at from that query.">
+<meta property="og:description" content="1. URL contains what? What is the function of each part of the URL? URL =&amp;gt; Uniform Resource Locator">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="../../../../../assets/images/URL_components.png">
+<meta property="og:image" content="../../../../../assets/images/URL_Example.png">
+<meta property="og:image" content="../../../../../assets/images/Domain_name.png">
+<meta property="og:image" content="../../../../../assets/images/server_runnng_state1.png">
+<meta property="og:image" content="../../../../../assets/images/Response.png">
+<meta property="og:image" content="../../../../../assets/images/request.png">
+<meta property="og:image" content="../../../../../assets/images/response_.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Query Reference and Query Snapshot">
-<meta name="twitter:description" content="Brief Note A query is a request we make to firestore to give us something from the database. Firestore returns us two types of objects: references and snapshots. Of these objects, they can be either Document or Collection versions. Firestore will always return us these objects, even if nothing exists at from that query.">
+<meta name="twitter:title" content="HTTP">
+<meta name="twitter:description" content="1. URL contains what? What is the function of each part of the URL? URL =&amp;gt; Uniform Resource Locator">
+<meta name="twitter:image" content="../../../../../assets/images/URL_components.png">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -154,7 +162,7 @@
 
 
 
-  <title>Query Reference and Query Snapshot</title>
+  <title>HTTP</title>
   
 
 
@@ -338,12 +346,12 @@
   
 
   <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/firestore/2021/02/19/query_ref_query_snapshot/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/http/2020/11/05/http_note/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yueran">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/assets/images/avatar.jpg">
+      <meta itemprop="image" content="../../../../../assets/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -358,7 +366,7 @@
           <h1 class="post-title" itemprop="name headline">
           
           
-            Query Reference and Query Snapshot
+            HTTP
           
         </h1>
         
@@ -372,8 +380,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-02-19T00:00:00-06:00">
-                19-02-2021
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-11-05T00:00:00-06:00">
+                05-11-2020
               </time>
             
 
@@ -396,8 +404,8 @@
               
                 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/category/#/firestore" itemprop="url" rel="index">
-                    <span itemprop="name">firestore</span>
+                  <a href="/category/#/http" itemprop="url" rel="index">
+                    <span itemprop="name">http</span>
                   </a>
                 </span>
 
@@ -414,9 +422,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/firestore/2021/02/19/query_ref_query_snapshot/#comments" itemprop="discussionUrl">
+                <a href="/http/2020/11/05/http_note/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="/firestore/2021/02/19/query_ref_query_snapshot/" itemprop="commentCount"></span>
+                        data-disqus-identifier="/http/2020/11/05/http_note/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -447,46 +455,235 @@
       
 
       
-        <h3 id="brief-note">Brief Note</h3>
-<ul>
-  <li>A query is a request we make to firestore to give us something from the database.</li>
-  <li>Firestore returns us two types of objects: references and snapshots. Of these objects, they can be either Document or Collection versions.</li>
-  <li>Firestore will <strong>always</strong> return us these objects, even if nothing exists at from that query.</li>
-</ul>
+        <h3 id="1-url-contains-what-what-is-the-function-of-each-part-of-the-url">1. URL contains what? What is the function of each part of the URL?</h3>
+<p><code class="language-plaintext highlighter-rouge">URL =&gt; Uniform Resource Locator</code></p>
 
-<h3 id="queryreference">QueryReference</h3>
-<ul>
-  <li>A queryReference object is an object that represents the “current” place in the database that we are querying.</li>
-  <li><em>We get them by calling either:</em>
-    <ul>
-      <li>firestore.doc(‘/users/:userId’);</li>
-      <li>firestore.collections(‘/users’);</li>
-    </ul>
-  </li>
-  <li>The queryReference object does not have the actual data of the collection or document. It instead has properties that tell us details about it, or the method to get the Snapshot object which gives us the data we are looking for.</li>
-</ul>
+<p><strong>Hosting:</strong></p>
+<blockquote>
+  <p>Means that all the web pages and their supporting files are available on that computer. The web server will send any web page from the website it is hosting to any user’s browser, per user request.</p>
+</blockquote>
 
-<h3 id="documentreference-vs-collectionreference">DocumentReference vs CollectionReference</h3>
-<ul>
-  <li>CollectionReference - QuerySnapshot: collectionRef.get()</li>
-  <li>DocumentReference - DocumentSnapshot: documentRef.get()</li>
-  <li>We use documentRef objects to perform our CRUD methods (create, retrieve, update, delete). The documentRef methods are <strong>.set()</strong>,
-<strong>.get()</strong>, <strong>update()</strong>, and <strong>.delete()</strong> respectively.</li>
-  <li>We also can add documents to collections using the collectionRef object using the <strong>.add()</strong> method. //collectionRef.add({//value:prop})</li>
-  <li>We get the snapshotObject from the referenceObject using the <strong>.get()</strong> method. ie. documentRef.get() or collectionRef.get()
-    <ul>
-      <li>documentRef returns a <strong>documentSnapshot</strong> object.</li>
-      <li>collectionRef returns a <strong>querySnapshot</strong> object.</li>
-    </ul>
-  </li>
-</ul>
+<p><strong>Perfect Explanation of Webpage and Web Server:</strong></p>
+<blockquote>
+  <p>Don’t confuse websites and web servers. For example, if you hear someone say, “My website is not responding”, it actually means that the web server is not responding and therefore the website is not available. More importantly, since a web server can host multiple websites, the term web server is never used to designate a website, as it could cause great confusion. In our previous example, if we said, “My web server is not responding”, it means that multiple websites on that web server are not available.</p>
+</blockquote>
 
-<h4 id="documentsnapshot">DocumentSnapshot</h4>
-<ul>
-  <li>We get a documentSnapshot object from our documentReference object.</li>
-  <li>The documentSnapshot object allows us to check if a document exists at this query using the <strong>.exists</strong> property which returns a boolean.</li>
-  <li>We can also get the actual properties on the object by calling the <strong>.data</strong> method, which returns us a JSON object of the document.</li>
-</ul>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Read Articles Below!!!
+</code></pre></div></div>
+
+<ol>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work">How does the Internet work?</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Pages_sites_servers_and_search_engines">What is the difference between webpage, website, web server, and search engine?</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server">What is a web server?</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_hyperlinks">What are hyperlinks? The concepts behind links on the web.</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL">What is a URL?</a></li>
+  <li><a href="https://stackoverflow.com/questions/4913343/what-is-the-difference-between-uri-url-and-urn">What is the difference between URI, URL and URN?</a></li>
+</ol>
+
+<p><img src="../../../../../assets/images/URL_components.png" width="500" alt="URL Components" />
+<img src="../../../../../assets/images/URL_Example.png" width="500" alt="URL Example" /></p>
+
+<h3 id="2-what-the-function-of-dns-how-to-use-nslookup-command">2. What the function of DNS? How to use <strong><em>nslookup</em></strong> command?</h3>
+<blockquote>
+  <p>The domain name system resolves the names of internet sites with their underlying IP addresses adding efficiency and even security in the process.</p>
+</blockquote>
+
+<blockquote>
+  <p>Think of DNS like your smartphone’s contact list, which matches people’s name with their phone numbers and email addresses. Then multiply that contact list by everyone else on the planet.
+Example:</p>
+  <ul>
+    <li><strong><em>nslookup  baidu.com</em></strong>
+      <blockquote>
+        <ul>
+          <li>Server:	192.168.0.1  Address:	192.168.0.1#53</li>
+        </ul>
+      </blockquote>
+      <ul>
+        <li>Non-authoritative answer:
+          <blockquote>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Name:	baidu.com Address: 220.181.38.148
+</code></pre></div>            </div>
+          </blockquote>
+          <ul>
+            <li>Name:	baidu.com Address: 39.156.69.79</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><strong><em>nslookup  google.com</em></strong>
+      <blockquote>
+        <ul>
+          <li>Server:		192.168.0.1 Address:	192.168.0.1#53</li>
+        </ul>
+      </blockquote>
+      <ul>
+        <li>Non-authoritative answer:
+          <blockquote>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Name:	google.com Address: 172.217.5.14
+</code></pre></div>            </div>
+          </blockquote>
+        </li>
+      </ul>
+    </li>
+    <li><strong><em>nslookup  github.com</em></strong>
+      <blockquote>
+        <ul>
+          <li>Server:		192.168.0.1 Address:	192.168.0.1#53</li>
+        </ul>
+      </blockquote>
+      <ul>
+        <li>Non-authoritative answer:
+          <blockquote>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Name:	github.com Address: 140.82.112.4
+</code></pre></div>            </div>
+          </blockquote>
+        </li>
+      </ul>
+    </li>
+    <li><strong><em>nslookup  yueran-yu.github.io</em></strong>
+      <blockquote>
+        <ul>
+          <li>SServer:		192.168.0.1 Address:	192.168.0.1#53</li>
+        </ul>
+      </blockquote>
+      <ul>
+        <li>Non-authoritative answer:
+          <blockquote>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Name:	yueran-yu.github.io Address: 185.199.110.153
+</code></pre></div>            </div>
+          </blockquote>
+          <ul>
+            <li>Name:	yueran-yu.github.io Address: 185.199.108.153</li>
+            <li>Name:	yueran-yu.github.io Address: 185.199.109.153</li>
+            <li>Name:	yueran-yu.github.io Address: 185.199.111.153</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+</blockquote>
+
+<h3 id="3-what-the-ip-used-for-how-to-use-ping">3. What the IP used for? How to use ping?</h3>
+<blockquote>
+  <p>An IP address allows information to be sent and received by the correct parties,
+which means they can also be used to track down a user’s physical location.</p>
+  <ul>
+    <li>Some special IP
+      <blockquote>
+        <ul>
+          <li>127.0.0.1 represent your laptop itself</li>
+        </ul>
+      </blockquote>
+      <ul>
+        <li>localhost: this is a hostname that refers to the current computer used to access it.</li>
+        <li>0.0.0.0 doesn’t represent any devices.</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<h3 id="4-what-is-domain-whats-the-type-of-domain">4. What is Domain, what’s the type of Domain?</h3>
+<blockquote>
+  <p>A domain name is your website name. A domain name is the address where Internet users can access your website. A domain name is used for finding and identifying computers on the Internet. Computers use IP addresses, which are a series of number. However, it is difficult for humans to remember strings of numbers. Because of this, domain names were developed and used to identify entities on the Internet rather than using IP addresses.</p>
+</blockquote>
+
+<h4 id="knowledge-points">Knowledge Points</h4>
+<blockquote>
+  <ul>
+    <li>A domain name can correspond to different IPs.
+      <blockquote>
+        <ul>
+          <li>This is called load balance to prevent one machine from breaking down.</li>
+        </ul>
+      </blockquote>
+    </li>
+    <li>One IP corresponds to a different domain name.
+      <blockquote>
+        <ul>
+          <li>This is called a Shared host, and poor developers do it.</li>
+        </ul>
+      </blockquote>
+    </li>
+  </ul>
+</blockquote>
+
+<p><img src="../../../../../assets/images/Domain_name.png" width="500" alt="Domain Name" /></p>
+
+<h3 id="http-request--response">HTTP Request &amp; Response</h3>
+<p>You can read the article in MDN as well: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages">HTTP Messages</a></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">http</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">url</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">port</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">port</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">请指定端口号好不啦？</span><span class="se">\n</span><span class="s1">node server.js 8888 这样不会吗？</span><span class="dl">'</span><span class="p">)</span>
+  <span class="nx">process</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">server</span> <span class="o">=</span> <span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">request</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">parsedUrl</span> <span class="o">=</span> <span class="nx">url</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">request</span><span class="p">.</span><span class="nx">url</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>
+  <span class="kd">var</span> <span class="nx">pathWithQuery</span> <span class="o">=</span> <span class="nx">request</span><span class="p">.</span><span class="nx">url</span>
+  <span class="kd">var</span> <span class="nx">queryString</span> <span class="o">=</span> <span class="dl">''</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">pathWithQuery</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="dl">'</span><span class="s1">?</span><span class="dl">'</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="nx">queryString</span> <span class="o">=</span> <span class="nx">pathWithQuery</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nx">pathWithQuery</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="dl">'</span><span class="s1">?</span><span class="dl">'</span><span class="p">))</span> <span class="p">}</span>
+  <span class="kd">var</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">parsedUrl</span><span class="p">.</span><span class="nx">pathname</span>
+  <span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="nx">parsedUrl</span><span class="p">.</span><span class="nx">query</span>
+  <span class="kd">var</span> <span class="nx">method</span> <span class="o">=</span> <span class="nx">request</span><span class="p">.</span><span class="nx">method</span>
+
+  <span class="cm">/******** 从这里开始看，上面不要看 ************/</span>
+
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">有个傻子发请求过来啦！路径（带查询参数）为：</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">pathWithQuery</span><span class="p">)</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">path</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">/</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">=</span> <span class="mi">200</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">setHeader</span><span class="p">(</span><span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">text/html;charset=utf-8</span><span class="dl">'</span><span class="p">)</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s2">`二哈`</span><span class="p">)</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">end</span><span class="p">()</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">path</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">/x</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">=</span> <span class="mi">200</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">setHeader</span><span class="p">(</span><span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">text/css;charset=utf-8</span><span class="dl">'</span><span class="p">)</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s2">`body{color: red;}\n`</span><span class="p">)</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">end</span><span class="p">()</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">=</span> <span class="mi">404</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">setHeader</span><span class="p">(</span><span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">text/html;charset=utf-8</span><span class="dl">'</span><span class="p">)</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="s2">`你输入的路径不存在对应的内容`</span><span class="p">)</span>
+    <span class="nx">response</span><span class="p">.</span><span class="nx">end</span><span class="p">()</span>
+  <span class="p">}</span>
+
+  <span class="cm">/******** 代码结束，下面不要看 ************/</span>
+<span class="p">})</span>
+<span class="nx">server</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">监听 </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">port</span> <span class="o">+</span> <span class="dl">'</span><span class="s1"> 成功</span><span class="se">\n</span><span class="s1">请用在空中转体720度然后用电饭煲打开 http://localhost:</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">port</span><span class="p">)</span>
+</code></pre></div></div>
+<blockquote>
+  <h4 id="logic">Logic:</h4>
+  <ul>
+    <li>According to the path and return back a string</li>
+    <li>Every time when you receive a request, the middle part code will be executed</li>
+    <li>Use <code class="language-plaintext highlighter-rouge">if else</code> to choose the path, and return the response</li>
+    <li>Return status code <code class="language-plaintext highlighter-rouge">200</code> if it is a known path</li>
+    <li>Return status code <code class="language-plaintext highlighter-rouge">404</code> if the is an unknown path</li>
+    <li><code class="language-plaintext highlighter-rouge">Content-Type</code> represents <code class="language-plaintext highlighter-rouge">Type/Grammar</code> of the content</li>
+    <li><code class="language-plaintext highlighter-rouge">response.write()</code> represents the return content</li>
+    <li><code class="language-plaintext highlighter-rouge">response.end()</code> represents when execute this code, the response will send to the user immediately</li>
+  </ul>
+</blockquote>
+
+<h4 id="important">IMPORTANT!!!</h4>
+<blockquote>
+  <p>The function of file suffix is to facilitate the identification of applications on the operating system, front-end request or response code in the identification of files don’t rely on suffixes</p>
+
+  <p>For example, as long as the content of the file is CSS code, the file suffix can be un.css</p>
+</blockquote>
+
+<h3 id="attention">Attention</h3>
+<p><img src="../../../../../assets/images/server_runnng_state1.png" width="800" alt="Checking request details in Network" />
+<img src="../../../../../assets/images/Response.png" width="500" alt="Attention" />
+<img src="../../../../../assets/images/request.png" width="500" alt="When Request" />
+<img src="../../../../../assets/images/response_.png" width="500" alt="When Response" /></p>
+
 
       
     </div>
@@ -517,7 +714,7 @@
         <div class="post-tags">
           
             
-            <a href="/tag/#/database" rel="tag"># database</a>
+            <a href="/tag/#/back%20end" rel="tag"># back end</a>
           
         </div>
       
@@ -533,8 +730,8 @@
         <div class="post-nav" id="post-nav-id">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/redux/2021/02/27/redux/" rel="next" title="Redux">
-                <i class="fa fa-chevron-left"></i> Redux
+              <a href="/javascript/2020/11/09/memory_plot_of_js/" rel="next" title="The Memory Plot of Javascript">
+                <i class="fa fa-chevron-left"></i> The Memory Plot of Javascript
               </a>
             
           </div>
@@ -543,8 +740,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/react/2021/02/02/pull_code_from_other's_repo/" rel="prev" title="How to Pull Code from Other's Repository and Change 'Origin'?">
-                How to Pull Code from Other's Repository and Change 'Origin'? <i class="fa fa-chevron-right"></i>
+              <a href="/html%20and%20css/2020/10/25/wrap_up_of_css/" rel="prev" title="Wrap Up of CSS">
+                Wrap Up of CSS <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -653,7 +850,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -664,7 +861,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -691,11 +888,22 @@
               
               
               <span class="links-of-author-item">
-                <a href="https://github.com/Yueran Yu" target="_blank" title="GitHub">
+                <a href="https://github.com/Yueran-Yu" target="_blank" title="GitHub">
                   
                     <i class="fa fa-fw fa-github"></i>
                   
                   GitHub
+                </a>
+              </span>
+            
+              
+              
+              <span class="links-of-author-item">
+                <a href="https://weibo.com/2100931767/" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
                 </a>
               </span>
             
@@ -730,7 +938,7 @@
             
               <div class="post-toc-content">
     <ol class=nav>
-      <li class="nav-item nav-level-3"> <a class="nav-link" href="#brief-note"> <span class="nav-number">1</span> <span class="nav-text">Brief Note</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#queryreference"> <span class="nav-number">2</span> <span class="nav-text">QueryReference</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#documentreference-vs-collectionreference"> <span class="nav-number">3</span> <span class="nav-text">DocumentReference vs CollectionReference</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#documentsnapshot"> <span class="nav-number">3.1</span> <span class="nav-text">DocumentSnapshot</span> </a> <ol class="nav-child"> <ol class="nav-child">
+      <li class="nav-item nav-level-3"> <a class="nav-link" href="#1-url-contains-what-what-is-the-function-of-each-part-of-the-url"> <span class="nav-number">1</span> <span class="nav-text">1. URL contains what? What is the function of each part of the URL?</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#2-what-the-function-of-dns-how-to-use-nslookup-command"> <span class="nav-number">2</span> <span class="nav-text">2. What the function of DNS? How to use <strong</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#3-what-the-ip-used-for-how-to-use-ping"> <span class="nav-number">3</span> <span class="nav-text">3. What the IP used for? How to use ping?</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#4-what-is-domain-whats-the-type-of-domain"> <span class="nav-number">4</span> <span class="nav-text">4. What is Domain, what’s the type of Domain?</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#knowledge-points"> <span class="nav-number">4.1</span> <span class="nav-text">Knowledge Points</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#http-request--response"> <span class="nav-number">5</span> <span class="nav-text">HTTP Request &amp; Response</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#logic"> <span class="nav-number">5.1</span> <span class="nav-text">Logic:</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#important"> <span class="nav-number">5.2</span> <span class="nav-text">IMPORTANT!!!</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#attention"> <span class="nav-number">6</span> <span class="nav-text">Attention</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child">
     </ol>
   </div>
             
@@ -891,19 +1099,19 @@
   
 
     
-      <script id="dsq-count-scr" src="https://Sinan.disqus.com/count.js" async></script>
+      <script id="dsq-count-scr" src="https://Yueran.disqus.com/count.js" async></script>
     
 
     
       
       <script type="text/javascript">
           var disqus_config = function () {
-              this.page.url = 'http://localhost:4000/firestore/2021/02/19/query_ref_query_snapshot/';
-              this.page.identifier = '/firestore/2021/02/19/query_ref_query_snapshot/';
-              this.page.title = 'Query Reference and Query Snapshot';
+              this.page.url = 'http://localhost:4000/http/2020/11/05/http_note/';
+              this.page.identifier = '/http/2020/11/05/http_note/';
+              this.page.title = 'HTTP';
           };
           var d = document, s = d.createElement('script');
-          s.src = 'https://Sinan.disqus.com/embed.js';
+          s.src = 'https://Yueran.disqus.com/embed.js';
           s.setAttribute('data-timestamp', '' + +new Date());
           (d.head || d.body).appendChild(s);
       </script>
