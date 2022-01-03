@@ -16,7 +16,6 @@ tags:
 ### 笔试部分
 
 #### 形式
-
 1. 第一种是直接考coding。倾向于software developer这类性质的工作。考试会让你share 屏幕，对方看着你整个输入的过程，考难度级别是Leetcode里easy级别的题目。 有些不共享屏幕的，但是也有限时coding
    question，难度会有leetcode里面的medium的级别。
 2. 第二种是做assignment，前端工程师需要管UX/UI Design?. 这类Assignment大概有一周的时间给你做，会要求重新设计一个页面，然后完成里面js的function，或者给mockup设计稿，按照设计实现网页功能
@@ -94,7 +93,8 @@ tags:
     - 一方面 freelancing项目可以放到你的portfolio里去，让公司看到你其实一直在做web开发相关的事情
 3. Github: 提供 github连接
 4. Leetcode刷题：基本上developer都会遇到的tech interview,leetcode上最简单的题目都能训练到面试所需的技能
-5. Youtube熟悉面试技巧:总结技巧，写成博客
+5. 参加多伦多地区的slack群，像[TorontoJS](https://torontojs.com/), [womenwhocode](https://www.womenwhocode.com/profile/edit#my-networks), 类似的job meetup，一般都有人发招聘信息。这种投了简历，一般都会至少让你做个test
+6. Youtube熟悉面试技巧:总结技巧，写成博客
 
 ### 关于要积极拿到面试
 
@@ -104,9 +104,8 @@ tags:
 - 最好能找到之前经历和这份工作相关的点。比如有个博主强调设计经验，后来拿到的offer也是骗UX engineer方向的。
 - 能讲通为什么要转码很重要，基本上所有公司都看中JS的基本功，不怎么问library,accessibility是每个公司都问过的。
 
-> Resource: [加拿大留学生在本地找工作有多难？ 知乎作者：Fei西](https://www.zhihu.com/question/50714531/answer/1626216412)
->
-> Resource: [[找工就业【多伦多】文科转码-自学7个月（约400小时）拿到前端offer](https://www.1point3acres.com/bbs/thread-552825-1-1.html)
+1. Resource: [加拿大留学生在本地找工作有多难？ 知乎作者：Fei西](https://www.zhihu.com/question/50714531/answer/1626216412)
+2. Resource: [[找工就业【多伦多】文科转码-自学7个月（约400小时）拿到前端offer](https://www.1point3acres.com/bbs/thread-552825-1-1.html)
 
 
 

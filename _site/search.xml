@@ -14,7 +14,6 @@
 <h3 id="笔试部分">笔试部分</h3>
 
 <h4 id="形式">形式</h4>
-
 <ol>
   <li>第一种是直接考coding。倾向于software developer这类性质的工作。考试会让你share 屏幕，对方看着你整个输入的过程，考难度级别是Leetcode里easy级别的题目。 有些不共享屏幕的，但是也有限时coding
 question，难度会有leetcode里面的medium的级别。</li>
@@ -116,6 +115,7 @@ question，难度会有leetcode里面的medium的级别。</li>
   </li>
   <li>Github: 提供 github连接</li>
   <li>Leetcode刷题：基本上developer都会遇到的tech interview,leetcode上最简单的题目都能训练到面试所需的技能</li>
+  <li>参加多伦多地区的slack群，像<a href="https://torontojs.com/">TorontoJS</a>, <a href="https://www.womenwhocode.com/profile/edit#my-networks">womenwhocode</a>, 类似的job meetup，一般都有人发招聘信息。这种投了简历，一般都会至少让你做个test</li>
   <li>Youtube熟悉面试技巧:总结技巧，写成博客</li>
 </ol>
 
@@ -129,11 +129,10 @@ question，难度会有leetcode里面的medium的级别。</li>
   <li>能讲通为什么要转码很重要，基本上所有公司都看中JS的基本功，不怎么问library,accessibility是每个公司都问过的。</li>
 </ul>
 
-<blockquote>
-  <p>Resource: <a href="https://www.zhihu.com/question/50714531/answer/1626216412">加拿大留学生在本地找工作有多难？ 知乎作者：Fei西</a></p>
-
-  <p>Resource: [<a href="https://www.1point3acres.com/bbs/thread-552825-1-1.html">找工就业【多伦多】文科转码-自学7个月（约400小时）拿到前端offer</a></p>
-</blockquote>
+<ol>
+  <li>Resource: <a href="https://www.zhihu.com/question/50714531/answer/1626216412">加拿大留学生在本地找工作有多难？ 知乎作者：Fei西</a></li>
+  <li>Resource: [<a href="https://www.1point3acres.com/bbs/thread-552825-1-1.html">找工就业【多伦多】文科转码-自学7个月（约400小时）拿到前端offer</a></li>
+</ol>
 
 ]]></content>
       <categories>
