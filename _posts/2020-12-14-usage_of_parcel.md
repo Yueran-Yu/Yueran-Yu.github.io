@@ -2,7 +2,7 @@
 title: Usage of Parcel
 date: 14-12-2020
 categories:
-- server
+- Server
 tags:
 - front end
 ---

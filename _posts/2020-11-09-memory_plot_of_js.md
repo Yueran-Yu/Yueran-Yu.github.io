@@ -2,7 +2,7 @@
 title: The Memory Plot of Javascript
 date: 09-11-2020
 categories:
-- javascript
+- Javascript
 tags:
 - front end
 ---

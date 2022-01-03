@@ -2,7 +2,7 @@
 title: Loader and Plugins
 date: 24-12-2020
 categories:
-- javascript
+- Javascript
 tags:
 - front end
 ---

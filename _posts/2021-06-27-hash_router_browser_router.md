@@ -2,7 +2,7 @@
 title: Hash Router VS. Browser Router
 date: 27-06-2021
 categories:
-- react
+- React Router
 tags:
 - front end
 ---

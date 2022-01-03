@@ -2,7 +2,7 @@
 title: Javascript Array
 date: 25-11-2020
 categories:
-- javascript
+- Javascript
 tags:
 - front end
 ---

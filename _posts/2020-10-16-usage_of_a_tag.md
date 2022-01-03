@@ -2,7 +2,7 @@
 title: Usage of 'a' Tag
 date: 16-10-2020
 categories: 
-- html and css
+- HTML and CSS
 tags:
 - front end
 ---

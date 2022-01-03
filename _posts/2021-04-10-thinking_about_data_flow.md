@@ -2,7 +2,7 @@
 title: Thinking About Data Flow
 date: 10-04-2021
 categories:
-- coding rules
+- Coding Rules
 tags:
 - learning
 ---

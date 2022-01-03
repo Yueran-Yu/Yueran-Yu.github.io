@@ -2,7 +2,7 @@
 title: React Basics
 date: 23-01-2021
 categories:
-- react
+- React
 tags:
 - front end
 ---

@@ -2,7 +2,7 @@
 title: MVC and Event Bus
 date: 21-12-2020
 categories:
-- javascript
+- Javascript
 tags:
 - front end
 ---

@@ -1,4 +1,133 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-02T10:12:56-06:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Yueran’s Learning</title><subtitle>Shoot for the moon. Even if you miss, you&apos;ll land among the stars.</subtitle><author><name>Yueran</name></author><entry><title type="html">Deploy Project With buildpacks to Heroku and Github</title><link href="http://localhost:4000/buildpacks/2021/09/29/buildpacks_deploy_to_heroku/" rel="alternate" type="text/html" title="Deploy Project With buildpacks to Heroku and Github" /><published>2021-09-29T00:00:00-05:00</published><updated>2021-09-29T00:00:00-05:00</updated><id>http://localhost:4000/buildpacks/2021/09/29/buildpacks_deploy_to_heroku</id><content type="html" xml:base="http://localhost:4000/buildpacks/2021/09/29/buildpacks_deploy_to_heroku/">&lt;h3 id=&quot;deploy-to-heroku&quot;&gt;Deploy to Heroku&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-02T22:52:50-06:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Yueran’s Learning</title><subtitle>Shoot for the moon. Even if you miss, you&apos;ll land among the stars.</subtitle><author><name>Yueran</name></author><entry><title type="html">搜集的在加拿大找工作的Tips</title><link href="http://localhost:4000/job%20hunting/2022/01/02/job_hunting_preparation/" rel="alternate" type="text/html" title="搜集的在加拿大找工作的Tips" /><published>2022-01-02T00:00:00-06:00</published><updated>2022-01-02T00:00:00-06:00</updated><id>http://localhost:4000/job%20hunting/2022/01/02/job_hunting_preparation</id><content type="html" xml:base="http://localhost:4000/job%20hunting/2022/01/02/job_hunting_preparation/">&lt;h3 id=&quot;零工作经验的毕业生&quot;&gt;零工作经验的毕业生&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;疫情期间竞争会大很多，有人投了超过100多份简历，只有三轮进入下一轮笔试机会。只有通过不断润色我们的portfolio作品集，通过简历筛选的机会更大。&lt;/li&gt;
+  &lt;li&gt;有可能找到的公司规模相对比较小，工作内容可能跟预期有差距。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;笔试部分&quot;&gt;笔试部分&lt;/h3&gt;
+
+&lt;h4 id=&quot;形式&quot;&gt;形式&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;第一种是直接考coding。倾向于software developer这类性质的工作。考试会让你share 屏幕，对方看着你整个输入的过程，考难度级别是Leetcode里easy级别的题目。 有些不共享屏幕的，但是也有限时coding
+question，难度会有leetcode里面的medium的级别。&lt;/li&gt;
+  &lt;li&gt;第二种是做assignment，前端工程师需要管UX/UI Design?. 这类Assignment大概有一周的时间给你做，会要求重新设计一个页面，然后完成里面js的function，或者给mockup设计稿，按照设计实现网页功能&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;面试部分&quot;&gt;面试部分&lt;/h3&gt;
+
+&lt;h4 id=&quot;形式-1&quot;&gt;形式&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;问Behaviour Question. 考核在工作中遇到的各种情景的应对方式，考核笔试项目是不是你本人做的。&lt;/li&gt;
+  &lt;li&gt;这类面试看中英语口语沟通能力，看处理问题的方式是否符合企业文化。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;做好准备投简历可能会投好几个月&quot;&gt;做好准备，投简历可能会投好几个月&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;可能投了好几个月的简历，面试机会寥寥无几&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;投简历需要知道的经验&quot;&gt;投简历需要知道的经验&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;基本上95%的公司都要求工作经验,有些1-2年，甚至5年工作经验。&lt;/li&gt;
+  &lt;li&gt;要求3年以上工作经验的就不用看了，目标最好锁定在1-2年
+    &lt;ul&gt;
+      &lt;li&gt;虽然在学校2年期间是学习，但也一直是前端领域，加上自己的项目以及实习经验，这可以算是两年经验&lt;/li&gt;
+      &lt;li&gt;大部分写着要求1-2年工作经验的职位，基本上是门槛没那么高的，因为从招聘角度来说，总不能说零工作经验要求吧， 所以1-2年的招聘要去机会比较大。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;投简历常用平台&quot;&gt;投简历常用平台&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Resource: &lt;a href=&quot;https://careersherpa.net/best-job-search-websites/&quot;&gt;33 Best Job Search Websites To Use In 2022&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Individual company websites&lt;/li&gt;
+  &lt;li&gt;Angellist&lt;/li&gt;
+  &lt;li&gt;Indeed (沉底的几率大)&lt;/li&gt;
+  &lt;li&gt;Glassdoor&lt;/li&gt;
+  &lt;li&gt;Job bank&lt;/li&gt;
+  &lt;li&gt;Monster&lt;/li&gt;
+  &lt;li&gt;FlexJobs&lt;/li&gt;
+  &lt;li&gt;Ladders&lt;/li&gt;
+  &lt;li&gt;AngeIList&lt;/li&gt;
+  &lt;li&gt;Linkedin(沉底的几率大)&lt;/li&gt;
+  &lt;li&gt;Getwork&lt;/li&gt;
+  &lt;li&gt;Scouted&lt;/li&gt;
+  &lt;li&gt;Snagajob&lt;/li&gt;
+  &lt;li&gt;Robert Half&lt;/li&gt;
+  &lt;li&gt;CareerBuilder&lt;/li&gt;
+  &lt;li&gt;Eluta&lt;/li&gt;
+  &lt;li&gt;Jobboom&lt;/li&gt;
+  &lt;li&gt;Simply Hired&lt;/li&gt;
+  &lt;li&gt;Google for jobs&lt;/li&gt;
+  &lt;li&gt;ZipRecruiter&lt;/li&gt;
+  &lt;li&gt;Workopolis&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;关于linkedin&quot;&gt;关于Linkedin&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;LinkedIn
+上面发布的职位都很诱人，就是你感觉各个方面都很符合自己的条件，但是对我来说是零回复率，虽然很多教你怎么找工作的过来人都说维护好linkdin的账号很重要，但是对于零职场经验的小白来说，怎么拓展人脉，怎么打包美化你的个人介绍作用都不大。我认为linkdin
+是比较适合有了职场经验后的networking的，当你的linkdin履历上面有一定工作经验的时候，同时你的connection 比较多的时候，那么会有hiring manager 对你的履历感兴趣然后来私信你。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;投简历的tips&quot;&gt;投简历的Tips&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;符合加拿大标准，直接付费买一个编辑简历的平台服务&lt;/li&gt;
+  &lt;li&gt;一定要求cover letter&lt;/li&gt;
+  &lt;li&gt;所有的工作都投&lt;/li&gt;
+  &lt;li&gt;找工作期间，一定要把投简历当成全职工作，不要想起来才投一下（这是最最最重要的策略）&lt;/li&gt;
+  &lt;li&gt;就算求职期间很受挫，也要每天规律job hunting&lt;/li&gt;
+  &lt;li&gt;比如每天10点开始，在indeed上找最新的招聘信息，基本上只投just posted，因为越是抢在前面投的简历，简历被看到的机会越大&lt;/li&gt;
+  &lt;li&gt;搜索职位关键字的时候要灵活，虽然是前端开发，不要只搜front end developer，可以搜：
+    &lt;ul&gt;
+      &lt;li&gt;front end developer&lt;/li&gt;
+      &lt;li&gt;web designer&lt;/li&gt;
+      &lt;li&gt;UX/UI developer&lt;/li&gt;
+      &lt;li&gt;full stack developer&lt;/li&gt;
+      &lt;li&gt;WordPress developer&lt;/li&gt;
+      &lt;li&gt;marketing developer等&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;如果提高自己的求职竞争力&quot;&gt;如果提高自己的求职竞争力&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Portfolio: 这是体现技术实力最重要的手段&lt;/li&gt;
+  &lt;li&gt;Freelancing: 很多找不到全职的同学可以积极的做freelancing
+    &lt;ul&gt;
+      &lt;li&gt;一方面freelancing是属于实际的项目经验，面试的时候有谈资&lt;/li&gt;
+      &lt;li&gt;一方面 freelancing项目可以放到你的portfolio里去，让公司看到你其实一直在做web开发相关的事情&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Github: 提供 github连接&lt;/li&gt;
+  &lt;li&gt;Leetcode刷题：基本上developer都会遇到的tech interview,leetcode上最简单的题目都能训练到面试所需的技能&lt;/li&gt;
+  &lt;li&gt;Youtube熟悉面试技巧:总结技巧，写成博客&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;关于要积极拿到面试&quot;&gt;关于要积极拿到面试&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;前期先别用内推，别申 dream companies. 前期主要是为了积累经验，每个tech test 和onsite都要认真做。&lt;/li&gt;
+  &lt;li&gt;像转专业，其实很多时候只是会在学习中遗漏，因为不知道哪里是重点，这时候面试就是为了查漏补缺。不要害怕被拒，也不用急着拿offer，你就当薅资本主义养猫，免费一小时培训以及练口语。&lt;/li&gt;
+  &lt;li&gt;一边面一边针对面试抓紧时间补知识点。等你觉得补得差不多了，就可以开始找人内推了。&lt;/li&gt;
+  &lt;li&gt;最好能找到之前经历和这份工作相关的点。比如有个博主强调设计经验，后来拿到的offer也是骗UX engineer方向的。&lt;/li&gt;
+  &lt;li&gt;能讲通为什么要转码很重要，基本上所有公司都看中JS的基本功，不怎么问library,accessibility是每个公司都问过的。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Resource: &lt;a href=&quot;https://www.zhihu.com/question/50714531/answer/1626216412&quot;&gt;加拿大留学生在本地找工作有多难？ 知乎作者：Fei西&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;Resource: [&lt;a href=&quot;https://www.1point3acres.com/bbs/thread-552825-1-1.html&quot;&gt;找工就业【多伦多】文科转码-自学7个月（约400小时）拿到前端offer&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Yueran</name></author><category term="Job Hunting" /><category term="front end" /><summary type="html">零工作经验的毕业生</summary></entry><entry><title type="html">制作一份前端Portfolio的重点</title><link href="http://localhost:4000/job%20hunting/2021/12/26/make_potfolio/" rel="alternate" type="text/html" title="制作一份前端Portfolio的重点" /><published>2021-12-26T00:00:00-06:00</published><updated>2021-12-26T00:00:00-06:00</updated><id>http://localhost:4000/job%20hunting/2021/12/26/make_potfolio</id><content type="html" xml:base="http://localhost:4000/job%20hunting/2021/12/26/make_potfolio/"></content><author><name>Yueran</name></author><category term="Job Hunting" /><category term="front end" /><summary type="html"></summary></entry><entry><title type="html">Deploy Project With buildpacks to Heroku and Github</title><link href="http://localhost:4000/buildpacks/2021/09/29/buildpacks_deploy_to_heroku/" rel="alternate" type="text/html" title="Deploy Project With buildpacks to Heroku and Github" /><published>2021-09-29T00:00:00-05:00</published><updated>2021-09-29T00:00:00-05:00</updated><id>http://localhost:4000/buildpacks/2021/09/29/buildpacks_deploy_to_heroku</id><content type="html" xml:base="http://localhost:4000/buildpacks/2021/09/29/buildpacks_deploy_to_heroku/">&lt;h3 id=&quot;deploy-to-heroku&quot;&gt;Deploy to Heroku&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -68,7 +197,7 @@ cd -
   &lt;li&gt;These are the executable script example in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deploy.sh&lt;/code&gt; file.&lt;/li&gt;
   &lt;li&gt;Final step: add &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;deploy: &quot;sh scripts/deploy.sh&lt;/code&gt; to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package.json&lt;/code&gt;  file.&lt;/li&gt;
   &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn deploy&lt;/code&gt;, it will automatically deploy the script as you provided.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Yueran</name></author><category term="buildpacks" /><category term="front end" /><summary type="html">Deploy to Heroku</summary></entry><entry><title type="html">The Difference Between a Framework and Library</title><link href="http://localhost:4000/react/2021/07/19/framework_and_library/" rel="alternate" type="text/html" title="The Difference Between a Framework and Library" /><published>2021-07-19T00:00:00-05:00</published><updated>2021-07-19T00:00:00-05:00</updated><id>http://localhost:4000/react/2021/07/19/framework_and_library</id><content type="html" xml:base="http://localhost:4000/react/2021/07/19/framework_and_library/">&lt;h3 id=&quot;what-the-difference-between-framework-and-library&quot;&gt;What the difference between framework and library?&lt;/h3&gt;
+&lt;/ol&gt;</content><author><name>Yueran</name></author><category term="Buildpacks" /><category term="front end" /><summary type="html">Deploy to Heroku</summary></entry><entry><title type="html">The Difference Between a Framework and Library</title><link href="http://localhost:4000/react/2021/07/19/framework_and_library/" rel="alternate" type="text/html" title="The Difference Between a Framework and Library" /><published>2021-07-19T00:00:00-05:00</published><updated>2021-07-19T00:00:00-05:00</updated><id>http://localhost:4000/react/2021/07/19/framework_and_library</id><content type="html" xml:base="http://localhost:4000/react/2021/07/19/framework_and_library/">&lt;h3 id=&quot;what-the-difference-between-framework-and-library&quot;&gt;What the difference between framework and library?&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -139,7 +268,7 @@ most likely want to see other people who might have encountered the issue and fo
 
 &lt;p&gt;&lt;a href=&quot;https://betterprogramming.pub/libraries-vs-frameworks-whats-the-difference-5f28c53dcffe&quot;&gt;2 Libraries vs. Frameworks — What’s the Difference?&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/is-react-a-library-or-a-framework/&quot;&gt;3 Is React a Library or a Framework? Here’s Why it Matters&lt;/a&gt;&lt;/p&gt;</content><author><name>Yueran</name></author><category term="react" /><category term="front end" /><summary type="html">What the difference between framework and library?</summary></entry><entry><title type="html">Hash Router VS. Browser Router</title><link href="http://localhost:4000/react/2021/06/27/hash_router_browser_router/" rel="alternate" type="text/html" title="Hash Router VS. Browser Router" /><published>2021-06-27T00:00:00-05:00</published><updated>2021-06-27T00:00:00-05:00</updated><id>http://localhost:4000/react/2021/06/27/hash_router_browser_router</id><content type="html" xml:base="http://localhost:4000/react/2021/06/27/hash_router_browser_router/">&lt;h3 id=&quot;hashrouter&quot;&gt;HashRouter&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/is-react-a-library-or-a-framework/&quot;&gt;3 Is React a Library or a Framework? Here’s Why it Matters&lt;/a&gt;&lt;/p&gt;</content><author><name>Yueran</name></author><category term="React" /><category term="front end" /><summary type="html">What the difference between framework and library?</summary></entry><entry><title type="html">Hash Router VS. Browser Router</title><link href="http://localhost:4000/react%20router/2021/06/27/hash_router_browser_router/" rel="alternate" type="text/html" title="Hash Router VS. Browser Router" /><published>2021-06-27T00:00:00-05:00</published><updated>2021-06-27T00:00:00-05:00</updated><id>http://localhost:4000/react%20router/2021/06/27/hash_router_browser_router</id><content type="html" xml:base="http://localhost:4000/react%20router/2021/06/27/hash_router_browser_router/">&lt;h3 id=&quot;hashrouter&quot;&gt;HashRouter&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;It uses URL hash, it puts no limitations on supported browsers or web server. Server-side routing is independent from client-side routing.&lt;/p&gt;
@@ -165,7 +294,7 @@ most likely want to see other people who might have encountered the issue and fo
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/51974369/what-is-the-difference-between-hashrouter-and-browserrouter-in-react&quot;&gt;Resource: What the difference between hash router and browser router&lt;/a&gt;&lt;/p&gt;</content><author><name>Yueran</name></author><category term="react" /><category term="front end" /><summary type="html">HashRouter It uses URL hash, it puts no limitations on supported browsers or web server. Server-side routing is independent from client-side routing.</summary></entry><entry><title type="html">Controlled Component VS. Uncontrolled Component</title><link href="http://localhost:4000/react/2021/06/13/control_uncontrol_component/" rel="alternate" type="text/html" title="Controlled Component VS. Uncontrolled Component" /><published>2021-06-13T00:00:00-05:00</published><updated>2021-06-13T00:00:00-05:00</updated><id>http://localhost:4000/react/2021/06/13/control_uncontrol_component</id><content type="html" xml:base="http://localhost:4000/react/2021/06/13/control_uncontrol_component/">&lt;ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/51974369/what-is-the-difference-between-hashrouter-and-browserrouter-in-react&quot;&gt;Resource: What the difference between hash router and browser router&lt;/a&gt;&lt;/p&gt;</content><author><name>Yueran</name></author><category term="React Router" /><category term="front end" /><summary type="html">HashRouter It uses URL hash, it puts no limitations on supported browsers or web server. Server-side routing is independent from client-side routing.</summary></entry><entry><title type="html">Controlled Component VS. Uncontrolled Component</title><link href="http://localhost:4000/react/2021/06/13/control_uncontrol_component/" rel="alternate" type="text/html" title="Controlled Component VS. Uncontrolled Component" /><published>2021-06-13T00:00:00-05:00</published><updated>2021-06-13T00:00:00-05:00</updated><id>http://localhost:4000/react/2021/06/13/control_uncontrol_component</id><content type="html" xml:base="http://localhost:4000/react/2021/06/13/control_uncontrol_component/">&lt;ul&gt;
   &lt;li&gt;Reference Article:
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/42522515/what-are-react-controlled-components-and-uncontrolled-components&quot;&gt;1. Controlled Component&lt;/a&gt;&lt;/li&gt;
@@ -183,7 +312,7 @@ most likely want to see other people who might have encountered the issue and fo
    &lt;span class=&quot;c1&quot;&gt;//Uncontrolled:&lt;/span&gt;
   &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Input&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;defaultValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;inputRef&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
 &lt;/span&gt;   &lt;span class=&quot;c1&quot;&gt;// Use `inputRef.current.value` to read the current value of &amp;lt;input&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Yueran</name></author><category term="react" /><category term="front end" /><summary type="html">Reference Article: 1. Controlled Component 2. Controlled and uncontrolled form inputs in React don’t have to be complicated</summary></entry><entry><title type="html">Thinking About Data Flow</title><link href="http://localhost:4000/coding%20rules/2021/04/10/thinking_about_data_flow/" rel="alternate" type="text/html" title="Thinking About Data Flow" /><published>2021-04-10T00:00:00-05:00</published><updated>2021-04-10T00:00:00-05:00</updated><id>http://localhost:4000/coding%20rules/2021/04/10/thinking_about_data_flow</id><content type="html" xml:base="http://localhost:4000/coding%20rules/2021/04/10/thinking_about_data_flow/">&lt;ol&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Yueran</name></author><category term="React" /><category term="front end" /><summary type="html">Reference Article: 1. Controlled Component 2. Controlled and uncontrolled form inputs in React don’t have to be complicated</summary></entry><entry><title type="html">Thinking About Data Flow</title><link href="http://localhost:4000/coding%20rules/2021/04/10/thinking_about_data_flow/" rel="alternate" type="text/html" title="Thinking About Data Flow" /><published>2021-04-10T00:00:00-05:00</published><updated>2021-04-10T00:00:00-05:00</updated><id>http://localhost:4000/coding%20rules/2021/04/10/thinking_about_data_flow</id><content type="html" xml:base="http://localhost:4000/coding%20rules/2021/04/10/thinking_about_data_flow/">&lt;ol&gt;
   &lt;li&gt;) Did you notice what Yi did in the last video? He is doing something that a lot of senior developers do, and that is they think about their data flow. They don’t just go ahead and start coding.
     &lt;blockquote&gt;
 
@@ -221,7 +350,7 @@ most likely want to see other people who might have encountered the issue and fo
     &lt;/blockquote&gt;
   &lt;/li&gt;
   &lt;li&gt;) But we engineer that. How it flows, how it moves, how it changes is our job so next time you’re working on a feature or a product or even a component. Start thinking about that data flow. How that component is going to affect that data flow, what’s going to need, what it’s going to present and what it’s going to change that’s going to make you a better developer.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Yueran</name></author><category term="coding rules" /><category term="learning" /><summary type="html">) Did you notice what Yi did in the last video? He is doing something that a lot of senior developers do, and that is they think about their data flow. They don’t just go ahead and start coding.</summary></entry><entry><title type="html">How to Write Extensible Code</title><link href="http://localhost:4000/coding%20rules/2021/03/16/extensible_code/" rel="alternate" type="text/html" title="How to Write Extensible Code" /><published>2021-03-16T00:00:00-05:00</published><updated>2021-03-16T00:00:00-05:00</updated><id>http://localhost:4000/coding%20rules/2021/03/16/extensible_code</id><content type="html" xml:base="http://localhost:4000/coding%20rules/2021/03/16/extensible_code/">&lt;h4 id=&quot;are-you-starting-to-feel-like-were-doing-a-lot-of-things-over-and-over-the-same-way-were-creating-reducers-and-actions-and-selectors-and-connecting-components-and-rendering-components-and-if-things-seem-repetitive-to-you-thats-actually-a-good-thing-because-what-were-doing-is-were-making-things-very-simple&quot;&gt;Are you starting to feel like we’re doing a lot of things over and over the same way we’re creating reducers and actions and selectors and connecting components and rendering components and if things seem repetitive to you, that’s actually a good thing because what we’re doing is we’re making things very simple.&lt;/h4&gt;
+&lt;/ol&gt;</content><author><name>Yueran</name></author><category term="Coding Rules" /><category term="learning" /><summary type="html">) Did you notice what Yi did in the last video? He is doing something that a lot of senior developers do, and that is they think about their data flow. They don’t just go ahead and start coding.</summary></entry><entry><title type="html">How to Write Extensible Code</title><link href="http://localhost:4000/coding%20rules/2021/03/16/extensible_code/" rel="alternate" type="text/html" title="How to Write Extensible Code" /><published>2021-03-16T00:00:00-05:00</published><updated>2021-03-16T00:00:00-05:00</updated><id>http://localhost:4000/coding%20rules/2021/03/16/extensible_code</id><content type="html" xml:base="http://localhost:4000/coding%20rules/2021/03/16/extensible_code/">&lt;h4 id=&quot;are-you-starting-to-feel-like-were-doing-a-lot-of-things-over-and-over-the-same-way-were-creating-reducers-and-actions-and-selectors-and-connecting-components-and-rendering-components-and-if-things-seem-repetitive-to-you-thats-actually-a-good-thing-because-what-were-doing-is-were-making-things-very-simple&quot;&gt;Are you starting to feel like we’re doing a lot of things over and over the same way we’re creating reducers and actions and selectors and connecting components and rendering components and if things seem repetitive to you, that’s actually a good thing because what we’re doing is we’re making things very simple.&lt;/h4&gt;
 
 &lt;blockquote&gt;
 
@@ -245,7 +374,7 @@ most likely want to see other people who might have encountered the issue and fo
 
 &lt;/blockquote&gt;
 
-&lt;h4 id=&quot;react-and-redux-really-allows-us-to-create-extensible-code-and-the-other-word-that-you-might-be-thinking-of-is-also-predictable-code&quot;&gt;React and Redux really allows us to create extensible code and the other word that you might be thinking of is also predictable code.&lt;/h4&gt;</content><author><name>Yueran</name></author><category term="coding rules" /><category term="learning" /><summary type="html">Are you starting to feel like we’re doing a lot of things over and over the same way we’re creating reducers and actions and selectors and connecting components and rendering components and if things seem repetitive to you, that’s actually a good thing because what we’re doing is we’re making things very simple.</summary></entry><entry><title type="html">Redux</title><link href="http://localhost:4000/redux/2021/02/27/redux/" rel="alternate" type="text/html" title="Redux" /><published>2021-02-27T00:00:00-06:00</published><updated>2021-02-27T00:00:00-06:00</updated><id>http://localhost:4000/redux/2021/02/27/redux</id><content type="html" xml:base="http://localhost:4000/redux/2021/02/27/redux/">&lt;p&gt;&lt;a href=&quot;https://redux.js.org/tutorials/essentials/part-1-overview-concepts&quot;&gt;Redux Tutorial Reference&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;react-and-redux-really-allows-us-to-create-extensible-code-and-the-other-word-that-you-might-be-thinking-of-is-also-predictable-code&quot;&gt;React and Redux really allows us to create extensible code and the other word that you might be thinking of is also predictable code.&lt;/h4&gt;</content><author><name>Yueran</name></author><category term="Coding Rules" /><category term="learning" /><summary type="html">Are you starting to feel like we’re doing a lot of things over and over the same way we’re creating reducers and actions and selectors and connecting components and rendering components and if things seem repetitive to you, that’s actually a good thing because what we’re doing is we’re making things very simple.</summary></entry><entry><title type="html">Redux</title><link href="http://localhost:4000/redux/2021/02/27/redux/" rel="alternate" type="text/html" title="Redux" /><published>2021-02-27T00:00:00-06:00</published><updated>2021-02-27T00:00:00-06:00</updated><id>http://localhost:4000/redux/2021/02/27/redux</id><content type="html" xml:base="http://localhost:4000/redux/2021/02/27/redux/">&lt;p&gt;&lt;a href=&quot;https://redux.js.org/tutorials/essentials/part-1-overview-concepts&quot;&gt;Redux Tutorial Reference&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Good for managing large state&lt;/li&gt;
@@ -422,7 +551,7 @@ most likely want to see other people who might have encountered the issue and fo
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Yueran</name></author><category term="redux" /><category term="react" /><summary type="html">Redux Tutorial Reference</summary></entry><entry><title type="html">Query Reference and Query Snapshot</title><link href="http://localhost:4000/firestore/2021/02/19/query_ref_query_snapshot/" rel="alternate" type="text/html" title="Query Reference and Query Snapshot" /><published>2021-02-19T00:00:00-06:00</published><updated>2021-02-19T00:00:00-06:00</updated><id>http://localhost:4000/firestore/2021/02/19/query_ref_query_snapshot</id><content type="html" xml:base="http://localhost:4000/firestore/2021/02/19/query_ref_query_snapshot/">&lt;h3 id=&quot;brief-note&quot;&gt;Brief Note&lt;/h3&gt;
+&lt;/ul&gt;</content><author><name>Yueran</name></author><category term="Redux" /><category term="react" /><summary type="html">Redux Tutorial Reference</summary></entry><entry><title type="html">Query Reference and Query Snapshot</title><link href="http://localhost:4000/firebase/2021/02/19/query_ref_query_snapshot/" rel="alternate" type="text/html" title="Query Reference and Query Snapshot" /><published>2021-02-19T00:00:00-06:00</published><updated>2021-02-19T00:00:00-06:00</updated><id>http://localhost:4000/firebase/2021/02/19/query_ref_query_snapshot</id><content type="html" xml:base="http://localhost:4000/firebase/2021/02/19/query_ref_query_snapshot/">&lt;h3 id=&quot;brief-note&quot;&gt;Brief Note&lt;/h3&gt;
 &lt;ul&gt;
   &lt;li&gt;A query is a request we make to firestore to give us something from the database.&lt;/li&gt;
   &lt;li&gt;Firestore returns us two types of objects: references and snapshots. Of these objects, they can be either Document or Collection versions.&lt;/li&gt;
@@ -461,355 +590,4 @@ most likely want to see other people who might have encountered the issue and fo
   &lt;li&gt;We get a documentSnapshot object from our documentReference object.&lt;/li&gt;
   &lt;li&gt;The documentSnapshot object allows us to check if a document exists at this query using the &lt;strong&gt;.exists&lt;/strong&gt; property which returns a boolean.&lt;/li&gt;
   &lt;li&gt;We can also get the actual properties on the object by calling the &lt;strong&gt;.data&lt;/strong&gt; method, which returns us a JSON object of the document.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Yueran</name></author><category term="firestore" /><category term="database" /><summary type="html">Brief Note A query is a request we make to firestore to give us something from the database. Firestore returns us two types of objects: references and snapshots. Of these objects, they can be either Document or Collection versions. Firestore will always return us these objects, even if nothing exists at from that query.</summary></entry><entry><title type="html">How to Pull Code from Other’s Repository and Change ‘Origin’?</title><link href="http://localhost:4000/react/2021/02/02/pull_code_from_others_repo/" rel="alternate" type="text/html" title="How to Pull Code from Other’s Repository and Change ‘Origin’?" /><published>2021-02-02T00:00:00-06:00</published><updated>2021-02-02T00:00:00-06:00</updated><id>http://localhost:4000/react/2021/02/02/pull_code_from_others_repo</id><content type="html" xml:base="http://localhost:4000/react/2021/02/02/pull_code_from_others_repo/">&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;&lt;em&gt;1). Repository tutor_react&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;&lt;strong&gt;&lt;em&gt;2). Repository student_react&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;&lt;strong&gt;Target: Pull down the code from Repository&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tutor_react&lt;/code&gt; &lt;strong&gt;and put the code into our local folder&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;student_react&lt;/code&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;1) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone git@github.com:ZhangSan/tutor_react.git student_react&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;2) git will clone this project into this local folder &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;student_react&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;3) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd student_clone&lt;/code&gt; this is going to this local folder&lt;/li&gt;
-      &lt;li&gt;4) If we type the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git remote&lt;/code&gt;  in the terminal, you will see a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;origin&lt;/code&gt; here, but this &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;origin&lt;/code&gt; is the name of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tutor_react&lt;/code&gt; repo. You can’t push any code to the tutor’s repo since you don’t have the authorization to write in other’s repository. So, at this time, you need to remove the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;origin&lt;/code&gt; which is now point to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tutor_react&lt;/code&gt; repository.&lt;/li&gt;
-      &lt;li&gt;5) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git remote remove origin&lt;/code&gt; this command will remove the name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;origin&lt;/code&gt; that point to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tutor_react&lt;/code&gt; repository.&lt;/li&gt;
-      &lt;li&gt;6) Now you need to let the name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;origin&lt;/code&gt; points to your own repository.&lt;/li&gt;
-      &lt;li&gt;7) &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git remote add origin git@github.com:Yueran-Yu/student_react.git&lt;/code&gt; Now the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;origin&lt;/code&gt; will point to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;student_react&lt;/code&gt; repository in github.&lt;/li&gt;
-      &lt;li&gt;8) Important!!! After you pull down the code from others, you should run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn install&lt;/code&gt; so that will download all of the packages related to your project.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;</content><author><name>Yueran</name></author><category term="react" /><category term="front end" /><summary type="html">1). Repository tutor_react 2). Repository student_react</summary></entry><entry><title type="html">React Basics</title><link href="http://localhost:4000/react/2021/01/23/react_basics/" rel="alternate" type="text/html" title="React Basics" /><published>2021-01-23T00:00:00-06:00</published><updated>2021-01-23T00:00:00-06:00</updated><id>http://localhost:4000/react/2021/01/23/react_basics</id><content type="html" xml:base="http://localhost:4000/react/2021/01/23/react_basics/">&lt;h3 id=&quot;packagejson&quot;&gt;package.json&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;react-scripts&quot;:&quot;3.0.0&quot;&lt;/code&gt; =&amp;gt;  It allows use to have no worry about webpack and babble.&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;scripts&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react-scripts start&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// starts the react project by running &quot;yarn start&quot;&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react-scripts build&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// it used to turn all of the react code in the &amp;lt;source&amp;gt; folder into that version the browser to understand and put it inside of this &amp;lt;public&amp;gt; folder,&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// after running &quot;npm run build&quot; generated a &amp;lt;build&amp;gt; folder, this is the place ready to be deployed and be displayed to the outside users.&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react-scripts test&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// run the test code we will going to write&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;eject&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react-scripts eject&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// take out all of the configuration files that it&apos;s hidden from us from Babble and webpack in case wwe will manage it ourselves.&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;source-folder&quot;&gt;‘source’ folder&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;All applications live, our workspace&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;public-folder&quot;&gt;‘public’ folder&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;The browser needs an older version of javascript and html to understand&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;class-vs-classname&quot;&gt;‘class’ vs. ‘className’&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c1&quot;&gt;// class&lt;/span&gt;
-   &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;App&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-         &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello Today I start to learn something from yihua&apos;s teaching&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// className&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;App&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;header&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;App-header&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/header&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)
-&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;//the &apos;className&apos; in the render is used to differentiate the class at the beginning&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;render-method&quot;&gt;‘render()’ method&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;render()&lt;/code&gt; is one of the built-in methods of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;React.Component&lt;/code&gt;, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;super()&lt;/code&gt; inside the React.Component’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;constructor()&lt;/code&gt; helps us call &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;render()&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;two-ways-to-create-components&quot;&gt;Two Ways to create components&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Class Component&lt;/li&gt;
-  &lt;li&gt;Functional Component&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;props-in-the-functional-component&quot;&gt;‘props’ in the functional component&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;CardList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)
-&lt;/span&gt;      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-      &lt;span class=&quot;c1&quot;&gt;// App.js&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;App&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CardList&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Grace-Yueran&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-              &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;monsters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h1&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)
-&lt;/span&gt;            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;      &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;props&lt;/code&gt; is going to be an object of any properties that you write onto this component where it gets used.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;children-property&quot;&gt;‘children’ Property&lt;/h3&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;c1&quot;&gt;// card-list.component.jsx&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;CardList&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;children&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;)
-&lt;/span&gt;    
-    &lt;span class=&quot;c1&quot;&gt;// App.js&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;App&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CardList&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Grace-Yueran&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-    
-          &lt;span class=&quot;c1&quot;&gt;// children property&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Grace&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Yueran&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h1&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/CardList&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;monsters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h1&amp;gt;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}
-&lt;/span&gt;          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Children&lt;/code&gt; are actually what you pass in between the brackets of our component that gets called.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;the-benefits-of-when-do-we-break-things-down-into-components&quot;&gt;The Benefits of When do we break things down into components?&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;To be a great React developer you need to be good at these very well:
-    &lt;ol&gt;
-      &lt;li&gt;Decide on Components&lt;/li&gt;
-      &lt;li&gt;Decide the State and where it lives&lt;/li&gt;
-      &lt;li&gt;What changes when state changes&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;By breaking things down we’re making things more flexible because each component does one thing and one thing really well.&lt;/li&gt;
-  &lt;li&gt;It can be used in other places, the bigger a file gets the more JSX we have, the more logic we have, the harder it gets to be used in another place.&lt;/li&gt;
-  &lt;li&gt;The KEY here is that the reason we break things down into smaller components is that we combine each component with its concern and that concern is that this component is only concerned about card list. This component is only concerned about cards.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;the-second-argument-of-setstate&quot;&gt;The second argument of ‘setState()’&lt;/h3&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;c1&quot;&gt;// App.js&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// if we wanted to see or do something with our state right after we set it&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// then we have to do it inside of this second argument function that will get called right after the set state.&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;App&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;placeholder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Search Monster&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;
-                    &lt;span class=&quot;nx&quot;&gt;onChange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;searchField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                      &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                    &lt;span class=&quot;p&quot;&gt;})}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CardList&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;monsters&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;monsters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;            &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;The second parameter&lt;/strong&gt; to &lt;strong&gt;&lt;em&gt;setState()&lt;/em&gt;&lt;/strong&gt; is an optional callback function that will be executed once &lt;strong&gt;&lt;em&gt;setState&lt;/em&gt;&lt;/strong&gt; is completed and the component is re-rendered. &lt;strong&gt;&lt;em&gt;componentDitUpdate&lt;/em&gt;&lt;/strong&gt; should be used instead to apply such logic in most cases.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;destructuring&quot;&gt;Destructuring&lt;/h3&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;monsters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;searchField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;c1&quot;&gt;// the state object is what we want to pull the properties of&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;monsters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;searchField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// equals&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;monsters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;monsters&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;searchField&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;searchField&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;when-use-class-component-and-when-use-functional-component&quot;&gt;When use class component and when use functional component?&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;functional components&lt;/em&gt;&lt;/strong&gt;, unlike &lt;strong&gt;&lt;em&gt;class components&lt;/em&gt;&lt;/strong&gt;, they don’t have the access to &lt;strong&gt;&lt;em&gt;state&lt;/em&gt;&lt;/strong&gt;, because they don’t have the access to constructor, which is a class method on our &lt;strong&gt;&lt;em&gt;Component&lt;/em&gt;&lt;/strong&gt; that we import from our React, that we extend our class from.&lt;/li&gt;
-  &lt;li&gt;They also don’t have access to lifecycle methods, because we don’t always need lifecycle methods or internal state.&lt;/li&gt;
-  &lt;li&gt;Sometimes we only want to render some HTML, that’s what functional component really is.&lt;/li&gt;
-  &lt;li&gt;A functional component is just a component that gets some props and returns some HTML.&lt;/li&gt;
-  &lt;li&gt;If you don’t need internal state nor lifecycle methods, then just use functional components. It’s easier to read and easier to test.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;the-test-of-the-scope-of-arrow-function&quot;&gt;The test of the scope of arrow function&lt;/h3&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   &lt;span class=&quot;c1&quot;&gt;// ======= define the function in the window scope&lt;/span&gt;
-     &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myFunc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-     &lt;span class=&quot;c1&quot;&gt;// call myFunc()&lt;/span&gt;
-     &lt;span class=&quot;nx&quot;&gt;myFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-     &lt;span class=&quot;c1&quot;&gt;// result: Window {window: Window, self: Window, document: document, name: &quot;&quot;, location: Location, …}&lt;/span&gt;
-
-
-    &lt;span class=&quot;c1&quot;&gt;// ======= define a function in a class scope&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FatherClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;myFunc2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FatherClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;myFunc2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-      &lt;span class=&quot;c1&quot;&gt;// result: FatherClass {myFunc2: ƒ}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;always-use-the-latest-version-of-react-and-reactdom&quot;&gt;Always use the Latest Version of React and ReactDOM&lt;/h3&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;monsters-rolodex&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;0.1.0&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;private&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;homepage&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;https://www.graceyutech.com/monsters-rolodex/&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;dependencies&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;@testing-library/jest-dom&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;^5.11.4&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;@testing-library/react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;^11.1.0&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;@testing-library/user-event&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;^12.1.10&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;gh-pages&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;^3.1.0&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;^17.0.1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;cm&quot;&gt;/* &apos;^&apos; symbol means whatever the package manager you are using
-      wheather it is a yarn or NPM, whenever it sees npm upgrade or yarn upgrade,
-      to update to the latest stable non-breaking version.
-      In other words, it should be at least using the &apos;17.0.1&apos; version or greater of react-dom and react.
-      */&lt;/span&gt;
-      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react-dom&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;^17.0.1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react-scripts&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;4.0.3&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;web-vitals&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;^1.0.1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;What is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn.lock&lt;/code&gt; file?
-    &lt;ol&gt;
-      &lt;li&gt;It isn’t auto-generated file by either NPM or a yarn that locks the version of all the packages inside of our application within a specific range based on the rules that we set inside of package.&lt;/li&gt;
-      &lt;li&gt;Without &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&apos;^&apos;&lt;/code&gt; this Caret symbol, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn.lock&lt;/code&gt; file, the version of React and ReactDOM and React scripts are locked exactly that version, the fixed version shows in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;package.json&lt;/code&gt; file.&lt;/li&gt;
-      &lt;li&gt;However, when we added this caret &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&apos;^&apos;&lt;/code&gt;, it gives more flexibility which means the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn.lock&lt;/code&gt; file is out of date and needs to be updated. And this file only updates whenever you run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn install&lt;/code&gt;.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;And why we need this file?
-    &lt;ol&gt;
-      &lt;li&gt;If there are multiple people are working on this application they are all using versions of dependencies that don’t conflict with each other, because maybe some people are running React ‘17.0.0’ someone is running React ‘16.0.0.’, and there is difference in features that might be breaking in the application.&lt;/li&gt;
-      &lt;li&gt;So &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn.lock&lt;/code&gt; file just ensures everybody is using a consistent version of these dependencies.&lt;/li&gt;
-      &lt;li&gt;After we run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn.lock&lt;/code&gt; file, we generated a new lock file. From now on, you can simply run your yarn upgrade whenever you want to upgrade these dependencies.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;one-main-difference-between-yarn-and-npm&quot;&gt;One main difference between &lt;strong&gt;&lt;em&gt;yarn&lt;/em&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;em&gt;npm&lt;/em&gt;&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;This command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm audit fix&lt;/code&gt; will go through and update the versions to a version of a package where it doesn’t have a security concern anymore.&lt;/li&gt;
-  &lt;li&gt;While, yarn doesn’t have this command, we only can install and upgrade all the packages that you see with a vulnerability.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;what-is-virtual-dom&quot;&gt;What is Virtual DOM?&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Virtual DOM is a javascript object. It’s a way to emulate the Real DOM.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;state-updates-are-asynchronous-you-should-pass-a-function-as-the-first-parameter-in-the-setstate-to-update-the-state-synchronously&quot;&gt;State updates are asynchronous!!! You should Pass a function as the first parameter in the setState() to update the state synchronously!!!&lt;/h3&gt;
-
-&lt;h3 id=&quot;react-concepts&quot;&gt;React Concepts&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;Don’t touch the DOM. I’ll do it&lt;/li&gt;
-  &lt;li&gt;Build websites like lego blocks&lt;/li&gt;
-  &lt;li&gt;Unidirectional data flow&lt;/li&gt;
-  &lt;li&gt;UI, The rest is up to you&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;the-job-of-a-senior-react-developer&quot;&gt;The job of a SENIOR React Developer&lt;/h3&gt;
-&lt;p&gt;1.Decide on Components&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Decide the State and where it lives&lt;/li&gt;
-  &lt;li&gt;What changes when state changes&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;This idea of deciding on components, deciding about the state and where it lists what happens when state changes because of user action. These all things that nobody is going  to tell you. These are things that is dependent on each app that you built.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;&lt;em&gt;What the senior developers have had this ability to think for themselves not just follow a tutorial but actually implement these things based on knowledge and experience that they’ve gathered.&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;the-benefit-of-using-arrow-function-in-jsx&quot;&gt;The Benefit of using Arrow Function in JSX!!!&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;this&lt;/code&gt; keyword with arrow function points to the current class object &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NameForm&lt;/code&gt; . However, without arrow function, you should manually bind the methods to current class object &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NameForm&lt;/code&gt;. Otherwise, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;this&lt;/code&gt; will point to global object &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;window&lt;/code&gt;. Therefore, we can downsize the code by using arrow function.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h4 id=&quot;example-1&quot;&gt;Example 1:&lt;/h4&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Code without Arrow function&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NameForm&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// you need to manually bind the methods to the current class object&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleSubmit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleSubmit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;handleSubmit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;A name was submitted: &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preventDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onSubmit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleSubmit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;nx&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onChange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/label&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;submit&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Submit&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/form&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;example-2&quot;&gt;Example 2:&lt;/h4&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Code with Arrow function&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NameForm&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;handleSubmit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;A name was submitted: &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preventDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onSubmit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleSubmit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;nx&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;onChange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/label&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;submit&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Submit&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/form&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
-&lt;/span&gt;    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Yueran</name></author><category term="react" /><category term="front end" /><summary type="html">package.json</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Yueran</name></author><category term="Firebase" /><category term="database" /><summary type="html">Brief Note A query is a request we make to firestore to give us something from the database. Firestore returns us two types of objects: references and snapshots. Of these objects, they can be either Document or Collection versions. Firestore will always return us these objects, even if nothing exists at from that query.</summary></entry></feed>

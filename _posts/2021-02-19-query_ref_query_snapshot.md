@@ -2,7 +2,7 @@
 title: Query Reference and Query Snapshot
 date: 19-02-2021
 categories:
-- firestore
+- Firebase
 tags:
 - database
 ---

@@ -2,7 +2,7 @@
 title: Tagged Template
 date: 18-12-2020
 categories:
-- javascript
+- Javascript
 tags:
 - front end
 ---

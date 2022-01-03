@@ -2,7 +2,7 @@
 title: HTML &CSS Notes
 date: 13-10-2020
 categories: 
-- html and css
+- HTML and CSS
 tags: 
 - front end
 ---

@@ -2,7 +2,7 @@
 title: How to Write Extensible Code 
 date: 16-03-2021 
 categories:
-- coding rules 
+- Coding Rules 
 tags:
 - learning
 ---

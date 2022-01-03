@@ -2,7 +2,7 @@
 title: How to Pull Code from Other's Repository and Change 'Origin'?
 date: 02-02-2021
 categories:
-- react
+- React
 tags:
 - front end
 ---

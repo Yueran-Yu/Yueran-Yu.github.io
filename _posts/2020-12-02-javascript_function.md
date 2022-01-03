@@ -2,7 +2,7 @@
 title: Javascript Function
 date: 02-12-2020
 categories:
-- javascript
+- Javascript
 tags:
 - front end
 ---

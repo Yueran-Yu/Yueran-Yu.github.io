@@ -2,7 +2,7 @@
 title: Deploy Project With buildpacks to Heroku and Github
 date: 29-09-2021
 categories:
-- buildpacks
+- Buildpacks
 tags:
 - front end
 ---

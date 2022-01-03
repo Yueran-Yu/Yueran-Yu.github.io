@@ -2,7 +2,7 @@
 title: Javascript Object
 date: 17-11-2020
 categories:
-- javascript
+- Javascript
 tags:
 - front end
 ---

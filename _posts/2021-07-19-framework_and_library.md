@@ -2,7 +2,7 @@
 title: The Difference Between a Framework and Library 
 date: 19-07-2021 
 categories:
-- react 
+- React 
 tags:
 - front end
 ---

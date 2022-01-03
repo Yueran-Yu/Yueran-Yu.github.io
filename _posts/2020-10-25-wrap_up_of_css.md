@@ -2,7 +2,7 @@
 title: Wrap Up of CSS
 date: 25-10-2020
 categories: 
-- html and css
+- HTML and CSS
 tags: 
 - front end
 ---

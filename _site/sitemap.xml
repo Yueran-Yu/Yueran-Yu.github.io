@@ -65,7 +65,7 @@
 <lastmod>2021-02-02T00:00:00-06:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/firestore/2021/02/19/query_ref_query_snapshot/</loc>
+<loc>http://localhost:4000/firebase/2021/02/19/query_ref_query_snapshot/</loc>
 <lastmod>2021-02-19T00:00:00-06:00</lastmod>
 </url>
 <url>
@@ -85,7 +85,7 @@
 <lastmod>2021-06-13T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/react/2021/06/27/hash_router_browser_router/</loc>
+<loc>http://localhost:4000/react%20router/2021/06/27/hash_router_browser_router/</loc>
 <lastmod>2021-06-27T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -95,6 +95,14 @@
 <url>
 <loc>http://localhost:4000/buildpacks/2021/09/29/buildpacks_deploy_to_heroku/</loc>
 <lastmod>2021-09-29T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/job%20hunting/2021/12/26/make_potfolio/</loc>
+<lastmod>2021-12-26T00:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/job%20hunting/2022/01/02/job_hunting_preparation/</loc>
+<lastmod>2022-01-02T00:00:00-06:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>

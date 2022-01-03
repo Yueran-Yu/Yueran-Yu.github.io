@@ -2,7 +2,7 @@
 title: Controlled Component VS. Uncontrolled Component
 date: 13-06-2021
 categories:
-- react
+- React
 tags:
 - front end
 ---
