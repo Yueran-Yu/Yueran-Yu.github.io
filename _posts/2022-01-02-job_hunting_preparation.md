@@ -104,8 +104,55 @@ tags:
 - 最好能找到之前经历和这份工作相关的点。比如有个博主强调设计经验，后来拿到的offer也是骗UX engineer方向的。
 - 能讲通为什么要转码很重要，基本上所有公司都看中JS的基本功，不怎么问library,accessibility是每个公司都问过的。
 
+
+### Mockup的网站
+- [Pramp](https://www.pramp.com/#/)
+
+
+### 以下是来自Norah的推荐，学习资料和学习方法
+1.[浏览器工作原理与实践](https://blog.poetries.top/browser-working-principle/guide/part1/lesson01.html#%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B)
+
+#### 面试准备
+1. Portfolio: 尽可能多的展示自己的作品，雇主可以直接看到你的程度
+2. git: 让雇主看到你的代码上传频率
+3. 简历梳理自己的工作经历，让自己能流畅的表达出自己会些什么
+4. 面试技术要点准备：
+    - 重点知识梳理,ES6的新内容都要过一遍
+    - JS 特有的闭包， this, 异步，深拷贝, promise等，这些都要知道怎么用英语表达，尽可能准备
+    - 算法：刷100道easy的题目
+5. 模拟面试
+7. 知识扩展: 尽可能一个方向学精。就把react这个里面的框架学好，在扩展把Node.js学一下
+8. 每次面试都是总结进步和学习的机会，多面几次就知道面试的套路流程，也知道自己那些地方不行，查漏补缺。一般小公司希望你能马上上手做事，大公司就希望你素质高学习能力好，可持续发展。
+9. 做项目参考freeCodeCamp
+10. 一般有两类面试问题：
+    - Behaviour Question
+        1. 20-30个常见的behaviour  问题
+    - Technical Question
+        1. technical question 可以准备的部分就是自己的经历和写在简历里的项目经验。
+        2. 其他部分，根据职位要求的技能点，去搜索常问的面试问题，过一遍。
+    - 程序员面试一般3-4轮
+    - 网上做题
+    - HR电话了解情况
+    - 技术人员面试
+    - 技术经理面试
+    - 总体来说，这种海投得来的面试还是比较难的，内推会容易一些。
+    - 面试题完的题目写下来。
+
+
+#### Norah学过的内容:
+- html,css,js,《JavaScript DOM 编程艺术》,《Java Script高级程序设计》
+- 前端框架React, Angular, Vue
+- 工具： git,less,scss, webpack, ajax,json, fetch API, HTTP状态码，node.js
+- 算法题：基本数据结构，排序，栈，队列，链表，二叉树，图，深度/广度优先搜索，遍历，最短路径，《啊哈，算法》，Youtube:《Leetcode题解》， github:CyC2918/CS-Notes
+- 优先英文搜索查阅资料，是在看不懂，中文辅助
+
+    
+                      
+                      
 1. Resource: [加拿大留学生在本地找工作有多难？ 知乎作者：Fei西](https://www.zhihu.com/question/50714531/answer/1626216412)
-2. Resource: [[找工就业【多伦多】文科转码-自学7个月（约400小时）拿到前端offer](https://www.1point3acres.com/bbs/thread-552825-1-1.html)
-
-
-
+2. Resource: [找工就业【多伦多】文科转码-自学7个月（约400小时）拿到前端offer](https://www.1point3acres.com/bbs/thread-552825-1-1.html)
+3. Resource: [Norah: 新移民登录加拿大第一份工作怎么找？简历篇](https://www.xiaohongshu.com/discovery/item/60c11f60000000000102ff32?xhsshare=WeixinSession&appuid=60bf083a000000000101f224&apptime=1641171807)
+4. Resource: [Norah: 新移民登陆加拿大第一份工作怎么找？面试篇](https://www.xiaohongshu.com/discovery/item/60c11f60000000000102ff32?xhsshare=WeixinSession&appuid=60bf083a000000000101f224&apptime=1641171807)
+5. Resource: [Norah: 加拿大新移民中年宝妈转码前端自学分享（一）](https://www.xiaohongshu.com/discovery/item/60df58bc000000002103902f?xhsshare=WeixinSession&appuid=60bf083a000000000101f224&apptime=1641171772)
+6. Resource: [Norah: 加拿大新移民中年宝妈转码前端分享(二)](https://www.xiaohongshu.com/discovery/item/60f4dfc0000000002103dcee?xhsshare=WeixinSession&appuid=60bf083a000000000101f224&apptime=1641171748)
+7. Resource: [Norah: 加拿大新移民中年宝妈转码前端分享（三）](https://www.xiaohongshu.com/discovery/item/610492dc000000000102d86b?xhsshare=WeixinSession&appuid=60bf083a000000000101f224&apptime=1641171724)      

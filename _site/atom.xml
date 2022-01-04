@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-02T23:23:29-06:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Yueran’s Learning</title><subtitle>Shoot for the moon. Even if you miss, you&apos;ll land among the stars.</subtitle><author><name>Yueran</name></author><entry><title type="html">搜集的在加拿大找工作的Tips</title><link href="http://localhost:4000/job%20hunting/2022/01/02/job_hunting_preparation/" rel="alternate" type="text/html" title="搜集的在加拿大找工作的Tips" /><published>2022-01-02T00:00:00-06:00</published><updated>2022-01-02T00:00:00-06:00</updated><id>http://localhost:4000/job%20hunting/2022/01/02/job_hunting_preparation</id><content type="html" xml:base="http://localhost:4000/job%20hunting/2022/01/02/job_hunting_preparation/">&lt;h3 id=&quot;零工作经验的毕业生&quot;&gt;零工作经验的毕业生&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-03T19:37:15-06:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Yueran’s Learning</title><subtitle>Shoot for the moon. Even if you miss, you&apos;ll land among the stars.</subtitle><author><name>Yueran</name></author><entry><title type="html">搜集的在加拿大找工作的Tips</title><link href="http://localhost:4000/job%20hunting/2022/01/02/job_hunting_preparation/" rel="alternate" type="text/html" title="搜集的在加拿大找工作的Tips" /><published>2022-01-02T00:00:00-06:00</published><updated>2022-01-02T00:00:00-06:00</updated><id>http://localhost:4000/job%20hunting/2022/01/02/job_hunting_preparation</id><content type="html" xml:base="http://localhost:4000/job%20hunting/2022/01/02/job_hunting_preparation/">&lt;h3 id=&quot;零工作经验的毕业生&quot;&gt;零工作经验的毕业生&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;疫情期间竞争会大很多，有人投了超过100多份简历，只有三轮进入下一轮笔试机会。只有通过不断润色我们的portfolio作品集，通过简历筛选的机会更大。&lt;/li&gt;
@@ -123,10 +123,93 @@ question，难度会有leetcode里面的medium的级别。&lt;/li&gt;
   &lt;li&gt;能讲通为什么要转码很重要，基本上所有公司都看中JS的基本功，不怎么问library,accessibility是每个公司都问过的。&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h3 id=&quot;mockup的网站&quot;&gt;Mockup的网站&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.pramp.com/#/&quot;&gt;Pramp&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;以下是来自norah的推荐学习资料和学习方法&quot;&gt;以下是来自Norah的推荐，学习资料和学习方法&lt;/h3&gt;
+&lt;p&gt;1.&lt;a href=&quot;https://blog.poetries.top/browser-working-principle/guide/part1/lesson01.html#%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B&quot;&gt;浏览器工作原理与实践&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;面试准备&quot;&gt;面试准备&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Portfolio: 尽可能多的展示自己的作品，雇主可以直接看到你的程度&lt;/li&gt;
+  &lt;li&gt;git: 让雇主看到你的代码上传频率&lt;/li&gt;
+  &lt;li&gt;简历梳理自己的工作经历，让自己能流畅的表达出自己会些什么&lt;/li&gt;
+  &lt;li&gt;面试技术要点准备：
+    &lt;ul&gt;
+      &lt;li&gt;重点知识梳理,ES6的新内容都要过一遍&lt;/li&gt;
+      &lt;li&gt;JS 特有的闭包， this, 异步，深拷贝, promise等，这些都要知道怎么用英语表达，尽可能准备&lt;/li&gt;
+      &lt;li&gt;算法：刷100道easy的题目&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;模拟面试&lt;/li&gt;
+  &lt;li&gt;知识扩展: 尽可能一个方向学精。就把react这个里面的框架学好，在扩展把Node.js学一下&lt;/li&gt;
+  &lt;li&gt;每次面试都是总结进步和学习的机会，多面几次就知道面试的套路流程，也知道自己那些地方不行，查漏补缺。一般小公司希望你能马上上手做事，大公司就希望你素质高学习能力好，可持续发展。&lt;/li&gt;
+  &lt;li&gt;做项目参考freeCodeCamp&lt;/li&gt;
+  &lt;li&gt;一般有两类面试问题：
+    &lt;ul&gt;
+      &lt;li&gt;Behaviour Question
+        &lt;ol&gt;
+          &lt;li&gt;20-30个常见的behaviour  问题&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Technical Question
+        &lt;ol&gt;
+          &lt;li&gt;technical question 可以准备的部分就是自己的经历和写在简历里的项目经验。&lt;/li&gt;
+          &lt;li&gt;其他部分，根据职位要求的技能点，去搜索常问的面试问题，过一遍。&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;程序员面试一般3-4轮&lt;/li&gt;
+      &lt;li&gt;网上做题&lt;/li&gt;
+      &lt;li&gt;HR电话了解情况&lt;/li&gt;
+      &lt;li&gt;技术人员面试&lt;/li&gt;
+      &lt;li&gt;技术经理面试&lt;/li&gt;
+      &lt;li&gt;总体来说，这种海投得来的面试还是比较难的，内推会容易一些。&lt;/li&gt;
+      &lt;li&gt;面试题完的题目写下来。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;norah学过的内容&quot;&gt;Norah学过的内容:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;html,css,js,《JavaScript DOM 编程艺术》,《Java Script高级程序设计》&lt;/li&gt;
+  &lt;li&gt;前端框架React, Angular, Vue&lt;/li&gt;
+  &lt;li&gt;工具： git,less,scss, webpack, ajax,json, fetch API, HTTP状态码，node.js&lt;/li&gt;
+  &lt;li&gt;算法题：基本数据结构，排序，栈，队列，链表，二叉树，图，深度/广度优先搜索，遍历，最短路径，《啊哈，算法》，Youtube:《Leetcode题解》， github:CyC2918/CS-Notes&lt;/li&gt;
+  &lt;li&gt;优先英文搜索查阅资料，是在看不懂，中文辅助&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;ol&gt;
   &lt;li&gt;Resource: &lt;a href=&quot;https://www.zhihu.com/question/50714531/answer/1626216412&quot;&gt;加拿大留学生在本地找工作有多难？ 知乎作者：Fei西&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Resource: [&lt;a href=&quot;https://www.1point3acres.com/bbs/thread-552825-1-1.html&quot;&gt;找工就业【多伦多】文科转码-自学7个月（约400小时）拿到前端offer&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Yueran</name></author><category term="Job Hunting" /><category term="front end" /><summary type="html">零工作经验的毕业生</summary></entry><entry><title type="html">制作一份前端Portfolio的重点</title><link href="http://localhost:4000/job%20hunting/2021/12/26/make_potfolio/" rel="alternate" type="text/html" title="制作一份前端Portfolio的重点" /><published>2021-12-26T00:00:00-06:00</published><updated>2021-12-26T00:00:00-06:00</updated><id>http://localhost:4000/job%20hunting/2021/12/26/make_potfolio</id><content type="html" xml:base="http://localhost:4000/job%20hunting/2021/12/26/make_potfolio/"></content><author><name>Yueran</name></author><category term="Job Hunting" /><category term="front end" /><summary type="html"></summary></entry><entry><title type="html">Deploy Project With buildpacks to Heroku and Github</title><link href="http://localhost:4000/buildpacks/2021/09/29/buildpacks_deploy_to_heroku/" rel="alternate" type="text/html" title="Deploy Project With buildpacks to Heroku and Github" /><published>2021-09-29T00:00:00-05:00</published><updated>2021-09-29T00:00:00-05:00</updated><id>http://localhost:4000/buildpacks/2021/09/29/buildpacks_deploy_to_heroku</id><content type="html" xml:base="http://localhost:4000/buildpacks/2021/09/29/buildpacks_deploy_to_heroku/">&lt;h3 id=&quot;deploy-to-heroku&quot;&gt;Deploy to Heroku&lt;/h3&gt;
+  &lt;li&gt;Resource: &lt;a href=&quot;https://www.1point3acres.com/bbs/thread-552825-1-1.html&quot;&gt;找工就业【多伦多】文科转码-自学7个月（约400小时）拿到前端offer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Resource: &lt;a href=&quot;https://www.xiaohongshu.com/discovery/item/60c11f60000000000102ff32?xhsshare=WeixinSession&amp;amp;appuid=60bf083a000000000101f224&amp;amp;apptime=1641171807&quot;&gt;Norah: 新移民登录加拿大第一份工作怎么找？简历篇&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Resource: &lt;a href=&quot;https://www.xiaohongshu.com/discovery/item/60c11f60000000000102ff32?xhsshare=WeixinSession&amp;amp;appuid=60bf083a000000000101f224&amp;amp;apptime=1641171807&quot;&gt;Norah: 新移民登陆加拿大第一份工作怎么找？面试篇&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Resource: &lt;a href=&quot;https://www.xiaohongshu.com/discovery/item/60df58bc000000002103902f?xhsshare=WeixinSession&amp;amp;appuid=60bf083a000000000101f224&amp;amp;apptime=1641171772&quot;&gt;Norah: 加拿大新移民中年宝妈转码前端自学分享（一）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Resource: &lt;a href=&quot;https://www.xiaohongshu.com/discovery/item/60f4dfc0000000002103dcee?xhsshare=WeixinSession&amp;amp;appuid=60bf083a000000000101f224&amp;amp;apptime=1641171748&quot;&gt;Norah: 加拿大新移民中年宝妈转码前端分享(二)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Resource: &lt;a href=&quot;https://www.xiaohongshu.com/discovery/item/610492dc000000000102d86b?xhsshare=WeixinSession&amp;amp;appuid=60bf083a000000000101f224&amp;amp;apptime=1641171724&quot;&gt;Norah: 加拿大新移民中年宝妈转码前端分享（三）&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Yueran</name></author><category term="Job Hunting" /><category term="front end" /><summary type="html">零工作经验的毕业生</summary></entry><entry><title type="html">制作一份前端Portfolio的重点</title><link href="http://localhost:4000/job%20hunting/2021/12/26/make_potfolio/" rel="alternate" type="text/html" title="制作一份前端Portfolio的重点" /><published>2021-12-26T00:00:00-06:00</published><updated>2021-12-26T00:00:00-06:00</updated><id>http://localhost:4000/job%20hunting/2021/12/26/make_potfolio</id><content type="html" xml:base="http://localhost:4000/job%20hunting/2021/12/26/make_potfolio/">&lt;h3 id=&quot;一些关键点&quot;&gt;一些关键点&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Always remember the keyboard and contrast accessibility&lt;/li&gt;
+  &lt;li&gt;Stop trying to rate your own skills.
+    &lt;ul&gt;
+      &lt;li&gt;You don’t know the skill at all&lt;/li&gt;
+      &lt;li&gt;You’re still learning the skill&lt;/li&gt;
+      &lt;li&gt;You feel confident in the skill&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You only need to tell them what you’re learning and what you feel confident in.&lt;/li&gt;
+  &lt;li&gt;Write your CSS written mobile-first, mobile responsive is quite important.&lt;/li&gt;
+  &lt;li&gt;Show me the code, and the live site.&lt;/li&gt;
+  &lt;li&gt;Tell me what you’ve actually contributed to.&lt;/li&gt;
+  &lt;li&gt;Prove you don’t need Bootstrap or jQuery&lt;/li&gt;
+  &lt;li&gt;Speak towards your dream job.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Resource: &lt;a href=&quot;https://www.freecodecamp.org/news/i-reviewed-fifty-portfolios-on-reddit-and-this-is-what-i-learned-e5d2b43150bc/&quot;&gt;What I learned from reviewing 50 portfolios on Reddit in 3 crazy days.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Yueran</name></author><category term="Job Hunting" /><category term="front end" /><summary type="html">一些关键点</summary></entry><entry><title type="html">Deploy Project With buildpacks to Heroku and Github</title><link href="http://localhost:4000/buildpacks/2021/09/29/buildpacks_deploy_to_heroku/" rel="alternate" type="text/html" title="Deploy Project With buildpacks to Heroku and Github" /><published>2021-09-29T00:00:00-05:00</published><updated>2021-09-29T00:00:00-05:00</updated><id>http://localhost:4000/buildpacks/2021/09/29/buildpacks_deploy_to_heroku</id><content type="html" xml:base="http://localhost:4000/buildpacks/2021/09/29/buildpacks_deploy_to_heroku/">&lt;h3 id=&quot;deploy-to-heroku&quot;&gt;Deploy to Heroku&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
