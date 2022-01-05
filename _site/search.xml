@@ -183,10 +183,45 @@ question，难度会有leetcode里面的medium的级别。</li>
   <li>前端框架React, Angular, Vue</li>
   <li>工具： git,less,scss, webpack, ajax,json, fetch API, HTTP状态码，node.js</li>
   <li>算法题：基本数据结构，排序，栈，队列，链表，二叉树，图，深度/广度优先搜索，遍历，最短路径，《啊哈，算法》，Youtube:《Leetcode题解》， github:CyC2918/CS-Notes</li>
+  <li>Data Structures: Array, Linked List, Queue, Stack, Tree, Graph, Hash Table</li>
   <li>优先英文搜索查阅资料，是在看不懂，中文辅助</li>
 </ul>
 
+<h4 id="the-process-of-learning">The Process of learning</h4>
+<ul>
+  <li>Find:
+    <ul>
+      <li>Look for atomic micro-projects to build. For example, navbar, different navbars, hamburger, header, hero,contact form footer etc.</li>
+    </ul>
+  </li>
+  <li>Learn &amp; Build:
+    <ul>
+      <li>Don’t think. Start coding. Look up tutorials on how to build a specific things and start coding. Knowing without taking action is not knowing.</li>
+    </ul>
+  </li>
+  <li>Repeat:
+    <ul>
+      <li>Building something once is not enough. You need repetition. A lot of it. Building multiple nav, footers, heros, contact forms etc.</li>
+    </ul>
+  </li>
+  <li>“It’s not that I’m so smart. It’s just that I stay with problems longer.”</li>
+</ul>
+
+<h3 id="apply-to-at-least-10-jobs-every-day-thats-300-in-a-month">Apply to at least 10 jobs every day. That’s 300 in a month.</h3>
+<ul>
+  <li>Even if you convert at 1%, that’s still 1.5 jobs. Most people don’t apply enough. Be ready to move to a different location.</li>
+  <li>Don’t worry about not qualifying. Still apply as long as it’s somewhat similar. You can learn things quickly.</li>
+</ul>
+
+<h3 id="serverless-is-the-future">Serverless is the future</h3>
+
+<h3 id="most-important">Most Important</h3>
 <ol>
+  <li>Focus - You must sacrifice all of your other ‘goals’. If you want to win, you have to focus on one thing. Focus requires sacrifice. You have to go ALL IN.</li>
+  <li>Recovery from deviation - You will deviate. You will deviate. You will fall off. It’s not an ‘if’. It’s a “when”. The key to success is doubling your rate of failure. The faster you recover, the better.</li>
+  <li>
+    <p>Systems over goals. - Forget thinking about</p>
+  </li>
   <li>Resource: <a href="https://www.zhihu.com/question/50714531/answer/1626216412">加拿大留学生在本地找工作有多难？ 知乎作者：Fei西</a></li>
   <li>Resource: <a href="https://www.1point3acres.com/bbs/thread-552825-1-1.html">找工就业【多伦多】文科转码-自学7个月（约400小时）拿到前端offer</a></li>
   <li>Resource: <a href="https://www.xiaohongshu.com/discovery/item/60c11f60000000000102ff32?xhsshare=WeixinSession&amp;appuid=60bf083a000000000101f224&amp;apptime=1641171807">Norah: 新移民登录加拿大第一份工作怎么找？简历篇</a></li>
@@ -231,8 +266,47 @@ question，难度会有leetcode里面的medium的级别。</li>
   <li>Speak towards your dream job.</li>
 </ol>
 
+<h3 id="portfolio每个部分的细节内容">Portfolio每个部分的细节内容</h3>
+<p>使用的工具是 webflow</p>
 <ul>
+  <li>自我介绍
+    <ul>
+      <li>告诉大家你是谁</li>
+      <li>你做什么的</li>
+      <li>你来此的目的是什么</li>
+    </ul>
+  </li>
+  <li>作品
+    <ul>
+      <li>动态展示</li>
+    </ul>
+  </li>
+  <li>简历
+    <ul>
+      <li>work experience</li>
+      <li>education</li>
+      <li>skills</li>
+      <li>online courses</li>
+      <li>Tools</li>
+      <li>Download Resume</li>
+    </ul>
+  </li>
+  <li>About me</li>
+  <li>
+    <p>Contact Me</p>
+  </li>
   <li>Resource: <a href="https://www.freecodecamp.org/news/i-reviewed-fifty-portfolios-on-reddit-and-this-is-what-i-learned-e5d2b43150bc/">What I learned from reviewing 50 portfolios on Reddit in 3 crazy days.</a></li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Resource: [Youtube: Beautiful Front End Developer Portfolio</td>
+          <td>Web Developer</td>
+          <td>No-Code](https://www.youtube.com/watch?v=quiX4tCj_-8&amp;t=137s)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
 </ul>
 
 ]]></content>

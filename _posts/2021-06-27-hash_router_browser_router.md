@@ -22,4 +22,5 @@ tags:
 
 - Additionally, the setup may involve server-side rendering, index.html may contain rendered components or data that are specific to current route.
 
+
 [Resource: What the difference between hash router and browser router](https://stackoverflow.com/questions/51974369/what-is-the-difference-between-hashrouter-and-browserrouter-in-react)

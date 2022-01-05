@@ -22,11 +22,26 @@ tags:
 7. Prove you don’t need Bootstrap or jQuery
 8. Speak towards your dream job. 
 
-
-
+### Portfolio每个部分的细节内容
+使用的工具是 webflow
+- 自我介绍
+    - 告诉大家你是谁
+    - 你做什么的
+    - 你来此的目的是什么
+- 作品
+  - 动态展示
+- 简历
+    - work experience
+    - education
+    - skills
+    - online courses
+    - Tools
+    - Download Resume
+- About me
+- Contact Me
 
 
 - Resource: [What I learned from reviewing 50 portfolios on Reddit in 3 crazy days.](https://www.freecodecamp.org/news/i-reviewed-fifty-portfolios-on-reddit-and-this-is-what-i-learned-e5d2b43150bc/)
-
+- Resource: [Youtube: Beautiful Front End Developer Portfolio|Web Developer|No-Code](https://www.youtube.com/watch?v=quiX4tCj_-8&t=137s)
 
 

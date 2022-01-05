@@ -144,11 +144,35 @@ tags:
 - 前端框架React, Angular, Vue
 - 工具： git,less,scss, webpack, ajax,json, fetch API, HTTP状态码，node.js
 - 算法题：基本数据结构，排序，栈，队列，链表，二叉树，图，深度/广度优先搜索，遍历，最短路径，《啊哈，算法》，Youtube:《Leetcode题解》， github:CyC2918/CS-Notes
+- Data Structures: Array, Linked List, Queue, Stack, Tree, Graph, Hash Table
 - 优先英文搜索查阅资料，是在看不懂，中文辅助
 
-    
-                      
-                      
+
+#### The Process of learning
+- Find:
+    - Look for atomic micro-projects to build. For example, navbar, different navbars, hamburger, header, hero,contact form footer etc.
+- Learn & Build: 
+    - Don't think. Start coding. Look up tutorials on how to build a specific things and start coding. Knowing without taking action is not knowing.
+- Repeat:
+    - Building something once is not enough. You need repetition. A lot of it. Building multiple nav, footers, heros, contact forms etc.
+- "It's not that I'm so smart. It's just that I stay with problems longer."
+
+
+### Apply to at least 10 jobs every day. That's 300 in a month.
+- Even if you convert at 1%, that's still 1.5 jobs. Most people don't apply enough. Be ready to move to a different location.
+- Don't worry about not qualifying. Still apply as long as it's somewhat similar. You can learn things quickly.
+
+### Serverless is the future
+
+### Most Important
+1. Focus - You must sacrifice all of your other 'goals'. If you want to win, you have to focus on one thing. Focus requires sacrifice. You have to go ALL IN.
+2. Recovery from deviation - You will deviate. You will deviate. You will fall off. It's not an 'if'. It's a "when". The key to success is doubling your rate of failure. The faster you recover, the better. 
+3. Systems over goals. - Forget thinking about 
+   
+   
+
+
+
 1. Resource: [加拿大留学生在本地找工作有多难？ 知乎作者：Fei西](https://www.zhihu.com/question/50714531/answer/1626216412)
 2. Resource: [找工就业【多伦多】文科转码-自学7个月（约400小时）拿到前端offer](https://www.1point3acres.com/bbs/thread-552825-1-1.html)
 3. Resource: [Norah: 新移民登录加拿大第一份工作怎么找？简历篇](https://www.xiaohongshu.com/discovery/item/60c11f60000000000102ff32?xhsshare=WeixinSession&appuid=60bf083a000000000101f224&apptime=1641171807)
