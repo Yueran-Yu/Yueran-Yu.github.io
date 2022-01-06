@@ -324,6 +324,513 @@ question，难度会有leetcode里面的medium的级别。</li>
     </entry>
   
     <entry>
+      <title><![CDATA[Radix Sort]]></title>
+      <url>/algorithm/2021/11/01/radix/</url>
+      <content type="html"><![CDATA[<h4 id="thinking">Thinking:</h4>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">505</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">931</span><span class="p">]</span>
+
+<span class="kd">const</span> <span class="nx">radixSort</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">max</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(...</span><span class="nx">arr</span><span class="p">)</span>
+  <span class="c1">// define a two-dimensional bucket array</span>
+  <span class="kd">let</span> <span class="nx">buckets</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="k">from</span><span class="p">({</span><span class="na">length</span><span class="p">:</span> <span class="mi">10</span><span class="p">},</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">[])</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">buckets</span><span class="p">)</span>
+  <span class="kd">let</span> <span class="nx">mark</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="c1">// when mark &lt; max. we need to do m*=10,</span>
+  <span class="c1">// this is the way to become tens digits, 100s digits or larger</span>
+  <span class="c1">// it helps to make sure we traverse all digits</span>
+  <span class="k">while</span> <span class="p">(</span><span class="nx">mark</span> <span class="o">&lt;</span> <span class="nx">max</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// get number for each digit(10s digit, 100s digit, 1000s digits)</span>
+    <span class="nx">arr</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="c1">//取余的的概念不牢固:65%100 余数是65</span>
+      <span class="kd">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="p">((</span><span class="nx">num</span> <span class="o">%</span> <span class="p">(</span><span class="nx">mark</span> <span class="o">*</span> <span class="mi">10</span><span class="p">))</span> <span class="o">/</span> <span class="nx">mark</span><span class="p">)</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Number</span><span class="p">.</span><span class="nx">isInteger</span><span class="p">(</span><span class="nx">c</span><span class="p">))</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">c</span><span class="p">)</span>
+      <span class="kd">const</span> <span class="nx">digitValue</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">num</span> <span class="o">%</span> <span class="p">(</span><span class="nx">mark</span> <span class="o">*</span> <span class="mi">10</span><span class="p">))</span> <span class="o">/</span> <span class="nx">mark</span><span class="p">)</span>
+      <span class="nx">buckets</span><span class="p">[</span><span class="nx">digitValue</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span>
+    <span class="p">})</span>
+    <span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="nx">buckets</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">bucket</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="k">while</span> <span class="p">(</span><span class="nx">bucket</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="nx">bucket</span><span class="p">.</span><span class="nx">shift</span><span class="p">()</span>
+      <span class="p">}</span>
+    <span class="p">})</span>
+    <span class="c1">// 每次最外层while循环后m要乘以10</span>
+    <span class="c1">// 也就是要判断下一位，比如当前是个位，下次就要判断十位</span>
+    <span class="nx">mark</span> <span class="o">*=</span> <span class="mi">10</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">arr</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">radixSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">))</span>
+</code></pre></div></div>
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+          <tag> Sort </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Merge Sort]]></title>
+      <url>/algorithm/2021/11/01/merge/</url>
+      <content type="html"><![CDATA[<h4 id="thinking">Thinking:</h4>
+
+<ol>
+  <li>If the list is of length 0 or 1, then it is already sorted. Otherwise:</li>
+  <li>Divide the unsorted list into two sublists of above half he size</li>
+  <li>Sort each sublist recursively by re-applying merge sort</li>
+  <li>Merge the two sublists back into one sorted list</li>
+</ol>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// O(n*log(n))</span>
+<span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">23</span><span class="p">]</span>
+
+<span class="kd">const</span> <span class="nx">MergeSort</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">)</span> <span class="k">return</span> <span class="nx">arr</span>
+  <span class="kd">let</span> <span class="nx">mid</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+  <span class="kd">let</span> <span class="nx">left</span> <span class="o">=</span> <span class="nx">MergeSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">mid</span><span class="p">))</span>
+  <span class="kd">let</span> <span class="nx">right</span> <span class="o">=</span> <span class="nx">MergeSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="nx">mid</span><span class="p">))</span>
+  <span class="k">return</span> <span class="nx">Merge</span><span class="p">(</span><span class="nx">left</span><span class="p">,</span> <span class="nx">right</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">Merge</span> <span class="o">=</span> <span class="p">(</span><span class="nx">l</span><span class="p">,</span> <span class="nx">r</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">while</span> <span class="p">(</span><span class="nx">l</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">r</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">result</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">l</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nx">r</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">?</span> <span class="nx">l</span><span class="p">.</span><span class="nx">shift</span><span class="p">()</span> <span class="p">:</span> <span class="nx">r</span><span class="p">.</span><span class="nx">shift</span><span class="p">())</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">result</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">r</span><span class="p">.</span><span class="nx">length</span> <span class="p">?</span> <span class="nx">r</span> <span class="p">:</span> <span class="nx">l</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">MergeSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p><img src="../../../../../assets/images/merge-sort.jpg" width="800" alt="Domain Name" /></p>
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+          <tag> Sort </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Insertion Sort]]></title>
+      <url>/algorithm/2021/10/20/insertion/</url>
+      <content type="html"><![CDATA[<h4 id="thinking">Thinking:</h4>
+
+<ol>
+  <li>set a marker for the sorted section after the first element</li>
+  <li>repeat the following until unsorted section is empty:
+select the first unsorted element
+swap other elements to the right to create the correct position and shift the unsorted element</li>
+</ol>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+
+<span class="kd">const</span> <span class="nx">InsertionSort</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">unsortedElement</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="c1">//selects the first unsorted element</span>
+    <span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">-</span> <span class="mi">1</span> <span class="c1">//previous sorted element</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="nx">j</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">unsortedElement</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">//把前面大的数字挪到后面去</span>
+      <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="c1">// this loop shifts all the elements to the right to create the correct position for unsorted element</span>
+      <span class="nx">j</span> <span class="o">-</span> <span class="mi">1</span> <span class="c1">// ready to compare with the previous sorted element when go to the next while loop</span>
+    <span class="p">}</span>
+    <span class="c1">//把后面小的目标数字挪到前面一个位置</span>
+    <span class="c1">//注意：while循环里最后 j--，下面一行是 j-- + 1  的结果</span>
+    <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nx">unsortedElement</span>  <span class="c1">// this inserts the unsorted element to its correct position</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">arr</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">InsertionSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">))</span>
+
+</code></pre></div></div>
+
+<p><img src="../../../../../assets/images/insertionSort.jpg" width="500" alt="Domain Name" /></p>
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+          <tag> Sort </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Heap Sort]]></title>
+      <url>/algorithm/2021/10/16/heap/</url>
+      <content type="html"><![CDATA[<h4 id="thinking">Thinking:</h4>
+
+<h5 id="buildmaxheaparr">buildMaxHeap(arr)</h5>
+<p>1 loop through all non-leaf node =&gt; Math.floor(arr.length/2-1) from last non-leaf node to first non-leaf node
+2 compare that node with its 2 children to find out the largest number by heapify method</p>
+
+<h5 id="heapifyarri">heapify(arr,i)</h5>
+<p>1 get three dots’ index or values:
+current non-leaf node: arr[i],
+left child node index: 2i+1
+right child node index:2i+2</p>
+
+<p>2 firstly, compare left child node with current non-leaf node
+3 then, compare right child node with current non-leaf node
+4 if the temp max index has changed, we need to swap the value between those nodes, and also need to call heapify(arr, max) again, to re-sort the remaining nodes, to find out if there is another max node exists</p>
+
+<h5 id="heapsortarr">heapSort(arr)</h5>
+<p>the main function of this method is to swap the largest node value to the end of the arr and then excludes the sorted largest values from the array, re-sort the rest unsorted array to find out a new largest node value again
+1 call buildMaxHeap(arr,heapSize) to initialize the correct heap in the first time
+2 loop through the array from end to start, swap the arr[arr_length-1] with the arr[0], put the largest node value to the end of the array
+3 reduce the array length by one to exclude the sorted values
+4 since currently the heap is in the correct structure,(from top to bottom, from left to right is sorted from large values to small values), so we only need to call heapify(arr, 0, heapSize) with second parameter ‘0’, this means we only need to sort the topped node to find out the largest value in the array, no need to sort the largest value from the non-leaf node from the bottom of the tree again.
+5 that’s it~!</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">20</span><span class="p">]</span>
+<span class="kd">const</span> <span class="nx">buildMaxHeap</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">heapSize</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">//从非叶子节点开始对每一组堆进行排序，保证 parent node 值最大</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">heapSize</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span> <span class="nx">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">heapify</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">heapSize</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// recursion happened here</span>
+<span class="kd">const</span> <span class="nx">heapify</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">heapSize</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">leftIndex</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span>
+  <span class="kd">let</span> <span class="nx">rightIndex</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">2</span>
+  <span class="kd">let</span> <span class="nx">tempMaxIndex</span> <span class="o">=</span> <span class="nx">i</span>
+
+  <span class="c1">//...我彻底忘掉了控制原数组长度-&gt; 因为之后我们需要移除最大顶点值，每移除一个最大顶点值就需要数组减去一个元素长度</span>
+  <span class="c1">// 三目运算符不能随便用!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!会出bug, 没 debugger 过，不打算细究，就是测试出来不能随便用三目运算符</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">leftIndex</span> <span class="o">&lt;</span> <span class="nx">heapSize</span> <span class="o">&amp;&amp;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">leftIndex</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">tempMaxIndex</span><span class="p">])</span> <span class="nx">tempMaxIndex</span> <span class="o">=</span> <span class="nx">leftIndex</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">rightIndex</span> <span class="o">&lt;</span> <span class="nx">heapSize</span> <span class="o">&amp;&amp;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">rightIndex</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">tempMaxIndex</span><span class="p">])</span> <span class="nx">tempMaxIndex</span> <span class="o">=</span> <span class="nx">rightIndex</span>
+
+  <span class="c1">// 忘了运行swap需要一个条件，就是 tempMaxIndex !== i 的时候才需要swap</span>
+  <span class="c1">// 因为如果 最大顶点值就是 当前non-leaf node的话，那没必要swap啊</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">tempMaxIndex</span> <span class="o">!==</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">swap</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">tempMaxIndex</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span>
+    <span class="nx">heapify</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">tempMaxIndex</span><span class="p">,</span> <span class="nx">heapSize</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">swap</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// temp &lt;- arr[one] &lt;- arr[two] &lt;- temp</span>
+  <span class="kd">let</span> <span class="nx">temp</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">one</span><span class="p">]</span>
+  <span class="nx">arr</span><span class="p">[</span><span class="nx">one</span><span class="p">]</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">two</span><span class="p">]</span>
+  <span class="nx">arr</span><span class="p">[</span><span class="nx">two</span><span class="p">]</span> <span class="o">=</span> <span class="nx">temp</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">heapSort</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">//因为arr_length需要在本方法内递减才能剔除掉顶点值，所以在这里 跟全局变量arr_length关联上</span>
+  <span class="kd">let</span> <span class="nx">heapSize</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span>
+  <span class="nx">buildMaxHeap</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">heapSize</span><span class="p">)</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">k</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">k</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">k</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">swap</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">k</span><span class="p">)</span>
+    <span class="nx">heapSize</span><span class="o">--</span>
+    <span class="nx">heapify</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">heapSize</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">heapSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p><img src="../../../../../assets/images/heapSort.jpg" width="500" alt="Domain Name" />
+<img src="../../../../../assets/images/heapSor2.jpg" width="500" alt="Domain Name" /></p>
+
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+          <tag> Sort </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Counting Sort]]></title>
+      <url>/algorithm/2021/10/12/counting/</url>
+      <content type="html"><![CDATA[<h4 id="thinking">Thinking:</h4>
+
+<ul>
+  <li>index 是 arr 的 (value - min) !!!!!!!</li>
+  <li>index 是 arr 的 (value - min）!!!!!!!</li>
+  <li>
+    <p>index 是 arr 的 (value - min) !!!!!!</p>
+  </li>
+  <li>the  last position that 4(the index of count) can occur is going to be the value at 4, the value is 5</li>
+  <li>
+    <p>the last position that 2(the index of count) can occur is going to be the value at 2, the value is 3</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  我主要不懂 running  sum，把 running sum 当成新输出数组的长度
+  running sum = result.length
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="kd">const</span> <span class="nx">countingSort</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(...</span><span class="nx">arr</span><span class="p">)</span>
+  <span class="kd">let</span> <span class="nx">min</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">(...</span><span class="nx">arr</span><span class="p">)</span>
+  <span class="kd">let</span> <span class="nx">countLength</span> <span class="o">=</span> <span class="nx">max</span> <span class="o">-</span> <span class="nx">min</span> <span class="o">+</span> <span class="mi">1</span>
+  <span class="kd">let</span> <span class="nx">counting</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">countLength</span><span class="p">).</span><span class="nx">fill</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+  <span class="c1">//遍历原数组，开始计算每个元素出现的次数， counting the occurrence of each value in the array</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span>
+    <span class="nx">counting</span><span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">-</span> <span class="nx">min</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
+
+  <span class="c1">//running sum</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">v</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">v</span> <span class="o">&lt;</span> <span class="nx">countLength</span><span class="p">;</span> <span class="nx">v</span><span class="o">++</span><span class="p">)</span>
+    <span class="nx">counting</span><span class="p">[</span><span class="nx">v</span><span class="p">]</span> <span class="o">+=</span> <span class="nx">counting</span><span class="p">[</span><span class="nx">v</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+
+  <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="kd">let</span> <span class="nx">runningSum</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">k</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">k</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">k</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">runningSum</span> <span class="o">=</span> <span class="nx">counting</span><span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="nx">k</span><span class="p">]</span> <span class="o">-</span> <span class="nx">min</span><span class="p">]</span>
+    <span class="nx">result</span><span class="p">[</span><span class="nx">runningSum</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">k</span><span class="p">]</span>
+    <span class="nx">counting</span><span class="p">[</span><span class="nx">arr</span><span class="p">[</span><span class="nx">k</span><span class="p">]</span> <span class="o">-</span> <span class="nx">min</span><span class="p">]</span><span class="o">--</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">result</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">countingSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">))</span>
+
+</code></pre></div></div>
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+          <tag> Sort </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Quick Sort]]></title>
+      <url>/algorithm/2021/10/08/quick/</url>
+      <content type="html"><![CDATA[<h4 id="thinking">Thinking:</h4>
+
+<p>when we don’t have special knowledge about certain set of unsorted data
+the best we can do is O(n*log(n)), like using quick or merge sort, the fastest sorting algorithms.
+In a recursion we are going to be able to split the inputs for merge sort up to log(n) levels of work.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">QuickSort</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">startIndex</span><span class="p">,</span> <span class="nx">endIndex</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">startIndex</span> <span class="o">&lt;</span> <span class="nx">endIndex</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">pivotIndex</span> <span class="o">=</span> <span class="nx">Partition</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">startIndex</span><span class="p">,</span> <span class="nx">endIndex</span><span class="p">)</span>
+    <span class="nx">QuickSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">startIndex</span><span class="p">,</span> <span class="nx">pivotIndex</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="nx">QuickSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">pivotIndex</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">endIndex</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">Partition</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">startIndex</span><span class="p">,</span> <span class="nx">endIndex</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">pivotValue</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">endIndex</span><span class="p">]</span>
+  <span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="nx">startIndex</span>
+
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="nx">startIndex</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">endIndex</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nx">pivotValue</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">Swap</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span><span class="nx">i</span> <span class="p">,</span> <span class="nx">j</span><span class="p">)</span>
+      <span class="nx">i</span><span class="o">++</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="nx">Swap</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span><span class="nx">i</span><span class="p">,</span> <span class="nx">endIndex</span><span class="p">)</span>
+  <span class="k">return</span> <span class="nx">i</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">Swap</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">index1</span><span class="p">,</span> <span class="nx">index2</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">temp</span> <span class="o">=</span><span class="nx">arr</span><span class="p">[</span><span class="nx">index1</span><span class="p">]</span>
+  <span class="nx">arr</span><span class="p">[</span><span class="nx">index1</span><span class="p">]</span> <span class="o">=</span><span class="nx">arr</span><span class="p">[</span><span class="nx">index2</span><span class="p">]</span>
+  <span class="nx">arr</span><span class="p">[</span><span class="nx">index2</span><span class="p">]</span> <span class="o">=</span> <span class="nx">temp</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">QuickSort</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">low</span><span class="p">,</span> <span class="nx">high</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">low</span> <span class="o">&lt;</span> <span class="nx">high</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">p</span> <span class="o">=</span> <span class="nx">Partition</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">low</span><span class="p">,</span> <span class="nx">high</span><span class="p">);</span>
+    <span class="nx">QuickSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">low</span><span class="p">,</span> <span class="nx">p</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="nx">QuickSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">p</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">high</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">arr</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p><img src="../../../../../assets/images/quickSort1.png" width="800" alt="Domain Name" />
+<img src="../../../../../assets/images/quickSort3.jpeg" width="800" alt="Domain Name" /></p>
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+          <tag> Sort </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Bucket Sort]]></title>
+      <url>/algorithm/2021/10/06/bucket/</url>
+      <content type="html"><![CDATA[<h4 id="thinking">Thinking:</h4>
+
+<ol>
+  <li>Create the initial bucketSort function</li>
+  <li>Create variables for i, min, max, and bucket size</li>
+  <li>Find min and max value</li>
+  <li>Create an amount of buckets</li>
+  <li>Push values to correct buckets</li>
+  <li>Sort buckets: it works by arranging elements into ‘buckets’ which are then sorted using another sort.</li>
+</ol>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// bucket sort is most suitable for sorting an array of </span>
+<span class="c1">// floating values or input is uniformly distributed over a range</span>
+<span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">32</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">61</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">7</span><span class="p">];</span>
+
+<span class="kd">const</span> <span class="nx">selectionSort</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">temp</span><span class="p">,</span> <span class="nx">minIndex</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">minIndex</span> <span class="o">=</span> <span class="nx">i</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">minIndex</span><span class="p">])</span> <span class="p">{</span>
+        <span class="nx">minIndex</span> <span class="o">=</span> <span class="nx">j</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">// until inner loop completed then exchange the value</span>
+    <span class="nx">temp</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">minIndex</span><span class="p">]</span>
+    <span class="nx">arr</span><span class="p">[</span><span class="nx">minIndex</span><span class="p">]</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
+    <span class="nx">arr</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="nx">temp</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">arr</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">bucketSort</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">bucketsAmount</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(...</span><span class="nx">arr</span><span class="p">)</span>
+  <span class="kd">let</span> <span class="nx">min</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">(...</span><span class="nx">arr</span><span class="p">)</span>
+  <span class="c1">// initializing each bucket</span>
+  <span class="kd">let</span> <span class="nx">eachBucket</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="k">from</span><span class="p">({</span><span class="na">length</span><span class="p">:</span> <span class="nx">bucketsAmount</span><span class="p">},</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">[])</span>
+<span class="c1">// decide the count of each bucket</span>
+  <span class="kd">let</span> <span class="nx">eachBucketLength</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">max</span> <span class="o">-</span> <span class="nx">min</span><span class="p">)</span> <span class="o">/</span> <span class="nx">bucketsAmount</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+  <span class="c1">// push values in a same range to the specific bucket</span>
+  <span class="nx">arr</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">currentValue</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">((</span><span class="nx">currentValue</span> <span class="o">-</span> <span class="nx">min</span><span class="p">)</span> <span class="o">/</span> <span class="nx">eachBucketLength</span><span class="p">)</span>
+    <span class="nx">eachBucket</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">push</span><span class="p">(</span><span class="nx">currentValue</span><span class="p">)</span>
+  <span class="p">})</span>
+
+  <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="c1">// A stable sort keeps the same relative order between any items with equal keys</span>
+  <span class="nx">eachBucket</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">subArray</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">selectionSort</span><span class="p">(</span><span class="nx">subArray</span><span class="p">)</span>
+    <span class="nx">subArray</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">element</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">arr</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span>
+    <span class="p">})</span>
+  <span class="p">})</span>
+  <span class="k">return</span> <span class="nx">arr</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">bucketSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+</code></pre></div></div>
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+          <tag> Sort </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Bubble Sort]]></title>
+      <url>/algorithm/2021/10/05/bubble/</url>
+      <content type="html"><![CDATA[<h4 id="thinking">Thinking:</h4>
+<p>Comparing each pair of adjacent items and swapping their value (not the index) if they are in the wrong order, then pass through the list from inside to outside until no swaps are needed</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">arr</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">18</span><span class="p">]</span>
+
+<span class="kd">const</span> <span class="nx">bubbleSort</span> <span class="o">=</span> <span class="p">(</span><span class="nx">arr</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">arr</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="nx">i</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span> <span class="p">{</span> <span class="c1">//swap</span>
+        <span class="kd">let</span> <span class="nx">temp</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span>
+        <span class="nx">arr</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="nx">temp</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">arr</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">bubbleSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">))</span>
+</code></pre></div></div>
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+          <tag> Sort </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
       <title><![CDATA[Deploy Project With buildpacks to Heroku and Github]]></title>
       <url>/buildpacks/2021/09/29/buildpacks_deploy_to_heroku/</url>
       <content type="html"><![CDATA[<h3 id="deploy-to-heroku">Deploy to Heroku</h3>
