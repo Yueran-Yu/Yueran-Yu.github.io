@@ -2,6 +2,54 @@
 <search>
   
     <entry>
+      <title><![CDATA[Two Sum]]></title>
+      <url>/algorithm/2022/01/05/two_sum/</url>
+      <content type="html"><![CDATA[<h4 id="description">Description:</h4>
+
+<blockquote>
+  <p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have <strong><em>exactly one solution</em></strong>, and you may <strong><em>not use the same element twice</em></strong>.
+You can return the answer in any order.</p>
+</blockquote>
+
+<h4 id="thinking">Thinking:</h4>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">twoSum</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nums</span><span class="p">,</span> <span class="nx">target</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// create an  Object Dictionary</span>
+  <span class="kd">const</span> <span class="nx">exsitedHash</span> <span class="o">=</span> <span class="p">{}</span>
+
+  <span class="c1">//loop through the array 'nums'，we need to store the index of nums as the value and the num as the key in the Object Dictionary</span>
+  
+  <span class="k">for</span> <span class="p">(</span><span class="kd">const</span> <span class="p">[</span><span class="nx">index</span><span class="p">,</span> <span class="nx">num</span><span class="p">]</span> <span class="k">of</span> <span class="nx">nums</span><span class="p">.</span><span class="nx">entries</span><span class="p">())</span> <span class="p">{</span>
+    <span class="c1">//check if the curremt item in the Object Dictionary has a value((the index in the nums))</span>
+    <span class="c1">// if the value(the index in the nums) exist, it means current item has a previous counterpart, their sum is equal the target, we can return the value(the index in the nums) of current item in the Object and the previous counterpart's index in the nums</span>
+    <span class="c1">// if the vlaue(the index in the nums) is not exist, store the value(the index in the nums)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">exsitedHash</span><span class="p">[</span><span class="nx">num</span><span class="p">]</span> <span class="o">!==</span> <span class="kc">undefined</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="p">[</span><span class="nx">exsitedHash</span><span class="p">[</span><span class="nx">num</span><span class="p">],</span> <span class="nx">index</span><span class="p">]</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+      <span class="nx">existedHash</span><span class="p">[</span><span class="nx">num</span><span class="p">]</span><span class="o">=</span><span class="nx">index</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+          <tag> Leetcode </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
       <title><![CDATA[搜集的在加拿大找工作的Tips]]></title>
       <url>/job%20hunting/2022/01/02/job_hunting_preparation/</url>
       <content type="html"><![CDATA[<h3 id="零工作经验的毕业生">零工作经验的毕业生</h3>
@@ -364,6 +412,8 @@ question，难度会有leetcode里面的medium的级别。</li>
 
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">radixSort</span><span class="p">(</span><span class="nx">arr</span><span class="p">))</span>
 </code></pre></div></div>
+
+<p><img src="../../../../../assets/images/radix.png" width="800" alt="Domain Name" /></p>
 ]]></content>
       <categories>
         

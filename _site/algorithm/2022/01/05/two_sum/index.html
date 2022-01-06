@@ -83,7 +83,7 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="front end," />
+  <meta name="keywords" content="Algorithm,Leetcode," />
 
 
 
@@ -111,26 +111,17 @@
 
 
 
-<meta name="description" content="Definition: Unordered data collection Key-Value Pair collection">
-<meta name="keywords" content="front end">
+<meta name="description" content="Description:">
+<meta name="keywords" content="Algorithm, Leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Javascript Object">
-<meta property="og:url" content="http://localhost:4000/javascript/2020/11/17/javascript_object/">
+<meta property="og:title" content="Two Sum">
+<meta property="og:url" content="http://localhost:4000/algorithm/2022/01/05/two_sum/">
 <meta property="og:site_name" content="Yueran&apos;s Learning">
-<meta property="og:description" content="Definition: Unordered data collection Key-Value Pair collection">
+<meta property="og:description" content="Description:">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="../../../../../assets/images/hiddenObjectProperty.png">
-<meta property="og:image" content="../../../../../assets/images/DeleteProperty.png">
-<meta property="og:image" content="../../../../../assets/images/CheckAllProperties.png">
-<meta property="og:image" content="../../../../../assets/images/Prototype.png">
-<meta property="og:image" content="../../../../../assets/images/LookupProperty.png">
-<meta property="og:image" content="../../../../../assets/images/Emphasis.png">
-<meta property="og:image" content="../../../../../assets/images/Emphasis2.png">
-<meta property="og:image" content="../../../../../assets/images/code_rule.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Javascript Object">
-<meta name="twitter:description" content="Definition: Unordered data collection Key-Value Pair collection">
-<meta name="twitter:image" content="../../../../../assets/images/hiddenObjectProperty.png">
+<meta name="twitter:title" content="Two Sum">
+<meta name="twitter:description" content="Description:">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -163,7 +154,7 @@
 
 
 
-  <title>Javascript Object</title>
+  <title>Two Sum</title>
   
 
 
@@ -347,7 +338,7 @@
   
 
   <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/javascript/2020/11/17/javascript_object/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/algorithm/2022/01/05/two_sum/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yueran">
@@ -367,7 +358,7 @@
           <h1 class="post-title" itemprop="name headline">
           
           
-            Javascript Object
+            Two Sum
           
         </h1>
         
@@ -381,8 +372,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-11-17T00:00:00-06:00">
-                17-11-2020
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-01-05T00:00:00-06:00">
+                05-01-2022
               </time>
             
 
@@ -405,8 +396,8 @@
               
                 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/category/#/Javascript" itemprop="url" rel="index">
-                    <span itemprop="name">Javascript</span>
+                  <a href="/category/#/Algorithm" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm</span>
                   </a>
                 </span>
 
@@ -423,9 +414,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/javascript/2020/11/17/javascript_object/#comments" itemprop="discussionUrl">
+                <a href="/algorithm/2022/01/05/two_sum/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="/javascript/2020/11/17/javascript_object/" itemprop="commentCount"></span>
+                        data-disqus-identifier="/algorithm/2022/01/05/two_sum/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -456,214 +447,35 @@
       
 
       
-        <h3 id="definition">Definition:</h3>
-<ul>
-  <li>Unordered data collection</li>
-  <li>Key-Value Pair collection</li>
-</ul>
+        <h4 id="description">Description:</h4>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">frank</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span><span class="mi">18</span><span class="p">}</span>
-<span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Object</span><span class="p">({</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">frank</span><span class="dl">'</span><span class="p">})</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">({</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span><span class="dl">'</span><span class="s1">frank</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">age</span><span class="dl">'</span><span class="p">:</span> <span class="mi">18</span><span class="p">})</span>
-</code></pre></div></div>
-
-<h3 id="details">Details</h3>
-<ul>
-  <li>key name should is string, not identifier, it can include any characters</li>
-  <li>quotation mark can be omitted, after omitting the quotation mark, the key name can only be represented according to the rules of the identifier</li>
-  <li>when you omit the quotation mark, the key name is also string</li>
-  <li>Each key is the property name of a object</li>
-  <li>Each value is the property value of a object
-    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">[</span><span class="dl">"</span><span class="s2">1</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">100</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">255</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">3.2</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">0.01</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">0.234</span><span class="dl">"</span><span class="p">]</span>
-<span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="c1">// can get all the keys of that obj</span>
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<h3 id="variable-as-property-name">Variable as Property name</h3>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">let</span> <span class="nx">a</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">xxx</span><span class="dl">'</span>
-  <span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">:</span> <span class="mi">111</span><span class="p">}</span>
-  <span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{[</span><span class="nx">a</span><span class="p">]:</span> <span class="mi">1111</span><span class="p">}</span> <span class="o">===</span> <span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="na">xxx</span><span class="p">:</span> <span class="mi">1111</span><span class="p">}</span>
-</code></pre></div></div>
-<ul>
-  <li><strong>How to use variables as property name?</strong>
-    <ul>
-      <li>Previously we use constant as the property name</li>
-      <li><code class="language-plaintext highlighter-rouge">let p1 = 'name'</code></li>
-      <li><code class="language-plaintext highlighter-rouge">let obj = {p1: 'frank'}</code> here, the property name is <code class="language-plaintext highlighter-rouge">'p1'</code></li>
-      <li><code class="language-plaintext highlighter-rouge">let obj = {[p1]: 'frank'}</code> here, the property name is <code class="language-plaintext highlighter-rouge">'name'</code></li>
-    </ul>
-  </li>
-  <li>Compare:
-    <ul>
-      <li>if there is no [], the property name will automatically become the string</li>
-      <li>if add [], the property will try to find the value inside of the []</li>
-      <li>if the property name is not a string, it will be automatically transformed into a string</li>
-    </ul>
-  </li>
-  <li>Five Falsy Values
-    <ul>
-      <li>null, undefined, 0, NaN, ‘’</li>
-    </ul>
-  </li>
-  <li>7 data types
-    <ul>
-      <li>number</li>
-      <li>string</li>
-      <li>bool</li>
-      <li>symbol</li>
-      <li>null</li>
-      <li>undefined</li>
-      <li>object</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="the-hidden-property-in-the-object">The hidden Property in the Object</h3>
 <blockquote>
-  <p><img src="../../../../../assets/images/hiddenObjectProperty.png" width="500" alt="hidden Object Property" /></p>
-
+  <p>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have <strong><em>exactly one solution</em></strong>, and you may <strong><em>not use the same element twice</em></strong>.
+You can return the answer in any order.</p>
 </blockquote>
 
-<h3 id="delete-property">Delete Property</h3>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span><span class="dl">'</span><span class="s1">frank</span><span class="dl">'</span><span class="p">,</span> <span class="na">age</span><span class="p">:</span> <span class="mi">18</span><span class="p">}</span>
-<span class="nx">obj</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="kc">undefined</span>
+<h4 id="thinking">Thinking:</h4>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span>
-<span class="c1">// result: {name: undefined, age: 18}</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">twoSum</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nums</span><span class="p">,</span> <span class="nx">target</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// create an  Object Dictionary</span>
+  <span class="kd">const</span> <span class="nx">exsitedHash</span> <span class="o">=</span> <span class="p">{}</span>
 
-<span class="k">delete</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">name</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span>
-<span class="c1">// result: {age: 18}</span>
+  <span class="c1">//loop through the array 'nums'，we need to store the index of nums as the value and the num as the key in the Object Dictionary</span>
+  
+  <span class="k">for</span> <span class="p">(</span><span class="kd">const</span> <span class="p">[</span><span class="nx">index</span><span class="p">,</span> <span class="nx">num</span><span class="p">]</span> <span class="k">of</span> <span class="nx">nums</span><span class="p">.</span><span class="nx">entries</span><span class="p">())</span> <span class="p">{</span>
+    <span class="c1">//check if the curremt item in the Object Dictionary has a value((the index in the nums))</span>
+    <span class="c1">// if the value(the index in the nums) exist, it means current item has a previous counterpart, their sum is equal the target, we can return the value(the index in the nums) of current item in the Object and the previous counterpart's index in the nums</span>
+    <span class="c1">// if the vlaue(the index in the nums) is not exist, store the value(the index in the nums)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">exsitedHash</span><span class="p">[</span><span class="nx">num</span><span class="p">]</span> <span class="o">!==</span> <span class="kc">undefined</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="p">[</span><span class="nx">exsitedHash</span><span class="p">[</span><span class="nx">num</span><span class="p">],</span> <span class="nx">index</span><span class="p">]</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+      <span class="nx">existedHash</span><span class="p">[</span><span class="nx">num</span><span class="p">]</span><span class="o">=</span><span class="nx">index</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-<span class="k">delete</span> <span class="nx">obj</span><span class="p">[</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">]</span>
-<span class="c1">// result: true</span>
-
-<span class="c1">// check if you have deleted the property successfully or not</span>
-<span class="c1">// true =&gt; property exists, false =&gt; property not exists</span>
-<span class="dl">'</span><span class="s1">name</span><span class="dl">'</span> <span class="k">in</span> <span class="nx">obj</span>
-
-<span class="nx">name</span> <span class="k">in</span> <span class="nx">obj</span>
-<span class="c1">// result: false</span>
-<span class="c1">// because name and 'name' are different things,</span>
-<span class="c1">// we have never declared or defined or assigned any value to name before</span>
-<span class="c1">// name without ''  is a variable</span>
 </code></pre></div></div>
-<blockquote>
-  <p><img src="../../../../../assets/images/DeleteProperty.png" width="500" alt="Delete Property" /></p>
-</blockquote>
-
-<h3 id="read-property">Read Property</h3>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span><span class="dl">'</span><span class="s1">frank</span><span class="dl">'</span><span class="p">,</span> <span class="na">age</span><span class="p">:</span> <span class="mi">18</span><span class="p">}</span>
-<span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span>
-<span class="c1">//result: (2)["name","age"]</span>
-<span class="nb">Object</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span>
-<span class="c1">//result: (2)["frank","18"]</span>
-<span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span>
-<span class="c1">//result:</span>
-<span class="c1">// (2) [Array(2), Array(2)]</span>
-<span class="c1">// 0: (2) ["name", "frank"]</span>
-<span class="c1">// 1: (2) ["age", 18]</span>
-<span class="c1">// length: 2</span>
-<span class="c1">// __proto__: Array(0)</span>
-</code></pre></div></div>
-
-<p><strong>When you want to see all the properties in a object, please use  <code class="language-plaintext highlighter-rouge">Console.dir()</code>  to print out all the properties.</strong></p>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span><span class="dl">'</span><span class="s1">frank</span><span class="dl">'</span><span class="p">,</span> <span class="na">age</span><span class="p">:</span> <span class="mi">18</span><span class="p">}</span>
-<span class="kc">undefined</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">dir</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span>
-<span class="nx">VM301</span><span class="p">:</span><span class="mi">1</span>
-<span class="nb">Object</span>
-  <span class="nx">age</span><span class="p">:</span> <span class="mi">18</span>
-  <span class="nx">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">frank</span><span class="dl">"</span>
-  <span class="nx">__proto__</span><span class="p">:</span>
-  <span class="kd">constructor</span><span class="p">:</span> <span class="nx">ƒ</span> <span class="nb">Object</span><span class="p">()</span>
-  <span class="nx">hasOwnProperty</span><span class="p">:</span> <span class="nx">ƒ</span> <span class="nx">hasOwnProperty</span><span class="p">()</span>
-  <span class="nx">isPrototypeOf</span><span class="p">:</span> <span class="nx">ƒ</span> <span class="nx">isPrototypeOf</span><span class="p">()</span>
-  <span class="nx">propertyIsEnumerable</span><span class="p">:</span> <span class="nx">ƒ</span> <span class="nx">propertyIsEnumerable</span><span class="p">()</span>
-  <span class="nx">toLocaleString</span><span class="p">:</span> <span class="nx">ƒ</span> <span class="nx">toLocaleString</span><span class="p">()</span>
-  <span class="nx">toString</span><span class="p">:</span> <span class="nx">ƒ</span> <span class="nx">toString</span><span class="p">()</span>
-  <span class="nx">valueOf</span><span class="p">:</span> <span class="nx">ƒ</span> <span class="nx">valueOf</span><span class="p">()</span>
-  <span class="nx">__defineGetter__</span><span class="p">:</span> <span class="nx">ƒ</span> <span class="nx">__defineGetter__</span><span class="p">()</span>
-  <span class="nx">__defineSetter__</span><span class="p">:</span> <span class="nx">ƒ</span> <span class="nx">__defineSetter__</span><span class="p">()</span>
-  <span class="nx">__lookupGetter__</span><span class="p">:</span> <span class="nx">ƒ</span> <span class="nx">__lookupGetter__</span><span class="p">()</span>
-  <span class="nx">__lookupSetter__</span><span class="p">:</span> <span class="nx">ƒ</span> <span class="nx">__lookupSetter__</span><span class="p">()</span>
-  <span class="kd">get</span> <span class="nx">__proto__</span><span class="p">:</span> <span class="nx">ƒ</span> <span class="nx">__proto__</span><span class="p">()</span>
-  <span class="kd">set</span> <span class="nx">__proto__</span><span class="p">:</span> <span class="nx">ƒ</span> <span class="nx">__proto__</span><span class="p">()</span>
-</code></pre></div></div>
-<blockquote>
-  <p><img src="../../../../../assets/images/CheckAllProperties.png" width="500" alt="Check All Properties" /></p>
-</blockquote>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nx">obj</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="dl">'</span><span class="s1">toString</span><span class="dl">'</span><span class="p">)</span>  <span class="c1">//result: false</span>
-  <span class="nx">obj</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">)</span>  <span class="c1">//result: true</span>
-</code></pre></div></div>
-
-<h3 id="more-explanation-about-prototype">More Explanation about Prototype</h3>
-<blockquote>
-  <p><img src="../../../../../assets/images/Prototype.png" width="500" alt="Prototype" />
-<img src="../../../../../assets/images/LookupProperty.png" width="500" alt="Look up Prototype" />
-<img src="../../../../../assets/images/Emphasis.png" width="500" alt="Emphasis property" />
-<img src="../../../../../assets/images/Emphasis2.png" width="500" alt="Emphasis property2" /></p>
-</blockquote>
-
-<h3 id="add-or-modify-property-values">Add or Modify Property Values</h3>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// direct assign value</span>
-  <span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">frank</span><span class="dl">'</span><span class="p">}</span>  <span class="c1">//'name' is a string</span>
-  <span class="kd">let</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">frank</span><span class="dl">'</span>  <span class="c1">//'name' is a string</span>
-  <span class="nx">obj</span><span class="p">[</span><span class="dl">'</span><span class="s1">na</span><span class="dl">'</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">]</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">frank</span><span class="dl">'</span>
-  <span class="kd">let</span> <span class="nx">key</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">frank</span><span class="dl">'</span><span class="p">;</span> <span class="nx">obj</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">frank</span><span class="dl">'</span>
-
-  <span class="c1">//assign value in batches</span>
-  <span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="p">{</span><span class="na">p1</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="na">p2</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="na">p3</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="na">p4</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="na">p5</span><span class="p">:</span> <span class="mi">5</span><span class="p">})</span>
-</code></pre></div></div>
-
-<h3 id="add-or-modify-prototype---common-properties">Add or Modify Prototype - <strong>Common Properties</strong></h3>
-<ul>
-  <li>
-    <h4 id="we-cannot-modify-or-add-common-properties-by-object-itself">We cannot modify or add common Properties by object itself</h4>
-    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{};</span> <span class="kd">let</span> <span class="nx">obj2</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1">// they have common 'toString'</span>
-<span class="nx">obj</span><span class="p">.</span><span class="nx">toString</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">xxx</span><span class="dl">'</span>
-<span class="c1">// you can change the toString value of the Object  obj, but this toString property now only belongs to obj, not belongs to any other Object like obj2</span>
-
-<span class="nx">obj2</span><span class="p">.</span><span class="nx">toString</span>  <span class="c1">// it still on the common properties</span>
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <h4 id="if-you-insist-to-modify-or-add-value-to-the-prototype-common-property">If you insist to modify or add value to the Prototype (Common Property)</h4>
-    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">obj</span><span class="p">.</span><span class="nx">__proto__</span><span class="p">.</span><span class="nx">toString</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">xxx</span><span class="dl">'</span>  <span class="c1">//not recommend to use __proto__</span>
-<span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">xxx</span><span class="dl">'</span>
-
-<span class="c1">// ****** Generally, please don't modify the prototype, can cause a lot of problem</span>
-</code></pre></div>    </div>
-    <h3 id="modify-hidden-properties">Modify hidden Properties</h3>
-  </li>
-  <li>
-    <h4 id="not-recommend-to-use-proto">Not recommend to use <strong>proto</strong></h4>
-    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">frank</span><span class="dl">'</span><span class="p">}</span>
-<span class="kd">let</span> <span class="nx">obj2</span> <span class="o">=</span> <span class="p">{</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">jack</span><span class="dl">'</span><span class="p">}</span>
-<span class="kd">let</span> <span class="nx">common</span> <span class="o">=</span> <span class="p">{</span><span class="na">kind</span><span class="p">:</span> <span class="dl">'</span><span class="s1">human</span><span class="dl">'</span><span class="p">}</span>
-<span class="nx">obj</span><span class="p">.</span><span class="nx">__proto__</span> <span class="o">=</span> <span class="nx">common</span>
-<span class="nx">obj2</span><span class="p">.</span><span class="nx">__proto__</span> <span class="o">=</span> <span class="nx">common</span>
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <h4 id="recommend-to-use-objectcreate">Recommend to use <strong>Object.create()</strong></h4>
-    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">common</span><span class="p">)</span>
-<span class="nx">obj</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">frank</span><span class="dl">'</span>
-<span class="kd">let</span> <span class="nx">obj2</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">common</span><span class="p">)</span>
-<span class="nx">obj2</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">jack</span><span class="dl">'</span>
-
-<span class="c1">//规范大概的意思是，要改就一开始就改，别后来再改</span>
-<span class="c1">// 需要修改本地属性的时候 如下:</span>
-<span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="p">{</span><span class="na">p1</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="nx">p2</span><span class="p">,</span><span class="mi">2</span><span class="p">})</span>
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<p>### Code Rule
-<img src="../../../../../assets/images/code_rule.png" width="500" alt="Code Rule" /></p>
-
 
       
     </div>
@@ -694,7 +506,10 @@
         <div class="post-tags">
           
             
-            <a href="/tag/#/front%20end" rel="tag"># front end</a>
+            <a href="/tag/#/Algorithm" rel="tag"># Algorithm</a>
+          
+            
+            <a href="/tag/#/Leetcode" rel="tag"># Leetcode</a>
           
         </div>
       
@@ -710,18 +525,14 @@
         <div class="post-nav" id="post-nav-id">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/javascript/2020/11/25/javascript_array/" rel="next" title="Javascript Array">
-                <i class="fa fa-chevron-left"></i> Javascript Array
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/javascript/2020/11/09/memory_plot_of_js/" rel="prev" title="The Memory Plot of Javascript">
-                The Memory Plot of Javascript <i class="fa fa-chevron-right"></i>
+              <a href="/job%20hunting/2022/01/02/job_hunting_preparation/" rel="prev" title="搜集的在加拿大找工作的Tips">
+                搜集的在加拿大找工作的Tips <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -918,7 +729,7 @@
             
               <div class="post-toc-content">
     <ol class=nav>
-      <li class="nav-item nav-level-3"> <a class="nav-link" href="#definition"> <span class="nav-number">1</span> <span class="nav-text">Definition:</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#details"> <span class="nav-number">2</span> <span class="nav-text">Details</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#variable-as-property-name"> <span class="nav-number">3</span> <span class="nav-text">Variable as Property name</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#the-hidden-property-in-the-object"> <span class="nav-number">4</span> <span class="nav-text">The hidden Property in the Object</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#delete-property"> <span class="nav-number">5</span> <span class="nav-text">Delete Property</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#read-property"> <span class="nav-number">6</span> <span class="nav-text">Read Property</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#more-explanation-about-prototype"> <span class="nav-number">7</span> <span class="nav-text">More Explanation about Prototype</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#add-or-modify-property-values"> <span class="nav-number">8</span> <span class="nav-text">Add or Modify Property Values</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#add-or-modify-prototype---common-properties"> <span class="nav-number">9</span> <span class="nav-text">Add or Modify Prototype - <strong</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#we-cannot-modify-or-add-common-properties-by-object-itself"> <span class="nav-number">9.1</span> <span class="nav-text">We cannot modify or add common Properties by object itself</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#if-you-insist-to-modify-or-add-value-to-the-prototype-common-property"> <span class="nav-number">9.2</span> <span class="nav-text">If you insist to modify or add value to the Prototype (Common Property)</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#modify-hidden-properties"> <span class="nav-number">10</span> <span class="nav-text">Modify hidden Properties</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#not-recommend-to-use-proto"> <span class="nav-number">10.1</span> <span class="nav-text">Not recommend to use <strong</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#recommend-to-use-objectcreate"> <span class="nav-number">10.2</span> <span class="nav-text">Recommend to use <strong</span> </a> <ol class="nav-child"> <ol class="nav-child">
+      <li class="nav-item nav-level-4"> <a class="nav-link" href="#description"> <span class="nav-number">1</span> <span class="nav-text">Description:</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#thinking"> <span class="nav-number">2</span> <span class="nav-text">Thinking:</span> </a> <ol class="nav-child"> <ol class="nav-child">
     </ol>
   </div>
             
@@ -1086,9 +897,9 @@
       
       <script type="text/javascript">
           var disqus_config = function () {
-              this.page.url = 'http://localhost:4000/javascript/2020/11/17/javascript_object/';
-              this.page.identifier = '/javascript/2020/11/17/javascript_object/';
-              this.page.title = 'Javascript Object';
+              this.page.url = 'http://localhost:4000/algorithm/2022/01/05/two_sum/';
+              this.page.identifier = '/algorithm/2022/01/05/two_sum/';
+              this.page.title = 'Two Sum';
           };
           var d = document, s = d.createElement('script');
           s.src = 'https://Yueran.disqus.com/embed.js';
