@@ -83,7 +83,7 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="learning," />
+  <meta name="keywords" content="Algorithm,Leetcode," />
 
 
 
@@ -111,17 +111,17 @@
 
 
 
-<meta name="description" content="Are you starting to feel like we’re doing a lot of things over and over the same way we’re creating reducers and actions and selectors and connecting components and rendering components and if things seem repetitive to you, that’s actually a good thing because what we’re doing is we’re making things very simple.">
-<meta name="keywords" content="learning">
+<meta name="description" content="Description">
+<meta name="keywords" content="Algorithm, Leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to Write Extensible Code">
-<meta property="og:url" content="http://localhost:4000/coding%20rules/2021/03/16/extensible_code/">
+<meta property="og:title" content="Palindrome Number">
+<meta property="og:url" content="http://localhost:4000/algorithm/2022/01/06/palindrome/">
 <meta property="og:site_name" content="Yueran&apos;s Learning">
-<meta property="og:description" content="Are you starting to feel like we’re doing a lot of things over and over the same way we’re creating reducers and actions and selectors and connecting components and rendering components and if things seem repetitive to you, that’s actually a good thing because what we’re doing is we’re making things very simple.">
+<meta property="og:description" content="Description">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How to Write Extensible Code">
-<meta name="twitter:description" content="Are you starting to feel like we’re doing a lot of things over and over the same way we’re creating reducers and actions and selectors and connecting components and rendering components and if things seem repetitive to you, that’s actually a good thing because what we’re doing is we’re making things very simple.">
+<meta name="twitter:title" content="Palindrome Number">
+<meta name="twitter:description" content="Description">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -154,7 +154,7 @@
 
 
 
-  <title>How to Write Extensible Code</title>
+  <title>Palindrome Number</title>
   
 
 
@@ -338,7 +338,7 @@
   
 
   <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/coding%20rules/2021/03/16/extensible_code/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/algorithm/2022/01/06/palindrome/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yueran">
@@ -358,7 +358,7 @@
           <h1 class="post-title" itemprop="name headline">
           
           
-            How to Write Extensible Code
+            Palindrome Number
           
         </h1>
         
@@ -372,8 +372,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-03-16T00:00:00-05:00">
-                16-03-2021
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-01-06T00:00:00-06:00">
+                06-01-2022
               </time>
             
 
@@ -396,8 +396,8 @@
               
                 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/category/#/Coding%20Rules" itemprop="url" rel="index">
-                    <span itemprop="name">Coding Rules</span>
+                  <a href="/category/#/Algorithm" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm</span>
                   </a>
                 </span>
 
@@ -414,9 +414,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/coding%20rules/2021/03/16/extensible_code/#comments" itemprop="discussionUrl">
+                <a href="/algorithm/2022/01/06/palindrome/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="/coding%20rules/2021/03/16/extensible_code/" itemprop="commentCount"></span>
+                        data-disqus-identifier="/algorithm/2022/01/06/palindrome/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -447,31 +447,54 @@
       
 
       
-        <h4 id="are-you-starting-to-feel-like-were-doing-a-lot-of-things-over-and-over-the-same-way-were-creating-reducers-and-actions-and-selectors-and-connecting-components-and-rendering-components-and-if-things-seem-repetitive-to-you-thats-actually-a-good-thing-because-what-were-doing-is-were-making-things-very-simple">Are you starting to feel like we’re doing a lot of things over and over the same way we’re creating reducers and actions and selectors and connecting components and rendering components and if things seem repetitive to you, that’s actually a good thing because what we’re doing is we’re making things very simple.</h4>
+        <h4 id="description">Description</h4>
 
 <blockquote>
-
+  <p>Given an integer x, return true if x is palindrome integer.
+An integer is a palindrome when it reads the same backward as forward.
+For example, 121 is a palindrome while 123 is not.</p>
 </blockquote>
 
-<h4 id="now-were-creating-a-lot-of-files-in-our-project-but-these-files-are-all-usually-under-one-hundred-lines-of-code-each-file-is-very-very-simple-isnt-it-we-havent-run-any-crazy-long-thousand-line-algorithms-everything-is-nice-small-and-simple-and-if-you-notice-each-one-makes-each-component-very-very-small-and-also-very-extensible-that-is-he-reuses-components-and-features-across-the-application-so-that-hes-not-constantly-doing-the-same-thing-over-and-over">Now we’re creating a lot of files in our project but these files are all usually under one hundred lines of code. Each file is very very simple isn’t it. We haven’t run any crazy long thousand line algorithms. Everything is nice small and simple. And if you notice, each one makes each component very very small and also very extensible. That is he reuses components and features across the application so that he’s not constantly doing the same thing over and over.</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Example 1:
+Input: x = 121
+Output: true
+Explanation: 121 reads as 121 from left to right and from right to left.
+Example 2:
 
-<blockquote>
+Input: x = -121
+Output: false
+Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
+Example 3:
 
-</blockquote>
+Input: x = 10
+Output: false
+Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+</code></pre></div></div>
 
-<h4 id="its-ok-if-were-copying-code-that-is-well-similar-in-lets-say-a-selector-or-using-map-state-to-props-over-and-over-the-idea-is-that-hes-structured-the-project-in-such-a-way-that-your-eye-could-come-to-the-project-and-really-easily-add-features-really-easily-add-a-custom-button-or-a-cart-item-and-this-is-a-sign-of-a-really-good-developer-because-when-hes-coding-he-is-coding-for-the-future-as-well">It’s ok if we’re copying code that is well similar in let’s say a selector or using map state to props over and over. The idea is that he’s structured the project in such a way that your eye could come to the project and really easily add features, really easily add a custom button or a cart item. And this is a sign of a really good developer. Because when he’s coding, he is coding for the future as well.</h4>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">isPalindrome</span> <span class="o">=</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="kc">false</span>
+  <span class="k">return</span> <span class="nx">x</span> <span class="o">===</span> <span class="nx">reversedInteger</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span>
+<span class="p">}</span>
 
-<blockquote>
+<span class="kd">const</span> <span class="nx">reversedInteger</span> <span class="o">=</span> <span class="p">(</span><span class="nx">x</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="c1">// declare a temporary container to store the reversed digits from x one by one</span>
+  <span class="kd">const</span> <span class="nx">reversed</span> <span class="o">=</span> <span class="mi">0</span>
+  
+  <span class="c1">// truncate the digidts from One's digit to Hundreds digit of x, </span>
+  <span class="c1">// x needs greater than 0 after each truncate</span>
+  <span class="k">while</span><span class="p">(</span><span class="nx">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">){</span>
+    <span class="c1">// key point: 'reversed' is the iterator</span>
+    <span class="c1">// the % module function is used to get the number from Ones digit</span>
+    <span class="nx">reversed</span> <span class="o">=</span> <span class="nx">reversed</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="nx">x</span><span class="o">%</span><span class="mi">10</span>
+    
+    <span class="c1">// this is used to remove the Ones digit from the x, </span>
+    <span class="c1">// and x will be a new shorter number and will be used the next time </span>
+    <span class="nx">x</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">x</span><span class="o">/</span><span class="mi">10</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
 
-</blockquote>
+</code></pre></div></div>
 
-<h4 id="he-knows-that-by-thinking-a-little-bit-about-how-to-make-the-code-more-extensible-in-the-future-he-will-benefit-as-he-takes-on-more-and-more-features-because-he-can-use-the-same-functionality-in-one-part-of-the-app-and-in-another-part-of-the-app">He knows that by thinking a little bit about how to make the code more extensible. In the future he will benefit as he takes on more and more features because he can use the same functionality in one part of the app and in another part of the app.</h4>
-
-<blockquote>
-
-</blockquote>
-
-<h4 id="react-and-redux-really-allows-us-to-create-extensible-code-and-the-other-word-that-you-might-be-thinking-of-is-also-predictable-code">React and Redux really allows us to create extensible code and the other word that you might be thinking of is also predictable code.</h4>
 
       
     </div>
@@ -502,7 +525,10 @@
         <div class="post-tags">
           
             
-            <a href="/tag/#/learning" rel="tag"># learning</a>
+            <a href="/tag/#/Algorithm" rel="tag"># Algorithm</a>
+          
+            
+            <a href="/tag/#/Leetcode" rel="tag"># Leetcode</a>
           
         </div>
       
@@ -518,18 +544,14 @@
         <div class="post-nav" id="post-nav-id">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/coding%20rules/2021/04/10/thinking_about_data_flow/" rel="next" title="Thinking About Data Flow">
-                <i class="fa fa-chevron-left"></i> Thinking About Data Flow
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/redux/2021/02/27/redux/" rel="prev" title="Redux">
-                Redux <i class="fa fa-chevron-right"></i>
+              <a href="/algorithm/2022/01/05/two_sum/" rel="prev" title="Two Sum">
+                Two Sum <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -726,7 +748,7 @@
             
               <div class="post-toc-content">
     <ol class=nav>
-      <li class="nav-item nav-level-4"> <a class="nav-link" href="#are-you-starting-to-feel-like-were-doing-a-lot-of-things-over-and-over-the-same-way-were-creating-reducers-and-actions-and-selectors-and-connecting-components-and-rendering-components-and-if-things-seem-repetitive-to-you-thats-actually-a-good-thing-because-what-were-doing-is-were-making-things-very-simple"> <span class="nav-number">1</span> <span class="nav-text">Are you starting to feel like we’re doing a lot of things over and over the same way we’re creating reducers and actions and selectors and connecting components and rendering components and if things seem repetitive to you, that’s actually a good thing because what we’re doing is we’re making things very simple.</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#now-were-creating-a-lot-of-files-in-our-project-but-these-files-are-all-usually-under-one-hundred-lines-of-code-each-file-is-very-very-simple-isnt-it-we-havent-run-any-crazy-long-thousand-line-algorithms-everything-is-nice-small-and-simple-and-if-you-notice-each-one-makes-each-component-very-very-small-and-also-very-extensible-that-is-he-reuses-components-and-features-across-the-application-so-that-hes-not-constantly-doing-the-same-thing-over-and-over"> <span class="nav-number">2</span> <span class="nav-text">Now we’re creating a lot of files in our project but these files are all usually under one hundred lines of code. Each file is very very simple isn’t it. We haven’t run any crazy long thousand line algorithms. Everything is nice small and simple. And if you notice, each one makes each component very very small and also very extensible. That is he reuses components and features across the application so that he’s not constantly doing the same thing over and over.</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#its-ok-if-were-copying-code-that-is-well-similar-in-lets-say-a-selector-or-using-map-state-to-props-over-and-over-the-idea-is-that-hes-structured-the-project-in-such-a-way-that-your-eye-could-come-to-the-project-and-really-easily-add-features-really-easily-add-a-custom-button-or-a-cart-item-and-this-is-a-sign-of-a-really-good-developer-because-when-hes-coding-he-is-coding-for-the-future-as-well"> <span class="nav-number">3</span> <span class="nav-text">It’s ok if we’re copying code that is well similar in let’s say a selector or using map state to props over and over. The idea is that he’s structured the project in such a way that your eye could come to the project and really easily add features, really easily add a custom button or a cart item. And this is a sign of a really good developer. Because when he’s coding, he is coding for the future as well.</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#he-knows-that-by-thinking-a-little-bit-about-how-to-make-the-code-more-extensible-in-the-future-he-will-benefit-as-he-takes-on-more-and-more-features-because-he-can-use-the-same-functionality-in-one-part-of-the-app-and-in-another-part-of-the-app"> <span class="nav-number">4</span> <span class="nav-text">He knows that by thinking a little bit about how to make the code more extensible. In the future he will benefit as he takes on more and more features because he can use the same functionality in one part of the app and in another part of the app.</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#react-and-redux-really-allows-us-to-create-extensible-code-and-the-other-word-that-you-might-be-thinking-of-is-also-predictable-code"> <span class="nav-number">5</span> <span class="nav-text">React and Redux really allows us to create extensible code and the other word that you might be thinking of is also predictable code.</span> </a> <ol class="nav-child"> <ol class="nav-child">
+      <li class="nav-item nav-level-4"> <a class="nav-link" href="#description"> <span class="nav-number">1</span> <span class="nav-text">Description</span> </a> <ol class="nav-child"> <ol class="nav-child">
     </ol>
   </div>
             
@@ -894,9 +916,9 @@
       
       <script type="text/javascript">
           var disqus_config = function () {
-              this.page.url = 'http://localhost:4000/coding%20rules/2021/03/16/extensible_code/';
-              this.page.identifier = '/coding%20rules/2021/03/16/extensible_code/';
-              this.page.title = 'How to Write Extensible Code';
+              this.page.url = 'http://localhost:4000/algorithm/2022/01/06/palindrome/';
+              this.page.identifier = '/algorithm/2022/01/06/palindrome/';
+              this.page.title = 'Palindrome Number';
           };
           var d = document, s = d.createElement('script');
           s.src = 'https://Yueran.disqus.com/embed.js';
