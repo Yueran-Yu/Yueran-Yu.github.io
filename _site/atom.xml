@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-07T15:04:00-06:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Yueran’s Learning</title><subtitle>Shoot for the moon. Even if you miss, you&apos;ll land among the stars.</subtitle><author><name>Yueran</name></author><entry><title type="html">Palindrome Number</title><link href="http://localhost:4000/algorithm/2022/01/06/palindrome/" rel="alternate" type="text/html" title="Palindrome Number" /><published>2022-01-06T00:00:00-06:00</published><updated>2022-01-06T00:00:00-06:00</updated><id>http://localhost:4000/algorithm/2022/01/06/palindrome</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/01/06/palindrome/">&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-01-07T17:37:10-06:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Yueran’s Learning</title><subtitle>Shoot for the moon. Even if you miss, you&apos;ll land among the stars.</subtitle><author><name>Yueran</name></author><entry><title type="html">Palindrome Number</title><link href="http://localhost:4000/algorithm/2022/01/06/palindrome/" rel="alternate" type="text/html" title="Palindrome Number" /><published>2022-01-06T00:00:00-06:00</published><updated>2022-01-06T00:00:00-06:00</updated><id>http://localhost:4000/algorithm/2022/01/06/palindrome</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/01/06/palindrome/">&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Given an integer x, return true if x is palindrome integer.
@@ -31,19 +31,22 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
   &lt;span class=&quot;c1&quot;&gt;// declare a temporary container to store the reversed digits from x one by one&lt;/span&gt;
   &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reversed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
   
-  &lt;span class=&quot;c1&quot;&gt;// truncate the digidts from One&apos;s digit to Hundreds digit of x, &lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// truncate the digidts from Ones digit to Hundreds digit of x, &lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;// x needs greater than 0 after each truncate&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// key point: &apos;reversed&apos; is the iterator&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// the % module function is used to get the number from Ones digit&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 用取模工具依次取个位数，十位数，百位数&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;reversed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reversed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
     
     &lt;span class=&quot;c1&quot;&gt;// this is used to remove the Ones digit from the x, &lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// and x will be a new shorter number and will be used the next time &lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 然后 用Math.floor获截取个位数之后的值，直到最后都截取完&lt;/span&gt;
     &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reversed&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Yueran</name></author><category term="Algorithm" /><category term="Algorithm" /><category term="Leetcode" /><summary type="html">Description</summary></entry><entry><title type="html">Two Sum</title><link href="http://localhost:4000/algorithm/2022/01/05/two_sum/" rel="alternate" type="text/html" title="Two Sum" /><published>2022-01-05T00:00:00-06:00</published><updated>2022-01-05T00:00:00-06:00</updated><id>http://localhost:4000/algorithm/2022/01/05/two_sum</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/01/05/two_sum/">&lt;h4 id=&quot;description&quot;&gt;Description:&lt;/h4&gt;
 
 &lt;blockquote&gt;

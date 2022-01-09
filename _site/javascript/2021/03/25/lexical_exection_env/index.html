@@ -111,17 +111,17 @@
 
 
 
-<meta name="description" content="Reference Article: 1. Controlled Component 2. Controlled and uncontrolled form inputs in React don’t have to be complicated">
+<meta name="description" content="Lexical Environment">
 <meta name="keywords" content="front end">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Controlled Component VS. Uncontrolled Component">
-<meta property="og:url" content="http://localhost:4000/react/2021/06/13/control_uncontrol_component/">
+<meta property="og:title" content="Lexical Environment VS. Execution Environment">
+<meta property="og:url" content="http://localhost:4000/javascript/2021/03/25/lexical_exection_env/">
 <meta property="og:site_name" content="Yueran&apos;s Learning">
-<meta property="og:description" content="Reference Article: 1. Controlled Component 2. Controlled and uncontrolled form inputs in React don’t have to be complicated">
+<meta property="og:description" content="Lexical Environment">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Controlled Component VS. Uncontrolled Component">
-<meta name="twitter:description" content="Reference Article: 1. Controlled Component 2. Controlled and uncontrolled form inputs in React don’t have to be complicated">
+<meta name="twitter:title" content="Lexical Environment VS. Execution Environment">
+<meta name="twitter:description" content="Lexical Environment">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -154,7 +154,7 @@
 
 
 
-  <title>Controlled Component VS. Uncontrolled Component</title>
+  <title>Lexical Environment VS. Execution Environment</title>
   
 
 
@@ -338,7 +338,7 @@
   
 
   <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/react/2021/06/13/control_uncontrol_component/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/javascript/2021/03/25/lexical_exection_env/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yueran">
@@ -358,7 +358,7 @@
           <h1 class="post-title" itemprop="name headline">
           
           
-            Controlled Component VS. Uncontrolled Component
+            Lexical Environment VS. Execution Environment
           
         </h1>
         
@@ -372,8 +372,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-06-13T00:00:00-05:00">
-                13-06-2021
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-03-25T00:00:00-05:00">
+                25-03-2021
               </time>
             
 
@@ -396,8 +396,8 @@
               
                 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/category/#/React" itemprop="url" rel="index">
-                    <span itemprop="name">React</span>
+                  <a href="/category/#/Javascript" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
                   </a>
                 </span>
 
@@ -414,9 +414,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/react/2021/06/13/control_uncontrol_component/#comments" itemprop="discussionUrl">
+                <a href="/javascript/2021/03/25/lexical_exection_env/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="/react/2021/06/13/control_uncontrol_component/" itemprop="commentCount"></span>
+                        data-disqus-identifier="/javascript/2021/03/25/lexical_exection_env/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -447,26 +447,34 @@
       
 
       
-        <ul>
-  <li>Reference Article:
+        <h3 id="lexical-environment">Lexical Environment</h3>
+
+<ul>
+  <li>Where something sits physically in the code you write
     <ul>
-      <li><a href="https://stackoverflow.com/questions/42522515/what-are-react-controlled-components-and-uncontrolled-components">1. Controlled Component</a></li>
-      <li><a href="https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/#conclusion">2. Controlled and uncontrolled form inputs in React don’t have to be complicated</a></li>
+      <li>‘Lexical’ means ‘having to do with words or grammar’. A lexical environment exists in programming languages in which <strong>where</strong> you write something is important.</li>
     </ul>
   </li>
-  <li>A <em>Controlled Component</em> is one that takes its current value through <strong>props</strong> and notifies changes through callback like <strong><em>onChange</em></strong> A parent component “controls” it by handling the callback and managing its own state and passing the new values as props to the controlled component. You could also call this a “dumb component”.
-&amp;</li>
-  <li>A <em>Uncontrolled Component</em> is one that stores its own state internally, and you query the DOM using a <strong>ref</strong> to find its current value when you need it. This is a bit more like traditional HTML.</li>
 </ul>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="c1">// Controlled:</span>
-   <span class="o">&lt;</span><span class="nx">Input</span> <span class="nx">type</span><span class="o">=</span><span class="dl">'</span><span class="s1">text</span><span class="dl">'</span> <span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="nx">value</span><span class="p">}</span> <span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">handleChange</span><span class="p">}</span><span class="sr">/</span><span class="err">&gt;
-</span>
-   <span class="c1">//Uncontrolled:</span>
-  <span class="o">&lt;</span><span class="nx">Input</span> <span class="nx">type</span><span class="o">=</span><span class="dl">"</span><span class="s2">text</span><span class="dl">"</span> <span class="nx">defaultValue</span><span class="o">=</span><span class="dl">"</span><span class="s2">foo</span><span class="dl">"</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">inputRef</span><span class="p">}</span> <span class="sr">/</span><span class="err">&gt;
-</span>   <span class="c1">// Use `inputRef.current.value` to read the current value of &lt;input&gt;</span>
-</code></pre></div></div>
+<h3 id="execution-environment">Execution Environment</h3>
 
+<ul>
+  <li>A wrapper to help manage the code that is running.
+    <ul>
+      <li>There are lots of lexical environments. Which one is currently running is managed via execution contexts. It can contain things beyond what you’ve written in your code.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="object-definition">Object Definition</h3>
+<ul>
+  <li>A collection of name/value pairs
+    <ul>
+      <li>The simplest definition when talking about Javascript.</li>
+    </ul>
+  </li>
+</ul>
 
       
     </div>
@@ -513,8 +521,8 @@
         <div class="post-nav" id="post-nav-id">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/react%20router/2021/06/27/hash_router_browser_router/" rel="next" title="Hash Router VS. Browser Router">
-                <i class="fa fa-chevron-left"></i> Hash Router VS. Browser Router
+              <a href="/coding%20rules/2021/04/10/thinking_about_data_flow/" rel="next" title="Thinking About Data Flow">
+                <i class="fa fa-chevron-left"></i> Thinking About Data Flow
               </a>
             
           </div>
@@ -523,8 +531,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/coding%20rules/2021/04/10/thinking_about_data_flow/" rel="prev" title="Thinking About Data Flow">
-                Thinking About Data Flow <i class="fa fa-chevron-right"></i>
+              <a href="/coding%20rules/2021/03/16/extensible_code/" rel="prev" title="How to Write Extensible Code">
+                How to Write Extensible Code <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -608,8 +616,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/assets/images/avatar.jpg"
@@ -695,6 +712,31 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class=nav>
+      <li class="nav-item nav-level-3"> <a class="nav-link" href="#lexical-environment"> <span class="nav-number">1</span> <span class="nav-text">Lexical Environment</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#execution-environment"> <span class="nav-number">2</span> <span class="nav-text">Execution Environment</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#object-definition"> <span class="nav-number">3</span> <span class="nav-text">Object Definition</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child">
+    </ol>
+  </div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -855,9 +897,9 @@
       
       <script type="text/javascript">
           var disqus_config = function () {
-              this.page.url = 'http://localhost:4000/react/2021/06/13/control_uncontrol_component/';
-              this.page.identifier = '/react/2021/06/13/control_uncontrol_component/';
-              this.page.title = 'Controlled Component VS. Uncontrolled Component';
+              this.page.url = 'http://localhost:4000/javascript/2021/03/25/lexical_exection_env/';
+              this.page.identifier = '/javascript/2021/03/25/lexical_exection_env/';
+              this.page.title = 'Lexical Environment VS. Execution Environment';
           };
           var d = document, s = d.createElement('script');
           s.src = 'https://Yueran.disqus.com/embed.js';

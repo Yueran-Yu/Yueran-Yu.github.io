@@ -45,10 +45,12 @@ const reversedInteger = (x)=>{
   while(x > 0){
     // key point: 'reversed' is the iterator
     // the % module function is used to get the number from Ones digit
+    // 用取模工具依次取个位数，十位数，百位数
     reversed = reversed * 10 + x%10
     
     // this is used to remove the Ones digit from the x, 
     // and x will be a new shorter number and will be used the next time 
+    // 然后 用Math.floor获截取个位数之后的值，直到最后都截取完
     x = Math.floor(x/10)
   }
   

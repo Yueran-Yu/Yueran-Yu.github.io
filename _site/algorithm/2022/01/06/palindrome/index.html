@@ -480,19 +480,22 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
   <span class="c1">// declare a temporary container to store the reversed digits from x one by one</span>
   <span class="kd">const</span> <span class="nx">reversed</span> <span class="o">=</span> <span class="mi">0</span>
   
-  <span class="c1">// truncate the digidts from One's digit to Hundreds digit of x, </span>
+  <span class="c1">// truncate the digidts from Ones digit to Hundreds digit of x, </span>
   <span class="c1">// x needs greater than 0 after each truncate</span>
   <span class="k">while</span><span class="p">(</span><span class="nx">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">){</span>
     <span class="c1">// key point: 'reversed' is the iterator</span>
     <span class="c1">// the % module function is used to get the number from Ones digit</span>
+    <span class="c1">// 用取模工具依次取个位数，十位数，百位数</span>
     <span class="nx">reversed</span> <span class="o">=</span> <span class="nx">reversed</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="nx">x</span><span class="o">%</span><span class="mi">10</span>
     
     <span class="c1">// this is used to remove the Ones digit from the x, </span>
     <span class="c1">// and x will be a new shorter number and will be used the next time </span>
+    <span class="c1">// 然后 用Math.floor获截取个位数之后的值，直到最后都截取完</span>
     <span class="nx">x</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">x</span><span class="o">/</span><span class="mi">10</span><span class="p">)</span>
   <span class="p">}</span>
+  
+  <span class="k">return</span> <span class="nx">reversed</span>
 <span class="p">}</span>
-
 </code></pre></div></div>
 
 
@@ -660,7 +663,7 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">36</span>
+                <span class="site-state-item-count">37</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
