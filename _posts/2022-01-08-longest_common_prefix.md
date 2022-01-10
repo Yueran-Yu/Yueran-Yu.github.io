@@ -3,7 +3,7 @@ title: Longest Common Prefix
 date: 08-01-2022
 categories:
 - Algorithm
-  tags:
+tags:
 - Algorithm
 ---
 
