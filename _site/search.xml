@@ -2,6 +2,337 @@
 <search>
   
     <entry>
+      <title><![CDATA[Merge Two Sorted Lists]]></title>
+      <url>/algorithm/2022/01/10/merge_two_sorted_lists/</url>
+      <content type="html"><![CDATA[<h4 id="description">Description</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are given the heads of two sorted linked lists 'list1' and 'list2'.
+
+Merge the two lists in a one sorted list. The list should be made by splicing together the nodes 
+of the first two lists.
+
+Return the head of the merged linked list.
+</code></pre></div></div>
+
+<p><img src="../../../../../assets/images/merge_2_sorted.jpeg" width="500" alt="Domain Name" /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Example 1:
+Input: list1 = [1,2,4], list2 = [1,3,4]
+Output: [1,1,2,3,4,4]
+
+Example 2:
+Input: list1 = [], list2 = []
+Output: []
+
+Example 3:
+Input: list1 = [], list2 = [0]
+Output: [0]
+
+Constraints:
+
+The number of nodes in both lists is in the range [0, 50].
+-100 &lt;= Node.val &lt;= 100
+Both list1 and list2 are sorted in non-decreasing order.
+</code></pre></div></div>
+
+<h4 id="thinking">Thinking</h4>
+
+<h5 id="solution-1-without-the-recursion">Solution 1 (Without the recursion)</h5>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Definition for singly-linked list.</span>
+<span class="kd">function</span> <span class="nx">ListNode</span><span class="p">(</span><span class="nx">val</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="p">(</span><span class="nx">val</span> <span class="o">===</span> <span class="kc">undefined</span> <span class="p">?</span> <span class="mi">0</span> <span class="p">:</span> <span class="nx">val</span><span class="p">)</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">next</span> <span class="o">=</span> <span class="p">(</span><span class="nx">next</span> <span class="o">===</span> <span class="kc">undefined</span> <span class="p">?</span> <span class="kc">null</span> <span class="p">:</span> <span class="nx">next</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="cm">/**
+ * @param {ListNode} list1
+ * @param {ListNode} list2
+ * @return {ListNode}
+ */</span>
+
+<span class="kd">const</span> <span class="nx">mergeTwoLists</span> <span class="o">=</span> <span class="p">(</span><span class="nx">l1</span><span class="p">,</span> <span class="nx">l2</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="c1">// initialize a LinkedList node with a dummy Node as the head</span>
+  <span class="kd">let</span> <span class="nx">dummyNode</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ListNode</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+  <span class="c1">// manitain a reference to the dummyNode head</span>
+  <span class="kd">let</span> <span class="nx">head</span> <span class="o">=</span> <span class="nx">dummyNode</span>
+
+  <span class="c1">// while both of passed nodes l1 and l2 has value</span>
+  <span class="k">while</span> <span class="p">(</span><span class="nx">l1</span> <span class="o">!==</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="nx">l2</span> <span class="o">!==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">l1</span><span class="p">.</span><span class="nx">val</span> <span class="o">&lt;=</span> <span class="nx">l2</span><span class="p">.</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// if l1 is smaller, point the dummyNode to the l1</span>
+      <span class="nx">dummyNode</span><span class="p">.</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">l1</span> 
+
+      <span class="c1">// get the next value of l1 list</span>
+      <span class="nx">l1</span> <span class="o">=</span> <span class="nx">l1</span><span class="p">.</span><span class="nx">next</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="c1">// if l2 is smaller, point the dummyNode to the l2</span>
+      <span class="nx">dummyNode</span><span class="p">.</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">l2</span>
+
+      <span class="c1">// get the next value of l2 list</span>
+      <span class="nx">l2</span> <span class="o">=</span> <span class="nx">l2</span><span class="p">.</span><span class="nx">next</span>
+    <span class="p">}</span>
+
+    <span class="c1">// move into the next level of the linkedlist for the next iteration</span>
+    <span class="nx">dummyNode</span> <span class="o">=</span> <span class="nx">dummyNode</span><span class="p">.</span><span class="nx">next</span>
+  <span class="p">}</span>
+  
+  <span class="c1">// if l1 has run out of elements</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">l1</span> <span class="o">===</span> <span class="kc">null</span><span class="p">){</span>
+    <span class="nx">dummyNode</span><span class="p">.</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">l2</span>
+  <span class="p">}</span>
+  <span class="c1">// if l2 has run out of elements</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">l2</span> <span class="o">===</span> <span class="kc">null</span><span class="p">){</span>
+    <span class="nx">dummyNode</span><span class="p">.</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">l1</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">head</span><span class="p">.</span><span class="nx">next</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h5 id="solution-2-with-the-recursion">Solution 2 (With the recursion)</h5>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Definition for singly-linked list.</span>
+<span class="kd">function</span> <span class="nx">ListNode</span><span class="p">(</span><span class="nx">val</span><span class="p">,</span> <span class="nx">next</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">val</span> <span class="o">=</span> <span class="p">(</span><span class="nx">val</span> <span class="o">===</span> <span class="kc">undefined</span> <span class="p">?</span> <span class="mi">0</span> <span class="p">:</span> <span class="nx">val</span><span class="p">)</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">next</span> <span class="o">=</span> <span class="p">(</span><span class="nx">next</span> <span class="o">===</span> <span class="kc">undefined</span> <span class="p">?</span> <span class="kc">null</span> <span class="p">:</span> <span class="nx">next</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="cm">/**
+ * @param {ListNode} list1
+ * @param {ListNode} list2
+ * @return {ListNode}
+ */</span>
+
+<span class="kd">const</span> <span class="nx">mergeTwoLists</span> <span class="o">=</span> <span class="p">(</span><span class="nx">l1</span><span class="p">,</span> <span class="nx">l2</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+  <span class="c1">// if either list is empty return the other one</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">l1</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span> <span class="nx">l2</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">l2</span><span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span> <span class="nx">l1</span>
+  
+  <span class="k">if</span><span class="p">(</span><span class="nx">l1</span><span class="p">.</span><span class="nx">val</span> <span class="o">&lt;=</span> <span class="nx">l2</span><span class="p">.</span><span class="nx">val</span><span class="p">){</span>
+    <span class="nx">l1</span><span class="p">.</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">mergeTwoLists</span><span class="p">(</span><span class="nx">l1</span><span class="p">.</span><span class="nx">next</span><span class="p">,</span> <span class="nx">l2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nx">l1</span>
+  <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+    <span class="nx">l2</span><span class="p">.</span><span class="nx">next</span> <span class="o">=</span> <span class="nx">mergeTwoLists</span><span class="p">(</span><span class="nx">l1</span><span class="p">,</span><span class="nx">l2</span><span class="p">.</span><span class="nx">next</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="running-time">Running Time</h4>
+<ul>
+  <li>This algorithm runs in O(n+m) time, where n and m are the lengths of respective linked lists. This is the running time because to merge both linked lists into one, we need to iterate through each node in the list</li>
+</ul>
+
+<h5 id="more-detailed-explain-graph">More detailed explain graph</h5>
+<p><img src="../../../../../assets/images/Merge-Two-Sorted-LinkedLists.jpeg" width="800" alt="Domain Name" /></p>
+
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Valid Parentheses]]></title>
+      <url>/algorithm/2022/01/09/valid_parentheses/</url>
+      <content type="html"><![CDATA[<h4 id="description">Description</h4>
+
+<h4 id="thinking">Thinking</h4>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Longest Common Prefix]]></title>
+      <url>/algorithm/2022/01/08/longest_common_prefix/</url>
+      <content type="html"><![CDATA[<h4 id="description">Description</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Write a function to find the longest common prefix string amongst an array of strings.
+If there is no common prefix, return an empty string "".
+
+Example 1:
+
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+Example 2:
+
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+
+
+Constraints:
+
+1 &lt;= strs.length &lt;= 200
+0 &lt;= strs[i].length &lt;= 200
+strs[i] consists of only lower-case English letters.
+</code></pre></div></div>
+
+<h4 id="thinking">Thinking</h4>
+<ul>
+  <li>Take the first item as the prefix, then compare with the next one with’ indexOf()’ method, if the prefix exists then compare it with the next one.  if the prefix not exists, reduce one character to continue to compare.</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">longestCommonPrefix</span> <span class="o">=</span> <span class="p">(</span><span class="nx">strs</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">longestPrefix</span> <span class="o">=</span> <span class="dl">''</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">strs</span> <span class="o">===</span> <span class="kc">null</span> <span class="o">|</span> <span class="nx">strs</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="nx">longestPrefix</span>
+
+  <span class="kd">let</span> <span class="nx">index</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="c1">// loop through the first string in the strs array</span>
+  <span class="c1">// then compare each letter of remaining strings in the array </span>
+  <span class="c1">// important: consider the index outofBound, not every string item length in the strs array greater than index while in the loop</span>
+
+  <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">comparisonLetter</span> <span class="k">of</span> <span class="nx">strs</span><span class="p">[</span><span class="mi">0</span><span class="p">]){</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">strs</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+      <span class="c1">// string[0][comparisonIndex]: each letter in the first string of strs array</span>
+      <span class="c1">// strs[i].chartAt(inedx): each letter in the remaining string </span>
+
+      <span class="kd">let</span> <span class="nx">currentWord</span> <span class="o">=</span> <span class="nx">strs</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
+      <span class="kd">let</span> <span class="nx">currentLetter</span> <span class="o">=</span> <span class="nx">currentWord</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="nx">index</span><span class="p">)</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">index</span> <span class="o">&gt;</span> <span class="nx">currentWord</span><span class="p">.</span><span class="nx">length</span> <span class="o">||</span> <span class="nx">currentLetter</span> <span class="o">!==</span> <span class="nx">comparisonLetter</span><span class="p">)</span>
+      <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">longestPrefix</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="c1">// since we use the vertical comparison method, so we need to do the below step outside the inner for loop</span>
+    <span class="nx">longestPrefix</span> <span class="o">+=</span> <span class="nx">comparisonLetter</span>
+    <span class="nx">index</span><span class="o">++</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">longestPrefix</span>
+<span class="p">};</span>
+</code></pre></div></div>
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Roman To Integer]]></title>
+      <url>/algorithm/2022/01/07/roman_to_integer/</url>
+      <content type="html"><![CDATA[<h4 id="description">Description</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+Symbol       Value
+I             1
+V             5
+X             10
+L             50
+C             100
+D             500
+M             1000
+For example, 2 is written as II in Roman numeral, just two one's added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII, which is XX + V + II.
+Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
+I can be placed before V (5) and X (10) to make 4 and 9.
+X can be placed before L (50) and C (100) to make 40 and 90.
+C can be placed before D (500) and M (1000) to make 400 and 900.
+Given a roman numeral, convert it to an integer.
+Example 1:
+
+Input: s = "III"
+Output: 3
+Explanation: III = 3.
+Example 2:
+
+Input: s = "LVIII"
+Output: 58
+Explanation: L = 50, V= 5, III = 3.
+Example 3:
+
+Input: s = "MCMXCIV"
+Output: 1994
+Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
+Constraints:
+
+1 &lt;= s.length &lt;= 15
+s contains only the characters ('I', 'V', 'X', 'L', 'C', 'D', 'M').
+It is guaranteed that s is a valid roman numeral in the range [1, 3999].
+</code></pre></div></div>
+
+<h4 id="thinking">Thinking:</h4>
+<ul>
+  <li>Always forgot to return the total value</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="kd">const</span> <span class="nx">RomanMap</span><span class="o">=</span><span class="p">{</span>
+  <span class="dl">'</span><span class="s1">I</span><span class="dl">'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">V</span><span class="dl">'</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">X</span><span class="dl">'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">L</span><span class="dl">'</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">C</span><span class="dl">'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">D</span><span class="dl">'</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">M</span><span class="dl">'</span><span class="p">:</span><span class="mi">1000</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">romanToInt</span> <span class="o">=</span> <span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="o">=&gt;</span><span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">total</span> <span class="o">=</span> <span class="mi">0</span>
+
+  <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="kd">let</span> <span class="nx">currentNum</span> <span class="o">=</span> <span class="nx">RomanMap</span><span class="p">[</span><span class="nx">s</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="nx">i</span><span class="p">)]</span>
+    <span class="kd">let</span> <span class="nx">nextNum</span> <span class="o">=</span> <span class="nx">RomanMap</span><span class="p">[</span><span class="nx">s</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="nx">nextNum</span><span class="p">){</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">currentNum</span> <span class="o">&gt;=</span> <span class="nx">nextNum</span><span class="p">){</span>
+        <span class="nx">total</span> <span class="o">+=</span> <span class="nx">currentNum</span>
+      <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+        <span class="nx">total</span> <span class="o">+=</span> <span class="p">(</span><span class="nx">nextNum</span><span class="o">-</span><span class="nx">currentNum</span><span class="p">)</span>
+        <span class="nx">i</span><span class="o">++</span>
+      <span class="p">}</span>
+    <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+      <span class="nx">total</span> <span class="o">+=</span><span class="nx">currentNum</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">total</span>
+<span class="p">};</span>
+
+</code></pre></div></div>
+
+<p><img src="../../../../../assets/images/RomanToInteger.png" width="500" alt="Domain Name" /></p>
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
       <title><![CDATA[Palindrome Number]]></title>
       <url>/algorithm/2022/01/06/palindrome/</url>
       <content type="html"><![CDATA[<h4 id="description">Description</h4>
