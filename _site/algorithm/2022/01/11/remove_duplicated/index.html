@@ -83,7 +83,7 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="front end," />
+  <meta name="keywords" content="Algorithm," />
 
 
 
@@ -111,17 +111,17 @@
 
 
 
-<meta name="description" content="Reference Article: 1. Controlled Component 2. Controlled and uncontrolled form inputs in React don’t have to be complicated">
-<meta name="keywords" content="front end">
+<meta name="description" content="Description">
+<meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Controlled Component VS. Uncontrolled Component">
-<meta property="og:url" content="http://localhost:4000/react/2021/06/13/control_uncontrol_component/">
+<meta property="og:title" content="Remove Duplicated from Sorted Array">
+<meta property="og:url" content="http://localhost:4000/algorithm/2022/01/11/remove_duplicated/">
 <meta property="og:site_name" content="Yueran&apos;s Learning">
-<meta property="og:description" content="Reference Article: 1. Controlled Component 2. Controlled and uncontrolled form inputs in React don’t have to be complicated">
+<meta property="og:description" content="Description">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Controlled Component VS. Uncontrolled Component">
-<meta name="twitter:description" content="Reference Article: 1. Controlled Component 2. Controlled and uncontrolled form inputs in React don’t have to be complicated">
+<meta name="twitter:title" content="Remove Duplicated from Sorted Array">
+<meta name="twitter:description" content="Description">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -154,7 +154,7 @@
 
 
 
-  <title>Controlled Component VS. Uncontrolled Component</title>
+  <title>Remove Duplicated from Sorted Array</title>
   
 
 
@@ -338,7 +338,7 @@
   
 
   <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/react/2021/06/13/control_uncontrol_component/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/algorithm/2022/01/11/remove_duplicated/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yueran">
@@ -358,7 +358,7 @@
           <h1 class="post-title" itemprop="name headline">
           
           
-            Controlled Component VS. Uncontrolled Component
+            Remove Duplicated from Sorted Array
           
         </h1>
         
@@ -372,8 +372,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-06-13T00:00:00-05:00">
-                13-06-2021
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-01-11T00:00:00-06:00">
+                11-01-2022
               </time>
             
 
@@ -396,8 +396,8 @@
               
                 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/category/#/React" itemprop="url" rel="index">
-                    <span itemprop="name">React</span>
+                  <a href="/category/#/Algorithm" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm</span>
                   </a>
                 </span>
 
@@ -414,9 +414,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/react/2021/06/13/control_uncontrol_component/#comments" itemprop="discussionUrl">
+                <a href="/algorithm/2022/01/11/remove_duplicated/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="/react/2021/06/13/control_uncontrol_component/" itemprop="commentCount"></span>
+                        data-disqus-identifier="/algorithm/2022/01/11/remove_duplicated/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -447,26 +447,62 @@
       
 
       
-        <ul>
-  <li>Reference Article:
-    <ul>
-      <li><a href="https://stackoverflow.com/questions/42522515/what-are-react-controlled-components-and-uncontrolled-components">1. Controlled Component</a></li>
-      <li><a href="https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/#conclusion">2. Controlled and uncontrolled form inputs in React don’t have to be complicated</a></li>
-    </ul>
-  </li>
-  <li>A <em>Controlled Component</em> is one that takes its current value through <strong>props</strong> and notifies changes through callback like <strong><em>onChange</em></strong> A parent component “controls” it by handling the callback and managing its own state and passing the new values as props to the controlled component. You could also call this a “dumb component”.
-&amp;</li>
-  <li>A <em>Uncontrolled Component</em> is one that stores its own state internally, and you query the DOM using a <strong>ref</strong> to find its current value when you need it. This is a bit more like traditional HTML.</li>
-</ul>
+        <h4 id="description">Description</h4>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="c1">// Controlled:</span>
-   <span class="o">&lt;</span><span class="nx">Input</span> <span class="nx">type</span><span class="o">=</span><span class="dl">'</span><span class="s1">text</span><span class="dl">'</span> <span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="nx">value</span><span class="p">}</span> <span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">handleChange</span><span class="p">}</span><span class="sr">/</span><span class="err">&gt;
-</span>
-   <span class="c1">//Uncontrolled:</span>
-  <span class="o">&lt;</span><span class="nx">Input</span> <span class="nx">type</span><span class="o">=</span><span class="dl">"</span><span class="s2">text</span><span class="dl">"</span> <span class="nx">defaultValue</span><span class="o">=</span><span class="dl">"</span><span class="s2">foo</span><span class="dl">"</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">inputRef</span><span class="p">}</span> <span class="sr">/</span><span class="err">&gt;
-</span>   <span class="c1">// Use `inputRef.current.value` to read the current value of &lt;input&gt;</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
+Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.
+Return k after placing the final result in the first k slots of nums.
+Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
 </code></pre></div></div>
 
+<p>Example 1:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input: nums = [1,1,2]
+Output: 2, nums = [1,2,_]
+Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+</code></pre></div></div>
+
+<p>Example 2:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input: nums = [0,0,1,1,1,2,2,3,3,4]
+Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+</code></pre></div></div>
+
+<h4 id="thinking">Thinking</h4>
+<ol>
+  <li>Declare two variables, pointer1 and pointer2</li>
+  <li>pointer1 records the first position of the number in the array</li>
+  <li>pointer2 records the position of the latest duplicated number appeared in the array</li>
+  <li>traverse array, check if pointer1 is equal to pointer2,</li>
+  <li>if true, move pointer2 to the next index position</li>
+  <li>if false, which means the number in the pointer2 position is unique, we need to move the unique number to the front</li>
+  <li>so, we move pointer1 to the next index position, and give the latest value in the pointer2 position to the new pointer1 position</li>
+  <li>until the loop end, we can return the pointer1+1, since we need to total count of the unique numbers in the array, pointer1 is just the index</li>
+</ol>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="cm">/**
+     * @param {number[]} nums
+     * @return {number}
+     */</span>
+    
+    <span class="kd">let</span> <span class="nx">removeDuplicates</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nums</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">nums</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span>
+    <span class="kd">let</span> <span class="nx">pointer1</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">pointer2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">pointer2</span> <span class="o">&lt;</span> <span class="nx">nums</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">pointer2</span><span class="p">){</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">nums</span><span class="p">[</span><span class="nx">pointer1</span><span class="p">]</span> <span class="o">!==</span> <span class="nx">nums</span><span class="p">[</span><span class="nx">pointer2</span><span class="p">]){</span>
+        <span class="c1">// when the numbers are not equal,  we need to give the value of nums[pointer2] to the new nums[pointer1]</span>
+        <span class="nx">pointer1</span><span class="o">++</span>
+        <span class="nx">nums</span><span class="p">[</span><span class="nx">pointer1</span><span class="p">]</span> <span class="o">=</span> <span class="nx">nums</span><span class="p">[</span><span class="nx">pointer2</span><span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">// pointer1 is index, but the problem needs us return the count of the unique numbers in the array</span>
+    <span class="k">return</span> <span class="nx">pointer1</span> <span class="o">+</span> <span class="mi">1</span>
+  <span class="p">}</span>
+
+</code></pre></div></div>
 
       
     </div>
@@ -497,7 +533,7 @@
         <div class="post-tags">
           
             
-            <a href="/tag/#/front%20end" rel="tag"># front end</a>
+            <a href="/tag/#/Algorithm" rel="tag"># Algorithm</a>
           
         </div>
       
@@ -513,18 +549,14 @@
         <div class="post-nav" id="post-nav-id">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/react%20router/2021/06/27/hash_router_browser_router/" rel="next" title="Hash Router VS. Browser Router">
-                <i class="fa fa-chevron-left"></i> Hash Router VS. Browser Router
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/coding%20rules/2021/04/10/thinking_about_data_flow/" rel="prev" title="Thinking About Data Flow">
-                Thinking About Data Flow <i class="fa fa-chevron-right"></i>
+              <a href="/algorithm/2022/01/10/merge_two_sorted_lists/" rel="prev" title="Merge Two Sorted Lists">
+                Merge Two Sorted Lists <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -608,8 +640,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/assets/images/avatar.jpg"
@@ -695,6 +736,31 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class=nav>
+      <li class="nav-item nav-level-4"> <a class="nav-link" href="#description"> <span class="nav-number">1</span> <span class="nav-text">Description</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#thinking"> <span class="nav-number">2</span> <span class="nav-text">Thinking</span> </a> <ol class="nav-child"> <ol class="nav-child">
+    </ol>
+  </div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -855,9 +921,9 @@
       
       <script type="text/javascript">
           var disqus_config = function () {
-              this.page.url = 'http://localhost:4000/react/2021/06/13/control_uncontrol_component/';
-              this.page.identifier = '/react/2021/06/13/control_uncontrol_component/';
-              this.page.title = 'Controlled Component VS. Uncontrolled Component';
+              this.page.url = 'http://localhost:4000/algorithm/2022/01/11/remove_duplicated/';
+              this.page.identifier = '/algorithm/2022/01/11/remove_duplicated/';
+              this.page.title = 'Remove Duplicated from Sorted Array';
           };
           var d = document, s = d.createElement('script');
           s.src = 'https://Yueran.disqus.com/embed.js';

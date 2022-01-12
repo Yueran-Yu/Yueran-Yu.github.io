@@ -2,6 +2,79 @@
 <search>
   
     <entry>
+      <title><![CDATA[Remove Duplicated from Sorted Array]]></title>
+      <url>/algorithm/2022/01/11/remove_duplicated/</url>
+      <content type="html"><![CDATA[<h4 id="description">Description</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
+Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.
+Return k after placing the final result in the first k slots of nums.
+Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
+</code></pre></div></div>
+
+<p>Example 1:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input: nums = [1,1,2]
+Output: 2, nums = [1,2,_]
+Explanation: Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+</code></pre></div></div>
+
+<p>Example 2:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input: nums = [0,0,1,1,1,2,2,3,3,4]
+Output: 5, nums = [0,1,2,3,4,_,_,_,_,_]
+Explanation: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+</code></pre></div></div>
+
+<h4 id="thinking">Thinking</h4>
+<ol>
+  <li>Declare two variables, pointer1 and pointer2</li>
+  <li>pointer1 records the first position of the number in the array</li>
+  <li>pointer2 records the position of the latest duplicated number appeared in the array</li>
+  <li>traverse array, check if pointer1 is equal to pointer2,</li>
+  <li>if true, move pointer2 to the next index position</li>
+  <li>if false, which means the number in the pointer2 position is unique, we need to move the unique number to the front</li>
+  <li>so, we move pointer1 to the next index position, and give the latest value in the pointer2 position to the new pointer1 position</li>
+  <li>until the loop end, we can return the pointer1+1, since we need to total count of the unique numbers in the array, pointer1 is just the index</li>
+</ol>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="cm">/**
+     * @param {number[]} nums
+     * @return {number}
+     */</span>
+    
+    <span class="kd">let</span> <span class="nx">removeDuplicates</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nums</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">nums</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span>
+    <span class="kd">let</span> <span class="nx">pointer1</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">pointer2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">pointer2</span> <span class="o">&lt;</span> <span class="nx">nums</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">pointer2</span><span class="p">){</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">nums</span><span class="p">[</span><span class="nx">pointer1</span><span class="p">]</span> <span class="o">!==</span> <span class="nx">nums</span><span class="p">[</span><span class="nx">pointer2</span><span class="p">]){</span>
+        <span class="c1">// when the numbers are not equal,  we need to give the value of nums[pointer2] to the new nums[pointer1]</span>
+        <span class="nx">pointer1</span><span class="o">++</span>
+        <span class="nx">nums</span><span class="p">[</span><span class="nx">pointer1</span><span class="p">]</span> <span class="o">=</span> <span class="nx">nums</span><span class="p">[</span><span class="nx">pointer2</span><span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">// pointer1 is index, but the problem needs us return the count of the unique numbers in the array</span>
+    <span class="k">return</span> <span class="nx">pointer1</span> <span class="o">+</span> <span class="mi">1</span>
+  <span class="p">}</span>
+
+</code></pre></div></div>
+]]></content>
+      <categories>
+        
+          <category> Algorithm </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Algorithm </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
       <title><![CDATA[Merge Two Sorted Lists]]></title>
       <url>/algorithm/2022/01/10/merge_two_sorted_lists/</url>
       <content type="html"><![CDATA[<h4 id="description">Description</h4>
@@ -123,7 +196,7 @@ Both list1 and list2 are sorted in non-decreasing order.
   <li>This algorithm runs in O(n+m) time, where n and m are the lengths of respective linked lists. This is the running time because to merge both linked lists into one, we need to iterate through each node in the list</li>
 </ul>
 
-<h5 id="more-detailed-explain-graph">More detailed explain graph</h5>
+<h5 id="ddetailed-explanation-with-graph">dDetailed explanation with graph</h5>
 <p><img src="../../../../../assets/images/Merge-Two-Sorted-LinkedLists.jpeg" width="800" alt="Domain Name" /></p>
 
 ]]></content>
@@ -145,9 +218,62 @@ Both list1 and list2 are sorted in non-decreasing order.
       <url>/algorithm/2022/01/09/valid_parentheses/</url>
       <content type="html"><![CDATA[<h4 id="description">Description</h4>
 
-<h4 id="thinking">Thinking</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+
+Example 1:
+Input: s = "()"
+Output: true
+
+Example 2:
+Input: s = "()[]{}"
+Output: true
+
+Example 3:
+Input: s = "(]"
+Output: false
+
+Constraints:
+1 &lt;= s.length &lt;= 104
+s consists of parentheses only '()[]{}'.
+</code></pre></div></div>
+
+<h4 id="thinking">Thinking</h4>
+<ul>
+  <li>use stack to store each item in the s string array</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// create a map</span>
+<span class="kd">const</span> <span class="nx">map</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="dl">'</span><span class="s1">)</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">(</span><span class="dl">'</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">]</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">[</span><span class="dl">'</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">}</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">{</span><span class="dl">'</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">isValid</span> <span class="o">=</span> <span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">stack</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// when find the open parentheses push to the stack</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">(</span><span class="dl">'</span> <span class="o">||</span> <span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">{</span><span class="dl">'</span> <span class="o">||</span> <span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">[</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">stack</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+      
+      <span class="c1">// when we find there is the counterpart of one kind of the parentheses</span>
+      <span class="c1">// compare the last item in the stack with the map's value</span>
+      <span class="c1">// if equal, it means we find the pair of parentheses</span>
+      <span class="c1">// if not equal, we didn't find any pair of parentheses</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">stack</span><span class="p">[</span><span class="nx">stack</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">===</span> <span class="nx">map</span><span class="p">[</span><span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">]])</span> <span class="p">{</span>
+      <span class="nx">stack</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="kc">false</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="o">!</span><span class="nx">stack</span><span class="p">.</span><span class="nx">length</span>
+<span class="p">}</span>
+
 </code></pre></div></div>
 ]]></content>
       <categories>

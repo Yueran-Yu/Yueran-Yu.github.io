@@ -449,9 +449,62 @@
       
         <h4 id="description">Description</h4>
 
-<h4 id="thinking">Thinking</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+
+Example 1:
+Input: s = "()"
+Output: true
+
+Example 2:
+Input: s = "()[]{}"
+Output: true
+
+Example 3:
+Input: s = "(]"
+Output: false
+
+Constraints:
+1 &lt;= s.length &lt;= 104
+s consists of parentheses only '()[]{}'.
+</code></pre></div></div>
+
+<h4 id="thinking">Thinking</h4>
+<ul>
+  <li>use stack to store each item in the s string array</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// create a map</span>
+<span class="kd">const</span> <span class="nx">map</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="dl">'</span><span class="s1">)</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">(</span><span class="dl">'</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">]</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">[</span><span class="dl">'</span><span class="p">,</span>
+  <span class="dl">'</span><span class="s1">}</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">{</span><span class="dl">'</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">isValid</span> <span class="o">=</span> <span class="p">(</span><span class="nx">s</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">stack</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">s</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// when find the open parentheses push to the stack</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">(</span><span class="dl">'</span> <span class="o">||</span> <span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">{</span><span class="dl">'</span> <span class="o">||</span> <span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">===</span> <span class="dl">'</span><span class="s1">[</span><span class="dl">'</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">stack</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+      
+      <span class="c1">// when we find there is the counterpart of one kind of the parentheses</span>
+      <span class="c1">// compare the last item in the stack with the map's value</span>
+      <span class="c1">// if equal, it means we find the pair of parentheses</span>
+      <span class="c1">// if not equal, we didn't find any pair of parentheses</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">stack</span><span class="p">[</span><span class="nx">stack</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">===</span> <span class="nx">map</span><span class="p">[</span><span class="nx">s</span><span class="p">[</span><span class="nx">i</span><span class="p">]])</span> <span class="p">{</span>
+      <span class="nx">stack</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="kc">false</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="o">!</span><span class="nx">stack</span><span class="p">.</span><span class="nx">length</span>
+<span class="p">}</span>
+
 </code></pre></div></div>
 
       
@@ -619,7 +672,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">41</span>
+                <span class="site-state-item-count">42</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
