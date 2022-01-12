@@ -124,7 +124,7 @@ const mergeTwoLists = (l1, l2)=>{
 #### Running Time
 - This algorithm runs in O(n+m) time, where n and m are the lengths of respective linked lists. This is the running time because to merge both linked lists into one, we need to iterate through each node in the list
 
-##### More detailed explain graph
+##### dDetailed explanation with graph
 <img src="../../../../../assets/images/Merge-Two-Sorted-LinkedLists.jpeg" width="800" alt="Domain Name">
 
 
