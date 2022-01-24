@@ -1,7 +1,9 @@
 ---
-title: Center Div in the Grid date: 22-01-2022 categories:
-
-- CSS tags:
+title: Center Div in the Grid 
+date: 22-01-2022 
+categories:
+- CSS 
+tags:
 - CSS
 
 ---
