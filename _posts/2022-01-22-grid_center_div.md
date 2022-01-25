@@ -23,6 +23,7 @@ div {
 ```
 
 - The second style
+
 ```css
 div {
     margin-top: 5vh;
