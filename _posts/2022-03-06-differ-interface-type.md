@@ -10,8 +10,25 @@ tags:
 Type aliases and interfaces are very similar, and in many cases you can choose between them freely. 
 
 Almost all features of an **interface** are available in **type**, the key distinction is that a type cannot be re-opened to add new properties vs an interface which is always extendable.
+### Type:
+- Easy way to refer to the different properties + functions that a value has
 
+#### Primitive Types
+- number
+- boolean
+- void
+- undefined
+- string
+- symbol
+- null
+#### Object Types
+- functions
+- arrays
+- classes
+- objects
 
+### Interface:
+- 
 ### Extending an interface
 ```typescript
     interface Animal {
