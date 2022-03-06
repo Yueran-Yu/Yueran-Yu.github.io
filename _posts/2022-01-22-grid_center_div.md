@@ -7,7 +7,7 @@ tags:
 - CSS
 ---
 
-### This is drive me crazy~! So here is the code snippet will often use in the future.
+### This is driving me crazy~! So here is the code snippet will often use in the future.
 
 - The first style
 

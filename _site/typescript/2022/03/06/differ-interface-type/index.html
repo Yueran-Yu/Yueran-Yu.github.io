@@ -83,7 +83,7 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="" />
+  <meta name="keywords" content="Typescript," />
 
 
 
@@ -111,17 +111,17 @@
 
 
 
-<meta name="description" content="">
-<meta name="keywords" content="Jekyll, NexT">
+<meta name="description" content="Type aliases and interfaces are very similar, and in many cases you can choose between them freely.">
+<meta name="keywords" content="Typescript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mp">
-<meta property="og:url" content="http://localhost:4000/2022/01/13/mp/">
+<meta property="og:title" content="Differences between Interfaces and Type Aliases">
+<meta property="og:url" content="http://localhost:4000/typescript/2022/03/06/differ-interface-type/">
 <meta property="og:site_name" content="Yueran&apos;s Learning">
-<meta property="og:description" content="">
+<meta property="og:description" content="Type aliases and interfaces are very similar, and in many cases you can choose between them freely.">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mp">
-<meta name="twitter:description" content="">
+<meta name="twitter:title" content="Differences between Interfaces and Type Aliases">
+<meta name="twitter:description" content="Type aliases and interfaces are very similar, and in many cases you can choose between them freely.">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -154,7 +154,7 @@
 
 
 
-  <title>Mp</title>
+  <title>Differences between Interfaces and Type Aliases</title>
   
 
 
@@ -338,7 +338,7 @@
   
 
   <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/2022/01/13/mp/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/typescript/2022/03/06/differ-interface-type/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yueran">
@@ -358,7 +358,7 @@
           <h1 class="post-title" itemprop="name headline">
           
           
-            Mp
+            Differences between Interfaces and Type Aliases
           
         </h1>
         
@@ -372,8 +372,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-01-13T00:00:00-06:00">
-                13-01-2022
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-03-06T00:00:00-06:00">
+                06-03-2022
               </time>
             
 
@@ -383,6 +383,29 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/Typescript" itemprop="url" rel="index">
+                    <span itemprop="name">Typescript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -391,9 +414,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2022/01/13/mp/#comments" itemprop="discussionUrl">
+                <a href="/typescript/2022/03/06/differ-interface-type/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="/2022/01/13/mp/" itemprop="commentCount"></span>
+                        data-disqus-identifier="/typescript/2022/03/06/differ-interface-type/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -424,7 +447,59 @@
       
 
       
-        
+        <p>Type aliases and interfaces are very similar, and in many cases you can choose between them freely.</p>
+
+<p>Almost all features of an <strong>interface</strong> are available in <strong>type</strong>, the key distinction is that a type cannot be re-opened to add new properties vs an interface which is always extendable.</p>
+
+<h3 id="extending-an-interface">Extending an interface</h3>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kr">interface</span> <span class="nx">Animal</span> <span class="p">{</span>
+        <span class="nl">name</span><span class="p">:</span><span class="kr">string</span>
+    <span class="p">}</span>
+    
+    <span class="kr">interface</span> <span class="nx">Bear</span> <span class="kd">extends</span> <span class="nx">Animal</span> <span class="p">{</span>
+        <span class="nl">honey</span><span class="p">:</span> <span class="nx">boolean</span>
+    <span class="p">}</span>
+    
+    <span class="kd">const</span> <span class="nx">bear</span> <span class="o">=</span> <span class="nx">getBear</span><span class="p">()</span>
+    <span class="nx">bear</span><span class="p">.</span><span class="nx">name</span>
+    <span class="nx">bear</span><span class="p">.</span><span class="nx">honey</span>
+</code></pre></div></div>
+
+<h3 id="extending-a-type-via-intersections">Extending a type via intersections</h3>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">type</span> <span class="nx">Animal</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="na">name</span><span class="p">:</span><span class="kr">string</span>
+    <span class="p">}</span>
+    
+    <span class="kd">type</span> <span class="nx">Bear</span> <span class="o">=</span> <span class="nx">Animal</span> <span class="o">&amp;</span> <span class="p">{</span>
+        <span class="na">honey</span><span class="p">:</span> <span class="nx">boolean</span>
+    <span class="p">}</span>
+    
+    <span class="kd">const</span> <span class="nx">bear</span> <span class="o">=</span> <span class="nx">getBear</span><span class="p">()</span>
+    <span class="nx">bear</span><span class="p">.</span><span class="nx">name</span>
+    <span class="nx">bear</span><span class="p">.</span><span class="nx">honey</span>
+</code></pre></div></div>
+
+<h3 id="adding-new-fields-to-an-existing-interface">Adding new fields to an existing interface</h3>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kr">interface</span> <span class="nx">Window</span> <span class="p">{</span>
+	<span class="nl">title</span><span class="p">:</span> <span class="kr">string</span>
+<span class="p">}</span>
+  <span class="kr">interface</span> <span class="nx">Window</span> <span class="p">{</span>
+	<span class="nl">ts</span><span class="p">:</span> <span class="nx">TypeScriptAPI</span>
+  <span class="p">}</span>
+
+</code></pre></div></div>
+
+<h3 id="a-type-cannot-be-changed-after-being-created">A type cannot be changed after being created</h3>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">type</span> <span class="nx">Window</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="na">title</span><span class="p">:</span><span class="kr">string</span>
+<span class="p">}</span>
+
+  <span class="kd">type</span> <span class="nx">Window</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="na">ts</span><span class="p">:</span> <span class="nx">TypeScriptAPI</span>
+  <span class="p">}</span>
+<span class="c1">// Error: Duplicate identifier 'Window'.</span>
+
+</code></pre></div></div>
 
       
     </div>
@@ -452,6 +527,13 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/Typescript" rel="tag"># Typescript</a>
+          
+        </div>
+      
 
       
       
@@ -470,8 +552,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/algorithm/2022/01/12/remove_element/" rel="prev" title="Remove Element">
-                Remove Element <i class="fa fa-chevron-right"></i>
+              <a href="/css/2022/01/22/grid_center_div/" rel="prev" title="Center Div in the Grid">
+                Center Div in the Grid <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -555,8 +637,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/assets/images/avatar.jpg"
@@ -571,7 +662,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">45</span>
+                <span class="site-state-item-count">46</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -582,7 +673,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -642,6 +733,31 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class=nav>
+      <li class="nav-item nav-level-3"> <a class="nav-link" href="#extending-an-interface"> <span class="nav-number">1</span> <span class="nav-text">Extending an interface</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#extending-a-type-via-intersections"> <span class="nav-number">2</span> <span class="nav-text">Extending a type via intersections</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#adding-new-fields-to-an-existing-interface"> <span class="nav-number">3</span> <span class="nav-text">Adding new fields to an existing interface</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#a-type-cannot-be-changed-after-being-created"> <span class="nav-number">4</span> <span class="nav-text">A type cannot be changed after being created</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child">
+    </ol>
+  </div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -802,9 +918,9 @@
       
       <script type="text/javascript">
           var disqus_config = function () {
-              this.page.url = 'http://localhost:4000/2022/01/13/mp/';
-              this.page.identifier = '/2022/01/13/mp/';
-              this.page.title = 'Mp';
+              this.page.url = 'http://localhost:4000/typescript/2022/03/06/differ-interface-type/';
+              this.page.identifier = '/typescript/2022/03/06/differ-interface-type/';
+              this.page.title = 'Differences between Interfaces and Type Aliases';
           };
           var d = document, s = d.createElement('script');
           s.src = 'https://Yueran.disqus.com/embed.js';

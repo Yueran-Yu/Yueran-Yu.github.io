@@ -2,14 +2,118 @@
 <search>
   
     <entry>
-      <title><![CDATA[Mp]]></title>
-      <url>/2022/01/13/mp/</url>
-      <content type="html"><![CDATA[
+      <title><![CDATA[Differences between Interfaces and Type Aliases]]></title>
+      <url>/typescript/2022/03/06/differ-interface-type/</url>
+      <content type="html"><![CDATA[<p>Type aliases and interfaces are very similar, and in many cases you can choose between them freely.</p>
+
+<p>Almost all features of an <strong>interface</strong> are available in <strong>type</strong>, the key distinction is that a type cannot be re-opened to add new properties vs an interface which is always extendable.</p>
+
+<h3 id="extending-an-interface">Extending an interface</h3>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kr">interface</span> <span class="nx">Animal</span> <span class="p">{</span>
+        <span class="nl">name</span><span class="p">:</span><span class="kr">string</span>
+    <span class="p">}</span>
+    
+    <span class="kr">interface</span> <span class="nx">Bear</span> <span class="kd">extends</span> <span class="nx">Animal</span> <span class="p">{</span>
+        <span class="nl">honey</span><span class="p">:</span> <span class="nx">boolean</span>
+    <span class="p">}</span>
+    
+    <span class="kd">const</span> <span class="nx">bear</span> <span class="o">=</span> <span class="nx">getBear</span><span class="p">()</span>
+    <span class="nx">bear</span><span class="p">.</span><span class="nx">name</span>
+    <span class="nx">bear</span><span class="p">.</span><span class="nx">honey</span>
+</code></pre></div></div>
+
+<h3 id="extending-a-type-via-intersections">Extending a type via intersections</h3>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">type</span> <span class="nx">Animal</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="na">name</span><span class="p">:</span><span class="kr">string</span>
+    <span class="p">}</span>
+    
+    <span class="kd">type</span> <span class="nx">Bear</span> <span class="o">=</span> <span class="nx">Animal</span> <span class="o">&amp;</span> <span class="p">{</span>
+        <span class="na">honey</span><span class="p">:</span> <span class="nx">boolean</span>
+    <span class="p">}</span>
+    
+    <span class="kd">const</span> <span class="nx">bear</span> <span class="o">=</span> <span class="nx">getBear</span><span class="p">()</span>
+    <span class="nx">bear</span><span class="p">.</span><span class="nx">name</span>
+    <span class="nx">bear</span><span class="p">.</span><span class="nx">honey</span>
+</code></pre></div></div>
+
+<h3 id="adding-new-fields-to-an-existing-interface">Adding new fields to an existing interface</h3>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kr">interface</span> <span class="nx">Window</span> <span class="p">{</span>
+	<span class="nl">title</span><span class="p">:</span> <span class="kr">string</span>
+<span class="p">}</span>
+  <span class="kr">interface</span> <span class="nx">Window</span> <span class="p">{</span>
+	<span class="nl">ts</span><span class="p">:</span> <span class="nx">TypeScriptAPI</span>
+  <span class="p">}</span>
+
+</code></pre></div></div>
+
+<h3 id="a-type-cannot-be-changed-after-being-created">A type cannot be changed after being created</h3>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">type</span> <span class="nx">Window</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="na">title</span><span class="p">:</span><span class="kr">string</span>
+<span class="p">}</span>
+
+  <span class="kd">type</span> <span class="nx">Window</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="na">ts</span><span class="p">:</span> <span class="nx">TypeScriptAPI</span>
+  <span class="p">}</span>
+<span class="c1">// Error: Duplicate identifier 'Window'.</span>
+
+</code></pre></div></div>
 ]]></content>
       <categories>
         
+          <category> Typescript </category>
+        
       </categories>
       <tags>
+        
+          <tag> Typescript </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
+      <title><![CDATA[Center Div in the Grid]]></title>
+      <url>/css/2022/01/22/grid_center_div/</url>
+      <content type="html"><![CDATA[<h3 id="this-is-driving-me-crazy-so-here-is-the-code-snippet-will-often-use-in-the-future">This is driving me crazy~! So here is the code snippet will often use in the future.</h3>
+
+<ul>
+  <li>The first style</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+    <span class="py">grid-template-columns</span><span class="p">:</span> <span class="m">1</span><span class="n">fr</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
+    <span class="py">gap</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+    <span class="py">justify-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">align-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<ul>
+  <li>The second style</li>
+</ul>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">margin-top</span><span class="p">:</span> <span class="m">5vh</span><span class="p">;</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">57vh</span><span class="p">;</span>
+    <span class="py">grid-template-columns</span><span class="p">:</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
+    <span class="py">grid-template-rows</span><span class="p">:</span> <span class="m">1</span><span class="n">fr</span> <span class="m">1</span><span class="n">fr</span><span class="p">;</span>
+    <span class="py">gap</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+    <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+]]></content>
+      <categories>
+        
+          <category> CSS </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> CSS </tag>
         
       </tags>
       <tags></tags>
