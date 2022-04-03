@@ -83,7 +83,7 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="front end," />
+  <meta name="keywords" content="Typescript,Portfolio," />
 
 
 
@@ -111,19 +111,17 @@
 
 
 
-<meta name="description" content="What the difference between framework and library?">
-<meta name="keywords" content="front end">
+<meta name="description" content="回忆从Javascript迁移到Typescript的修复bug的过程">
+<meta name="keywords" content="Typescript, Portfolio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="The Difference Between a Framework and Library">
-<meta property="og:url" content="http://localhost:4000/react/2021/07/19/framework_and_library/">
+<meta property="og:title" content="Migrate Javascript to Typescript of Portfolio">
+<meta property="og:url" content="http://localhost:4000/typescript/javascript/2022/04/03/portfolio_migrate_ts/">
 <meta property="og:site_name" content="Yueran&apos;s Learning">
-<meta property="og:description" content="What the difference between framework and library?">
+<meta property="og:description" content="回忆从Javascript迁移到Typescript的修复bug的过程">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="../../../../../assets/images/frameworkvslibraries.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Difference Between a Framework and Library">
-<meta name="twitter:description" content="What the difference between framework and library?">
-<meta name="twitter:image" content="../../../../../assets/images/frameworkvslibraries.png">
+<meta name="twitter:title" content="Migrate Javascript to Typescript of Portfolio">
+<meta name="twitter:description" content="回忆从Javascript迁移到Typescript的修复bug的过程">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -156,7 +154,7 @@
 
 
 
-  <title>The Difference Between a Framework and Library</title>
+  <title>Migrate Javascript to Typescript of Portfolio</title>
   
 
 
@@ -340,7 +338,7 @@
   
 
   <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://localhost:4000/react/2021/07/19/framework_and_library/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/typescript/javascript/2022/04/03/portfolio_migrate_ts/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yueran">
@@ -360,7 +358,7 @@
           <h1 class="post-title" itemprop="name headline">
           
           
-            The Difference Between a Framework and Library
+            Migrate Javascript to Typescript of Portfolio
           
         </h1>
         
@@ -374,8 +372,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-07-19T00:00:00-05:00">
-                19-07-2021
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2022-04-03T00:00:00-05:00">
+                03-04-2022
               </time>
             
 
@@ -398,12 +396,26 @@
               
                 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/category/#/React" itemprop="url" rel="index">
-                    <span itemprop="name">React</span>
+                  <a href="/category/#/Typescript" itemprop="url" rel="index">
+                    <span itemprop="name">Typescript</span>
                   </a>
                 </span>
 
                 
+                
+                  , 
+                
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/Javascript" itemprop="url" rel="index">
+                    <span itemprop="name">Javascript</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
                 
               
             </span>
@@ -416,9 +428,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/react/2021/07/19/framework_and_library/#comments" itemprop="discussionUrl">
+                <a href="/typescript/javascript/2022/04/03/portfolio_migrate_ts/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="/react/2021/07/19/framework_and_library/" itemprop="commentCount"></span>
+                        data-disqus-identifier="/typescript/javascript/2022/04/03/portfolio_migrate_ts/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -449,78 +461,19 @@
       
 
       
-        <h3 id="what-the-difference-between-framework-and-library">What the difference between framework and library?</h3>
+        <h3 id="回忆从javascript迁移到typescript的修复bug的过程">回忆从Javascript迁移到Typescript的修复bug的过程</h3>
 
-<ul>
-  <li>
-    <p>Both libraries and frameworks are reusable code written by someone else. Their purpose is to help you solve common
-problems in easier ways.</p>
-  </li>
-  <li>
-    <h4 id="the-technical-difference">The Technical Difference</h4>
-  </li>
-</ul>
+<blockquote>
+  <p>首先在原有的React project上安装typescript的模板，运行<code class="language-plaintext highlighter-rouge">yarn add typescript @types/node @types/react @types/react-dom @types/jest</code>.
+因为不知道该怎么下手，所以搜索了一下油管的一些视频,像<a href="https://www.youtube.com/watch?v=A_rrMXLwyqI">How to add Typescript to existing ReactJS project? Step by step tutorial</a>.
+看了一点点视频后发现视频的内容比较简单，而修改我自己的portfolio却是一个巨大的工程，所以我决定在这个视频的启发下开始自己动手改代码。
+心里比较没底，所以一开始就从简单的components改。打开 <strong><em>components</em></strong> folder,从第一个 <strong><em>About</em></strong> 文件改起。</p>
+</blockquote>
 
-<p>The technical difference between a framework and library lies in a term called inversion of control. When you use a
-library, you are in charge of the application flow. You choose when and where to call the library. When you use a
-framework, the framework is in charge of the flow. It provides you with a few places to plug in your code, but it calls
-the code you plugged in as needed.</p>
+<blockquote>
+  <p>遇到的第一个问题是需要手动添加后缀名 <strong><em>.tsx</em></strong> 到import的语句里。</p>
 
-<p><img src="../../../../../assets/images/frameworkvslibraries.png" width="800" alt="frameworks vs libraries" /></p>
-
-<ul>
-  <li>You tell libraries what to do, frameworks tell you what to do.</li>
-</ul>
-
-<h4 id="one-definition-i-know-is">One definition I know is:</h4>
-
-<ul>
-  <li>a framework is a software where you plug your code into</li>
-  <li>a library is a software that you plug into your code</li>
-</ul>
-
-<h3 id="why-is-react-a-library-and-not-a-framework">Why is React a library and not a framework?</h3>
-
-<ul>
-  <li>React itself does not include many of the React-specific libraries you’re going to need for most projects. Angular and
-Vue, by comparison, include many more tools all bundled within the core package itself.</li>
-  <li>Many developers consider this discussion of what is and isn’t a library to be trivial. But it has real consequences
-for our development process. In other words, because React is a library and not a framework, becoming a skilled React
-developer entails having a good knowledge of third-party React libraries.
-    <ul>
-      <li>The Third-Party React libraries example:</li>
-      <li>Redux, Redux Form, React Router, Styled Component</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="since-react-is-a-library-you-must-choose-the-tools-on-your-own">Since React is a library, you must choose the tools on your own</h3>
-
-<ul>
-  <li>That means, in order to build complete React applications, you will need to choose these packages and tools on your
-own.</li>
-  <li>For a form library, I have to decide whether I want to use the package React Hook Form or Formik. These are both
-React-specific form libraries to add important features to our forms like validation.</li>
-  <li>For testing my React application, I might use either React Testing Library, Jest, or some combination of the two.</li>
-  <li>For making network requests, I might need to choose between the Fetch API and Axios. I might also need to decide if I
-want to add an additional library to make managing my server state easier, such as React Query or SWR.</li>
-</ul>
-
-<p><a href="https://digitalya.co/blog/is-react-a-framework-or-library/">3 Reference: Is React a framework or library? - Everything you need to know </a></p>
-
-<ul>
-  <li>When choosing the right libraries and frameworks to build your mobile app or we app, it</li>
-  <li>s important that a framework is popular so that it has a well-established dev community around it. If you were to
-search on google or StackOverflow a question regarding some specific functionality or bug inside the framework, you’d
-most likely want to see other people who might have encountered the issue and found a solution.</li>
-</ul>
-
-<h3 id="resource-reference">Resource Reference:</h3>
-<p><a href="https://sofienebk.medium.com/what-is-the-difference-between-a-framework-and-library-2b712a1a1c41">1 What is the Difference Between a Framework and Library?</a></p>
-
-<p><a href="https://betterprogramming.pub/libraries-vs-frameworks-whats-the-difference-5f28c53dcffe">2 Libraries vs. Frameworks — What’s the Difference?</a></p>
-
-<p><a href="https://www.freecodecamp.org/news/is-react-a-library-or-a-framework/">3 Is React a Library or a Framework? Here’s Why it Matters</a></p>
+</blockquote>
 
       
     </div>
@@ -551,7 +504,10 @@ most likely want to see other people who might have encountered the issue and fo
         <div class="post-tags">
           
             
-            <a href="/tag/#/front%20end" rel="tag"># front end</a>
+            <a href="/tag/#/Typescript" rel="tag"># Typescript</a>
+          
+            
+            <a href="/tag/#/Portfolio" rel="tag"># Portfolio</a>
           
         </div>
       
@@ -567,18 +523,14 @@ most likely want to see other people who might have encountered the issue and fo
         <div class="post-nav" id="post-nav-id">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/buildpacks/2021/09/29/buildpacks_deploy_to_heroku/" rel="next" title="Deploy Project With buildpacks to Heroku and Github">
-                <i class="fa fa-chevron-left"></i> Deploy Project With buildpacks to Heroku and Github
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/react%20router/2021/06/27/hash_router_browser_router/" rel="prev" title="Hash Router VS. Browser Router">
-                Hash Router VS. Browser Router <i class="fa fa-chevron-right"></i>
+              <a href="/typescript/2022/03/06/differ-interface-type/" rel="prev" title="Differences between Interfaces and Type Aliases">
+                Differences between Interfaces and Type Aliases <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -775,7 +727,7 @@ most likely want to see other people who might have encountered the issue and fo
             
               <div class="post-toc-content">
     <ol class=nav>
-      <li class="nav-item nav-level-3"> <a class="nav-link" href="#what-the-difference-between-framework-and-library"> <span class="nav-number">1</span> <span class="nav-text">What the difference between framework and library?</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#the-technical-difference"> <span class="nav-number">1.1</span> <span class="nav-text">The Technical Difference</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#one-definition-i-know-is"> <span class="nav-number">1.2</span> <span class="nav-text">One definition I know is:</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#why-is-react-a-library-and-not-a-framework"> <span class="nav-number">2</span> <span class="nav-text">Why is React a library and not a framework?</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#since-react-is-a-library-you-must-choose-the-tools-on-your-own"> <span class="nav-number">3</span> <span class="nav-text">Since React is a library, you must choose the tools on your own</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#resource-reference"> <span class="nav-number">4</span> <span class="nav-text">Resource Reference:</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child">
+      <li class="nav-item nav-level-3"> <a class="nav-link" href="#回忆从javascript迁移到typescript的修复bug的过程"> <span class="nav-number">1</span> <span class="nav-text">回忆从Javascript迁移到Typescript的修复bug的过程</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child">
     </ol>
   </div>
             
@@ -943,9 +895,9 @@ most likely want to see other people who might have encountered the issue and fo
       
       <script type="text/javascript">
           var disqus_config = function () {
-              this.page.url = 'http://localhost:4000/react/2021/07/19/framework_and_library/';
-              this.page.identifier = '/react/2021/07/19/framework_and_library/';
-              this.page.title = 'The Difference Between a Framework and Library';
+              this.page.url = 'http://localhost:4000/typescript/javascript/2022/04/03/portfolio_migrate_ts/';
+              this.page.identifier = '/typescript/javascript/2022/04/03/portfolio_migrate_ts/';
+              this.page.title = 'Migrate Javascript to Typescript of Portfolio';
           };
           var d = document, s = d.createElement('script');
           s.src = 'https://Yueran.disqus.com/embed.js';

@@ -1,20 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-06T15:34:16-06:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Yueran’s Learning</title><subtitle>Shoot for the moon. Even if you miss, you&apos;ll land among the stars.</subtitle><author><name>Yueran</name></author><entry><title type="html">Differences between Interfaces and Type Aliases</title><link href="http://localhost:4000/typescript/2022/03/06/differ-interface-type/" rel="alternate" type="text/html" title="Differences between Interfaces and Type Aliases" /><published>2022-03-06T00:00:00-06:00</published><updated>2022-03-06T00:00:00-06:00</updated><id>http://localhost:4000/typescript/2022/03/06/differ-interface-type</id><content type="html" xml:base="http://localhost:4000/typescript/2022/03/06/differ-interface-type/">&lt;p&gt;Type aliases and interfaces are very similar, and in many cases you can choose between them freely.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-04-03T17:49:12-05:00</updated><id>http://localhost:4000/atom.xml</id><title type="html">Yueran’s Learning</title><subtitle>Shoot for the moon. Even if you miss, you&apos;ll land among the stars.</subtitle><author><name>Yueran</name></author><entry><title type="html">Migrate Javascript to Typescript of Portfolio</title><link href="http://localhost:4000/typescript/javascript/2022/04/03/portfolio_migrate_ts/" rel="alternate" type="text/html" title="Migrate Javascript to Typescript of Portfolio" /><published>2022-04-03T00:00:00-05:00</published><updated>2022-04-03T00:00:00-05:00</updated><id>http://localhost:4000/typescript/javascript/2022/04/03/portfolio_migrate_ts</id><content type="html" xml:base="http://localhost:4000/typescript/javascript/2022/04/03/portfolio_migrate_ts/">&lt;h3 id=&quot;回忆从javascript迁移到typescript的修复bug的过程&quot;&gt;回忆从Javascript迁移到Typescript的修复bug的过程&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;首先在原有的React project上安装typescript的模板，运行&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;yarn add typescript @types/node @types/react @types/react-dom @types/jest&lt;/code&gt;.
+因为不知道该怎么下手，所以搜索了一下油管的一些视频,像&lt;a href=&quot;https://www.youtube.com/watch?v=A_rrMXLwyqI&quot;&gt;How to add Typescript to existing ReactJS project? Step by step tutorial&lt;/a&gt;.
+看了一点点视频后发现视频的内容比较简单，而修改我自己的portfolio却是一个巨大的工程，所以我决定在这个视频的启发下开始自己动手改代码。
+心里比较没底，所以一开始就从简单的components改。打开 &lt;strong&gt;&lt;em&gt;components&lt;/em&gt;&lt;/strong&gt; folder,从第一个 &lt;strong&gt;&lt;em&gt;About&lt;/em&gt;&lt;/strong&gt; 文件改起。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;遇到的第一个问题是需要手动添加后缀名 &lt;strong&gt;&lt;em&gt;.tsx&lt;/em&gt;&lt;/strong&gt; 到import的语句里。&lt;/p&gt;
+
+&lt;/blockquote&gt;</content><author><name>Yueran</name></author><category term="Typescript" /><category term="Javascript" /><category term="Typescript" /><category term="Portfolio" /><summary type="html">回忆从Javascript迁移到Typescript的修复bug的过程</summary></entry><entry><title type="html">Differences between Interfaces and Type Aliases</title><link href="http://localhost:4000/typescript/2022/03/06/differ-interface-type/" rel="alternate" type="text/html" title="Differences between Interfaces and Type Aliases" /><published>2022-03-06T00:00:00-06:00</published><updated>2022-03-06T00:00:00-06:00</updated><id>http://localhost:4000/typescript/2022/03/06/differ-interface-type</id><content type="html" xml:base="http://localhost:4000/typescript/2022/03/06/differ-interface-type/">&lt;p&gt;Type aliases and interfaces are very similar, and in many cases you can choose between them freely.&lt;/p&gt;
 
 &lt;p&gt;Almost all features of an &lt;strong&gt;interface&lt;/strong&gt; are available in &lt;strong&gt;type&lt;/strong&gt;, the key distinction is that a type cannot be re-opened to add new properties vs an interface which is always extendable.&lt;/p&gt;
+&lt;h3 id=&quot;type&quot;&gt;Type:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Easy way to refer to the different properties + functions that a value has&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&quot;extending-an-interface&quot;&gt;Extending an interface&lt;/h3&gt;
-&lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;kr&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nl&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;h4 id=&quot;primitive-types&quot;&gt;Primitive Types&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;number&lt;/li&gt;
+  &lt;li&gt;boolean&lt;/li&gt;
+  &lt;li&gt;void&lt;/li&gt;
+  &lt;li&gt;undefined&lt;/li&gt;
+  &lt;li&gt;string&lt;/li&gt;
+  &lt;li&gt;symbol&lt;/li&gt;
+  &lt;li&gt;null
+    &lt;h4 id=&quot;object-types&quot;&gt;Object Types&lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;functions&lt;/li&gt;
+  &lt;li&gt;arrays&lt;/li&gt;
+  &lt;li&gt;classes&lt;/li&gt;
+  &lt;li&gt;objects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;interface&quot;&gt;Interface:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;extending-an-interface&quot;&gt;Extending an interface&lt;/h3&gt;
+    &lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;string&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
     
-    &lt;span class=&quot;kr&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Bear&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nl&quot;&gt;honey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;boolean&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Bear&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;honey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;boolean&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
     
-    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bear&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getBear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;bear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;bear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;honey&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bear&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getBear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;bear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;bear&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;honey&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;extending-a-type-via-intersections&quot;&gt;Extending a type via intersections&lt;/h3&gt;
 &lt;div class=&quot;language-typescript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;kd&quot;&gt;type&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Animal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -80,7 +118,64 @@
     &lt;span class=&quot;nl&quot;&gt;justify-content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;nl&quot;&gt;align-items&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Yueran</name></author><category term="CSS" /><category term="CSS" /><summary type="html">This is driving me crazy~! So here is the code snippet will often use in the future.</summary></entry><entry><title type="html">Remove Element</title><link href="http://localhost:4000/algorithm/2022/01/12/remove_element/" rel="alternate" type="text/html" title="Remove Element" /><published>2022-01-12T00:00:00-06:00</published><updated>2022-01-12T00:00:00-06:00</updated><id>http://localhost:4000/algorithm/2022/01/12/remove_element</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/01/12/remove_element/">&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Yueran</name></author><category term="CSS" /><category term="CSS" /><summary type="html">This is driving me crazy~! So here is the code snippet will often use in the future.</summary></entry><entry><title type="html">Implement stStr()</title><link href="http://localhost:4000/algorithm/2022/01/12/implement_strStr/" rel="alternate" type="text/html" title="Implement stStr()" /><published>2022-01-12T00:00:00-06:00</published><updated>2022-01-12T00:00:00-06:00</updated><id>http://localhost:4000/algorithm/2022/01/12/implement_strStr</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/01/12/implement_strStr/">&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Implement strStr().
+Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+Clarification:
+What should we return when needle is an empty string? This is a great question to ask during an interview.
+For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C&apos;s strstr() and Java&apos;s indexOf().
+
+
+Example 1:
+
+Input: haystack = &quot;hello&quot;, needle = &quot;ll&quot;
+Output: 2
+Example 2:
+
+Input: haystack = &quot;aaaaa&quot;, needle = &quot;bba&quot;
+Output: -1
+Example 3:
+
+Input: haystack = &quot;&quot;, needle = &quot;&quot;
+Output: 0
+Constraints:
+
+0 &amp;lt;= haystack.length, needle.length &amp;lt;= 5 * 104
+haystack and needle consist of only lower-case English characters.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;thinking&quot;&gt;Thinking&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;traverse the haystack string, find out if there is the one letter equal the first letter in the needle string&lt;/li&gt;
+  &lt;li&gt;if true, we can slice the length that equal to the needle string from the letter we found in the haystack, compare
+them&lt;/li&gt;
+  &lt;li&gt;if equal the index&lt;/li&gt;
+  &lt;li&gt;otherwise, we always return -1&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;cm&quot;&gt;/**
+ * @param {string} haystack
+ * @param {string} needle
+ * @return {number}
+ */&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;strStr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;haystack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;needle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;needle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initial&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;needle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;haystack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;haystack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;haystack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;needle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;needle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Yueran</name></author><category term="Algorithm" /><category term="Algorithm" /><summary type="html">Description</summary></entry><entry><title type="html">Remove Element</title><link href="http://localhost:4000/algorithm/2022/01/12/remove_element/" rel="alternate" type="text/html" title="Remove Element" /><published>2022-01-12T00:00:00-06:00</published><updated>2022-01-12T00:00:00-06:00</updated><id>http://localhost:4000/algorithm/2022/01/12/remove_element</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/01/12/remove_element/">&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The relative order of the elements may be changed.
 Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the first part of the array nums. More formally, if there are k elements after removing the duplicates, then the first k elements of nums should hold the final result. It does not matter what you leave beyond the first k elements.
@@ -140,63 +235,6 @@ It does not matter what you leave beyond the returned k (hence they are undersco
   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Yueran</name></author><category term="Algorithm" /><category term="Algorithm" /><summary type="html">Description</summary></entry><entry><title type="html">Implement stStr()</title><link href="http://localhost:4000/algorithm/2022/01/12/implement_strStr/" rel="alternate" type="text/html" title="Implement stStr()" /><published>2022-01-12T00:00:00-06:00</published><updated>2022-01-12T00:00:00-06:00</updated><id>http://localhost:4000/algorithm/2022/01/12/implement_strStr</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/01/12/implement_strStr/">&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Implement strStr().
-Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
-
-Clarification:
-What should we return when needle is an empty string? This is a great question to ask during an interview.
-For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C&apos;s strstr() and Java&apos;s indexOf().
-
-
-Example 1:
-
-Input: haystack = &quot;hello&quot;, needle = &quot;ll&quot;
-Output: 2
-Example 2:
-
-Input: haystack = &quot;aaaaa&quot;, needle = &quot;bba&quot;
-Output: -1
-Example 3:
-
-Input: haystack = &quot;&quot;, needle = &quot;&quot;
-Output: 0
-Constraints:
-
-0 &amp;lt;= haystack.length, needle.length &amp;lt;= 5 * 104
-haystack and needle consist of only lower-case English characters.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;thinking&quot;&gt;Thinking&lt;/h4&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;traverse the haystack string, find out if there is the one letter equal the first letter in the needle string&lt;/li&gt;
-  &lt;li&gt;if true, we can slice the length that equal to the needle string from the letter we found in the haystack, compare
-them&lt;/li&gt;
-  &lt;li&gt;if equal the index&lt;/li&gt;
-  &lt;li&gt;otherwise, we always return -1&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;cm&quot;&gt;/**
- * @param {string} haystack
- * @param {string} needle
- * @return {number}
- */&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;strStr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;haystack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;needle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;needle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initial&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;needle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;haystack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;haystack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;initial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;haystack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;needle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;needle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Yueran</name></author><category term="Algorithm" /><category term="Algorithm" /><summary type="html">Description</summary></entry><entry><title type="html">Remove Duplicated from Sorted Array</title><link href="http://localhost:4000/algorithm/2022/01/11/remove_duplicated/" rel="alternate" type="text/html" title="Remove Duplicated from Sorted Array" /><published>2022-01-11T00:00:00-06:00</published><updated>2022-01-11T00:00:00-06:00</updated><id>http://localhost:4000/algorithm/2022/01/11/remove_duplicated</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/01/11/remove_duplicated/">&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same.
@@ -563,53 +601,4 @@ It is guaranteed that s is a valid roman numeral in the range [1, 3999].
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;../../../../../assets/images/RomanToInteger.png&quot; width=&quot;500&quot; alt=&quot;Domain Name&quot; /&gt;&lt;/p&gt;</content><author><name>Yueran</name></author><category term="Algorithm" /><category term="Algorithm" /><summary type="html">Description</summary></entry><entry><title type="html">Palindrome Number</title><link href="http://localhost:4000/algorithm/2022/01/06/palindrome/" rel="alternate" type="text/html" title="Palindrome Number" /><published>2022-01-06T00:00:00-06:00</published><updated>2022-01-06T00:00:00-06:00</updated><id>http://localhost:4000/algorithm/2022/01/06/palindrome</id><content type="html" xml:base="http://localhost:4000/algorithm/2022/01/06/palindrome/">&lt;h4 id=&quot;description&quot;&gt;Description&lt;/h4&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Given an integer x, return true if x is palindrome integer.
-An integer is a palindrome when it reads the same backward as forward.
-For example, 121 is a palindrome while 123 is not.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Example 1:
-Input: x = 121
-Output: true
-Explanation: 121 reads as 121 from left to right and from right to left.
-Example 2:
-
-Input: x = -121
-Output: false
-Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
-Example 3:
-
-Input: x = 10
-Output: false
-Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;isPalindrome&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reversedInteger&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reversedInteger&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// declare a temporary container to store the reversed digits from x one by one&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reversed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-  
-  &lt;span class=&quot;c1&quot;&gt;// truncate the digidts from Ones digit to Hundreds digit of x, &lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;// x needs greater than 0 after each truncate&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// key point: &apos;reversed&apos; is the iterator&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// the % module function is used to get the number from Ones digit&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// 用取模工具依次取个位数，十位数，百位数&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;reversed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reversed&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
-    
-    &lt;span class=&quot;c1&quot;&gt;// this is used to remove the Ones digit from the x, &lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// and x will be a new shorter number and will be used the next time &lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// 然后 用Math.floor获截取个位数之后的值，直到最后都截取完&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reversed&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Yueran</name></author><category term="Algorithm" /><category term="Algorithm" /><category term="Leetcode" /><summary type="html">Description</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;../../../../../assets/images/RomanToInteger.png&quot; width=&quot;500&quot; alt=&quot;Domain Name&quot; /&gt;&lt;/p&gt;</content><author><name>Yueran</name></author><category term="Algorithm" /><category term="Algorithm" /><summary type="html">Description</summary></entry></feed>

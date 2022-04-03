@@ -450,20 +450,46 @@
         <p>Type aliases and interfaces are very similar, and in many cases you can choose between them freely.</p>
 
 <p>Almost all features of an <strong>interface</strong> are available in <strong>type</strong>, the key distinction is that a type cannot be re-opened to add new properties vs an interface which is always extendable.</p>
+<h3 id="type">Type:</h3>
+<ul>
+  <li>Easy way to refer to the different properties + functions that a value has</li>
+</ul>
 
-<h3 id="extending-an-interface">Extending an interface</h3>
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kr">interface</span> <span class="nx">Animal</span> <span class="p">{</span>
-        <span class="nl">name</span><span class="p">:</span><span class="kr">string</span>
-    <span class="p">}</span>
+<h4 id="primitive-types">Primitive Types</h4>
+<ul>
+  <li>number</li>
+  <li>boolean</li>
+  <li>void</li>
+  <li>undefined</li>
+  <li>string</li>
+  <li>symbol</li>
+  <li>null
+    <h4 id="object-types">Object Types</h4>
+  </li>
+  <li>functions</li>
+  <li>arrays</li>
+  <li>classes</li>
+  <li>objects</li>
+</ul>
+
+<h3 id="interface">Interface:</h3>
+<ul>
+  <li>
+    <h3 id="extending-an-interface">Extending an interface</h3>
+    <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">interface</span> <span class="nx">Animal</span> <span class="p">{</span>
+    <span class="nl">name</span><span class="p">:</span><span class="kr">string</span>
+<span class="p">}</span>
     
-    <span class="kr">interface</span> <span class="nx">Bear</span> <span class="kd">extends</span> <span class="nx">Animal</span> <span class="p">{</span>
-        <span class="nl">honey</span><span class="p">:</span> <span class="nx">boolean</span>
-    <span class="p">}</span>
+<span class="kr">interface</span> <span class="nx">Bear</span> <span class="kd">extends</span> <span class="nx">Animal</span> <span class="p">{</span>
+    <span class="nl">honey</span><span class="p">:</span> <span class="nx">boolean</span>
+<span class="p">}</span>
     
-    <span class="kd">const</span> <span class="nx">bear</span> <span class="o">=</span> <span class="nx">getBear</span><span class="p">()</span>
-    <span class="nx">bear</span><span class="p">.</span><span class="nx">name</span>
-    <span class="nx">bear</span><span class="p">.</span><span class="nx">honey</span>
-</code></pre></div></div>
+<span class="kd">const</span> <span class="nx">bear</span> <span class="o">=</span> <span class="nx">getBear</span><span class="p">()</span>
+<span class="nx">bear</span><span class="p">.</span><span class="nx">name</span>
+<span class="nx">bear</span><span class="p">.</span><span class="nx">honey</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <h3 id="extending-a-type-via-intersections">Extending a type via intersections</h3>
 <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">type</span> <span class="nx">Animal</span> <span class="o">=</span> <span class="p">{</span>
@@ -545,6 +571,10 @@
       
         <div class="post-nav" id="post-nav-id">
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/typescript/javascript/2022/04/03/portfolio_migrate_ts/" rel="next" title="Migrate Javascript to Typescript of Portfolio">
+                <i class="fa fa-chevron-left"></i> Migrate Javascript to Typescript of Portfolio
+              </a>
             
           </div>
 
@@ -662,7 +692,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">46</span>
+                <span class="site-state-item-count">47</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -750,7 +780,7 @@
             
               <div class="post-toc-content">
     <ol class=nav>
-      <li class="nav-item nav-level-3"> <a class="nav-link" href="#extending-an-interface"> <span class="nav-number">1</span> <span class="nav-text">Extending an interface</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#extending-a-type-via-intersections"> <span class="nav-number">2</span> <span class="nav-text">Extending a type via intersections</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#adding-new-fields-to-an-existing-interface"> <span class="nav-number">3</span> <span class="nav-text">Adding new fields to an existing interface</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#a-type-cannot-be-changed-after-being-created"> <span class="nav-number">4</span> <span class="nav-text">A type cannot be changed after being created</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child">
+      <li class="nav-item nav-level-3"> <a class="nav-link" href="#type"> <span class="nav-number">1</span> <span class="nav-text">Type:</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-4"> <a class="nav-link" href="#primitive-types"> <span class="nav-number">1.1</span> <span class="nav-text">Primitive Types</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li> <li class="nav-item nav-level-4"> <a class="nav-link" href="#object-types"> <span class="nav-number">1.2</span> <span class="nav-text">Object Types</span> </a> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#interface"> <span class="nav-number">2</span> <span class="nav-text">Interface:</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#extending-an-interface"> <span class="nav-number">3</span> <span class="nav-text">Extending an interface</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#extending-a-type-via-intersections"> <span class="nav-number">4</span> <span class="nav-text">Extending a type via intersections</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#adding-new-fields-to-an-existing-interface"> <span class="nav-number">5</span> <span class="nav-text">Adding new fields to an existing interface</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child"> </li></ol> </li></ol> </li></ol> </li> <li class="nav-item nav-level-3"> <a class="nav-link" href="#a-type-cannot-be-changed-after-being-created"> <span class="nav-number">6</span> <span class="nav-text">A type cannot be changed after being created</span> </a> <ol class="nav-child"> <ol class="nav-child"> <ol class="nav-child">
     </ol>
   </div>
             

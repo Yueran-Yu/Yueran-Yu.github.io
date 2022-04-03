@@ -2,25 +2,85 @@
 <search>
   
     <entry>
+      <title><![CDATA[Migrate Javascript to Typescript of Portfolio]]></title>
+      <url>/typescript/javascript/2022/04/03/portfolio_migrate_ts/</url>
+      <content type="html"><![CDATA[<h3 id="回忆从javascript迁移到typescript的修复bug的过程">回忆从Javascript迁移到Typescript的修复bug的过程</h3>
+
+<blockquote>
+  <p>首先在原有的React project上安装typescript的模板，运行<code class="language-plaintext highlighter-rouge">yarn add typescript @types/node @types/react @types/react-dom @types/jest</code>.
+因为不知道该怎么下手，所以搜索了一下油管的一些视频,像<a href="https://www.youtube.com/watch?v=A_rrMXLwyqI">How to add Typescript to existing ReactJS project? Step by step tutorial</a>.
+看了一点点视频后发现视频的内容比较简单，而修改我自己的portfolio却是一个巨大的工程，所以我决定在这个视频的启发下开始自己动手改代码。
+心里比较没底，所以一开始就从简单的components改。打开 <strong><em>components</em></strong> folder,从第一个 <strong><em>About</em></strong> 文件改起。</p>
+</blockquote>
+
+<blockquote>
+  <p>遇到的第一个问题是需要手动添加后缀名 <strong><em>.tsx</em></strong> 到import的语句里。</p>
+
+</blockquote>
+]]></content>
+      <categories>
+        
+          <category> Typescript </category>
+        
+          <category> Javascript </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Typescript </tag>
+        
+          <tag> Portfolio </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
       <title><![CDATA[Differences between Interfaces and Type Aliases]]></title>
       <url>/typescript/2022/03/06/differ-interface-type/</url>
       <content type="html"><![CDATA[<p>Type aliases and interfaces are very similar, and in many cases you can choose between them freely.</p>
 
 <p>Almost all features of an <strong>interface</strong> are available in <strong>type</strong>, the key distinction is that a type cannot be re-opened to add new properties vs an interface which is always extendable.</p>
+<h3 id="type">Type:</h3>
+<ul>
+  <li>Easy way to refer to the different properties + functions that a value has</li>
+</ul>
 
-<h3 id="extending-an-interface">Extending an interface</h3>
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kr">interface</span> <span class="nx">Animal</span> <span class="p">{</span>
-        <span class="nl">name</span><span class="p">:</span><span class="kr">string</span>
-    <span class="p">}</span>
+<h4 id="primitive-types">Primitive Types</h4>
+<ul>
+  <li>number</li>
+  <li>boolean</li>
+  <li>void</li>
+  <li>undefined</li>
+  <li>string</li>
+  <li>symbol</li>
+  <li>null
+    <h4 id="object-types">Object Types</h4>
+  </li>
+  <li>functions</li>
+  <li>arrays</li>
+  <li>classes</li>
+  <li>objects</li>
+</ul>
+
+<h3 id="interface">Interface:</h3>
+<ul>
+  <li>
+    <h3 id="extending-an-interface">Extending an interface</h3>
+    <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">interface</span> <span class="nx">Animal</span> <span class="p">{</span>
+    <span class="nl">name</span><span class="p">:</span><span class="kr">string</span>
+<span class="p">}</span>
     
-    <span class="kr">interface</span> <span class="nx">Bear</span> <span class="kd">extends</span> <span class="nx">Animal</span> <span class="p">{</span>
-        <span class="nl">honey</span><span class="p">:</span> <span class="nx">boolean</span>
-    <span class="p">}</span>
+<span class="kr">interface</span> <span class="nx">Bear</span> <span class="kd">extends</span> <span class="nx">Animal</span> <span class="p">{</span>
+    <span class="nl">honey</span><span class="p">:</span> <span class="nx">boolean</span>
+<span class="p">}</span>
     
-    <span class="kd">const</span> <span class="nx">bear</span> <span class="o">=</span> <span class="nx">getBear</span><span class="p">()</span>
-    <span class="nx">bear</span><span class="p">.</span><span class="nx">name</span>
-    <span class="nx">bear</span><span class="p">.</span><span class="nx">honey</span>
-</code></pre></div></div>
+<span class="kd">const</span> <span class="nx">bear</span> <span class="o">=</span> <span class="nx">getBear</span><span class="p">()</span>
+<span class="nx">bear</span><span class="p">.</span><span class="nx">name</span>
+<span class="nx">bear</span><span class="p">.</span><span class="nx">honey</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <h3 id="extending-a-type-via-intersections">Extending a type via intersections</h3>
 <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">type</span> <span class="nx">Animal</span> <span class="o">=</span> <span class="p">{</span>
