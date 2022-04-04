@@ -114,7 +114,7 @@ tags:
         )
      }
 ```
-> 之后，使用了styled-components, 里面有个ThemeProvider, 关于theme的类型, 首先需要在 src的隔壁创建一个 ***theme.d.ts***，然后添加到 ***tsconfig.js***， 申明如下:
+> 之后，使用了styled-components, 里面有个ThemeProvider, 关于theme的类型, 首先需要在 src的隔壁创建一个 ***theme.d.ts***，然后添加到 ***tsconfig.js***。 如果 ***tsconfig.js*** 里没有 ***theme.d.ts***,***styled-components***的 ***global.style.tsx*** 里就会不停报错，报错内容是 ***theme*** 的 ***DefaultTheme***里面没有 ***chosenTheme***等这些自定义类型，所以我们需要手动添加自定义 props到 ***DefaultTheme***里去，申明如下:
  
 ```typescript
     import {NDThemeProps,FontProps } from "./src/components/gobalStyles";
