@@ -58,7 +58,7 @@ Therefore, to ensure the quality of code at the beginning, writing unit tests im
 <h4 id="which-methods-functions-or-components-need-to-be-unit-tested">Which methods, functions or components need to be unit tested?</h4>
 <ul>
   <li>Transaction related code corrections</li>
-  <li>More answers maybe need to be required from the real work situation. But the</li>
+  <li>More answers maybe need to be required from the real work situation. However, the basic principle is that the code that can cause major damage to the project should be thoroughly tested.</li>
 </ul>
 
 <h4 id="reading-resources">Reading Resources</h4>
