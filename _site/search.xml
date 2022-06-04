@@ -19,9 +19,9 @@ This makes the code structure very unclear, making it difficult to read and trac
 <h4 id="since-im-free-to-write-my-own-code-without-having-to-consider-the-constraints-of-unit-testing-i-can-write-whatever-i-want-in-any-style">Since I’m free to write my own code without having to consider the constraints of unit testing. I can write whatever I want in any style.</h4>
 
 <p>It is obvious that the code with cluttered logic will be difficult to maintain and troubleshoot in the future as the program grows, and the number of codes increases. If we don’t spend time writing unit tests at the early stage, we will definitely spend more time in the future constantly reworking, debugging and troubleshooting. 
-Therefore, to ensure the quality of code at the beginning, writing unit tests immediately after each little coding function completed will be a multiplier thing with half effort.</p>
+Therefore, to ensure the quality of code at the beginning, writing unit tests immediately after each little coding function is completed will be a multiplier thing with half effort.</p>
 
-<h4 id="what-is-the-unit-test">What is the unit test</h4>
+<h4 id="what-is-the-unit-test">What is the unit test?</h4>
 <ul>
   <li>UNIT TESTING is a type of software testing where individual units or components of a software are tested. The purpose is to validate that each unit of the software code performs as expected.</li>
 </ul>
@@ -31,7 +31,7 @@ Therefore, to ensure the quality of code at the beginning, writing unit tests im
   <li>Since our goal is to write testable code, the first thing I need to become familiar with standard methods that libraries, such as Jest, and the React Hooks Testing Library provide. I only had a general understanding of tests through reading articles before, I didn’t get to the point where I could use them freely. So I have to continue to be familiar with these test libraries as a new learner.</li>
   <li>My purpose is to observe and summarize the commonalities of these testable codes. Whenever I write code, I will be aware of these standards and write reliable code accordingly.</li>
   <li>Of course, when reading other articles, some people mentioned that you should avoid deceiving yourself, that is, don’t write easy code just to pass the test, it is meaningless.</li>
-  <li>Next, review my code and determine which parts can be separated and moved into the smallest test function.Split the crowded code into small functional modules that match the single responsibility principle.</li>
+  <li>Next, review my code and determine which parts can be separated and moved into the smallest test function. Split the crowded code into small functional modules that match the single responsibility principle.</li>
   <li><strong>I will post some related modified examples in this blog later.</strong></li>
 </ul>
 
