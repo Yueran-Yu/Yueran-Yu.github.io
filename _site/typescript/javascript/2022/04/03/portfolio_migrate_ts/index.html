@@ -587,7 +587,7 @@
      <span class="p">}</span>
 </code></pre></div></div>
 <blockquote>
-  <p>之后，使用了styled-components, 里面有个ThemeProvider, 关于theme的类型, 首先需要在 src的隔壁创建一个 <strong><em>theme.d.ts</em></strong>，然后添加到 <strong><em>tsconfig.js</em></strong>， 申明如下:</p>
+  <p>之后，使用了styled-components, 里面有个ThemeProvider, 关于theme的类型, 首先需要在 src的隔壁创建一个 <strong><em>theme.d.ts</em></strong>，然后添加到 <strong><em>tsconfig.js</em></strong>。 如果 <strong><em>tsconfig.js</em></strong> 里没有 <strong><em>theme.d.ts</em></strong>,<strong><em>styled-components</em></strong>的 <strong><em>global.style.tsx</em></strong> 里就会不停报错，报错内容是 <strong><em>theme</em></strong> 的 <strong><em>DefaultTheme</em></strong>里面没有 <strong><em>chosenTheme</em></strong>等这些自定义类型，所以我们需要手动添加自定义 props到 <strong><em>DefaultTheme</em></strong>里去，申明如下:</p>
 </blockquote>
 
 <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">import</span> <span class="p">{</span><span class="nx">NDThemeProps</span><span class="p">,</span><span class="nx">FontProps</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./src/components/gobalStyles</span><span class="dl">"</span><span class="p">;</span>
@@ -664,6 +664,10 @@
       
         <div class="post-nav" id="post-nav-id">
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/unit%20test/2022/06/04/unit-test/" rel="next" title="An Interview Review - My Spaghetti Code and Unit Test">
+                <i class="fa fa-chevron-left"></i> An Interview Review - My Spaghetti Code and Unit Test
+              </a>
             
           </div>
 
@@ -781,7 +785,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">47</span>
+                <span class="site-state-item-count">48</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -792,7 +796,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>

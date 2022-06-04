@@ -2,6 +2,47 @@
 <search>
   
     <entry>
+      <title><![CDATA[An Interview Review - My Spaghetti Code and Unit Test]]></title>
+      <url>/unit%20test/2022/06/04/unit-test/</url>
+      <content type="html"><![CDATA[<h3 id="problem-of-my-demo-code">Problem of my demo code</h3>
+
+<p>Based on the interview meeting, the biggest problem of my code is a lot of coding logic jammed into one function.
+This makes the code structure very unclear, making it difficult to read and track the logic, which, in turn, makes it almost impossible to do the unit test.</p>
+
+<p>This is because I lack of experience of coding in a team,and I am unaware of the importance of unit test, and the importance of clear, concise module code for unit testing.</p>
+
+<p>I read some articles about Jest a few days ago, React Hooks Testing Library and watching some videos, I struggled to write the first unit test. However, I was intimidated by my spaghetti code before it even started. Honestly, it’s impossible to write a unit test with my messy code.</p>
+
+<p>At that time, a question popped into my mind, why are the unit test examples given by others so simple and easy, why there is no example suited for my complex code situation?</p>
+
+<h4 id="from-the-interview-i-got-the-core-answer-my-code-is-an-untestable-mess"><ins>From the interview I got the core answer, my code is an untestable mess.</ins></h4>
+
+<p>It is obvious that the code with cluttered logic will be difficult to maintain and troubleshoot in the future as the program grows, and the number of codes increases.If we don’t spend time writing unit tests at the early stage, we will definitely spend more time in the future constantly reworking, debugging and troubleshooting. 
+Therefore, to ensure the quality of code at the beginning, writing unit test immediately along with each little coding function will be a multiplier thing with half effort.</p>
+
+<h4 id="reading-resources">Reading Resources</h4>
+<ol>
+  <li><a href="https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters">Unit Tests, How to Write Testable Code and Why it Matters</a></li>
+  <li><a href="https://medium.com/feedzaitech/writing-testable-code-b3201d4538eb">Writing Testable Code</a></li>
+  <li><a href="https://medium.com/@tasdikrahman/f-i-r-s-t-principles-of-testing-1a497acda8d6">F.I.R.S.T principles of testing</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Single-responsibility_principle">Single-responsibility principle</a></li>
+  <li><a href="https://dzone.com/articles/unit-testing-guidelines-what-to-test-and-what-not">Unit Testing Guidelines: What to Test and What Not to Test</a></li>
+</ol>
+]]></content>
+      <categories>
+        
+          <category> Unit Test </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> Unit Test </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+    <entry>
       <title><![CDATA[Migration of Javascript to Typescript of Portfolio]]></title>
       <url>/typescript/javascript/2022/04/03/portfolio_migrate_ts/</url>
       <content type="html"><![CDATA[<h3 id="回忆从javascript迁移到typescript的修复bug的过程">回忆从Javascript迁移到Typescript的修复bug的过程</h3>
@@ -122,7 +163,7 @@
      <span class="p">}</span>
 </code></pre></div></div>
 <blockquote>
-  <p>之后，使用了styled-components, 里面有个ThemeProvider, 关于theme的类型, 首先需要在 src的隔壁创建一个 <strong><em>theme.d.ts</em></strong>，然后添加到 <strong><em>tsconfig.js</em></strong>， 申明如下:</p>
+  <p>之后，使用了styled-components, 里面有个ThemeProvider, 关于theme的类型, 首先需要在 src的隔壁创建一个 <strong><em>theme.d.ts</em></strong>，然后添加到 <strong><em>tsconfig.js</em></strong>。 如果 <strong><em>tsconfig.js</em></strong> 里没有 <strong><em>theme.d.ts</em></strong>,<strong><em>styled-components</em></strong>的 <strong><em>global.style.tsx</em></strong> 里就会不停报错，报错内容是 <strong><em>theme</em></strong> 的 <strong><em>DefaultTheme</em></strong>里面没有 <strong><em>chosenTheme</em></strong>等这些自定义类型，所以我们需要手动添加自定义 props到 <strong><em>DefaultTheme</em></strong>里去，申明如下:</p>
 </blockquote>
 
 <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">import</span> <span class="p">{</span><span class="nx">NDThemeProps</span><span class="p">,</span><span class="nx">FontProps</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">./src/components/gobalStyles</span><span class="dl">"</span><span class="p">;</span>
